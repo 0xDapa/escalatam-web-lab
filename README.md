@@ -25,6 +25,7 @@ Demo anterior (Three.js r170, ~150 KB gz de JS): https://0xdapa.github.io/escala
 | [`LIBRERIAS.md`](LIBRERIAS.md) | 15 webs premiadas rápidas analizadas (librerías detectadas, peso, LCP) y comparativa medida de Three.js, OGL, GSAP (+plugins), Lenis, Motion, anime.js, Barba, Swup, Taxi, View Transitions, Lottie/dotLottie, Rive, Spline, Theatre, PixiJS, Swiper… con licencias y cuándo usar cada una |
 | [`REFERENCIAS.md`](REFERENCIAS.md) | Webs reales analizadas para las tandas 3 y 4 |
 | [`METODO-EMIL-KOWALSKI.md`](METODO-EMIL-KOWALSKI.md) | Principios de animación Emil Kowalski + Apple con snippets propios (tanda 4) |
+| [`ANTI-AI-SLOP.md`](ANTI-AI-SLOP.md) | Cómo evitar que una demo se sienta generada: checklist de tells, flujo con DESIGN.md, prompts por tipo de sitio, reglas de tipo/color/layout/motion y hilos reales de X (Emil, Anthropic, shadcn, agencias locales) |
 | `<id>/README.md` | Notas de cada variante: técnica, cómo funciona el hero, tamaños y rendimiento |
 
 ## Las 12 variantes
