@@ -19,7 +19,7 @@ const S=[
  ['Más allá de la sonrisa','Bruxismo, dolor mandibular y apnea del sueño: férulas a medida y trabajo con fisioterapeutas.',['Férulas','ATM','Ronquido'],'180 €','hero','por férula']];
 const panel=$('.svc-panel'),img=$('#svc-img');
 $$('.svc-list button').forEach(b=>b.addEventListener('click',()=>{const s=S[+b.dataset.i];
- $$('.svc-list button').forEach(x=>x.setAttribute('aria-selected',x===b));panel.classList.add('sw');
+ $$('.svc-list button').forEach(x=>x.setAttribute('aria-pressed',x===b));panel.classList.add('sw');
  setTimeout(()=>{img.src=`img/${s[4]}-960.webp`;img.srcset=`img/${s[4]}-560.webp 560w, img/${s[4]}-960.webp 960w`;$('#svc-h').textContent=s[0];$('#svc-p').textContent=s[1];$('#svc-li').innerHTML=s[2].map(t=>`<li>${t}</li>`).join('');$('#svc-pr').textContent=s[3];$('#svc-pr').nextSibling.textContent=' '+s[5];panel.classList.remove('sw')},RM?0:280)}));
 // antes / después
 const box=$('.ba-box');$('input',box).addEventListener('input',e=>box.style.setProperty('--p',e.target.value+'%'));

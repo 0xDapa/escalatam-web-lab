@@ -70,6 +70,31 @@ Página gzip = todo lo que hay en la carpeta (HTML, CSS, JS con gzip -9 + woff2 
 Lighthouse: preset móvil (CPU ×4, 4G simulada) contra localhost. Cada carpeta tiene su README con cómo funciona.
 <!-- TANDA2:END -->
 
+<!-- TANDA3:START -->
+## Tanda 3 — 12 webs inspiradas en webs reales premiadas
+
+Investigamos ~40 webs reales de negocios de personas (Awwwards SOTD/HM y líderes de nicho) y analizamos a fondo su diseño
+(ver [`REFERENCIAS.md`](REFERENCIAS.md)). Cada demo **adapta el lenguaje de diseño de una referencia distinta** a un nicho
+vendible, con código propio, marca ficticia, textos en español, fotos CC0 locales y CTA a WhatsApp. Sin librerías.
+
+| # | Demo en vivo | Nicho | Ideal para | Inspirada en | Técnica | JS gzip | Página gzip | Lighthouse móvil (Perf / A11y / BP / SEO) |
+|---|---|---|---|---|---|---|---|---|
+| 23 | [Valeria Montes](https://0xdapa.github.io/escalatam-web-lab/23-marca-personal/) | Coach de carrera · CDMX | coaches, mentores, consultores, creadores de cursos, psicólogos, formadores | [aliabdaal.com](https://aliabdaal.com/) | Selector "¿cómo te ayudo?" con View Transitions + subrayado SVG que se dibuja | 1.8 KB | 203.6 KB | 100 / 97 / 100 / 100 |
+| 24 | [Alba Clínica Dental](https://0xdapa.github.io/escalatam-web-lab/24-dental-premium/) | Odontología estética · Madrid | clínicas dentales, estética, cirugía plástica, dermatología, clínicas premium | [Aventura Dental Arts (Awwwards SOTD)](https://aventuradentalarts.com/) | Revelado con clip-path + texto palabra a palabra ligado al scroll + slider antes/después | 1.9 KB | 232.9 KB | 100 / 96 / 100 / 100 |
+| 25 | [Ferrer Ruiz Abogados](https://0xdapa.github.io/escalatam-web-lab/25-abogados/) | Despacho de abogados · Bogotá | abogados, notarías, asesorías fiscales, consultoras, gestorías | [PXR Legal (Awwwards SOTD)](https://pxr.law/) | Píldora rotativa en el titular, menú de esquina a pantalla completa, tarjetas apiladas sticky (sin fotos) | 0.9 KB | 31.8 KB | 100 / 96 / 100 / 100 |
+| 26 | [Almendro Residences](https://0xdapa.github.io/escalatam-web-lab/26-inmobiliaria-lujo/) | Promoción residencial de lujo · Altea | inmobiliarias, promotoras, residencias, villas vacacionales, arquitectos | [ERA Residence (Awwwards SOTD)](https://www.era-residence.com/) | Arco que crece con el scroll, anillo de texto circular, modo día/noche y tabla filtrable con View Transitions | 1.9 KB | 575.4 KB | 98 / 97 / 100 / 100 |
+| 27 | [Hotel Pasaje](https://0xdapa.github.io/escalatam-web-lab/27-hotel-boutique/) | Hotel boutique · CDMX | hoteles boutique, hostales, casas rurales, apartamentos turísticos, bares de hotel | [The Drake Hotel (Awwwards SOTD)](https://thedrake.ca/) | Slideshow con miniaturas, barra de reserva sticky, pestañas de habitaciones y agenda con ticker | 1.2 KB | 486.1 KB | 98 / 100 / 100 / 100 |
+| 28 | [Marea](https://0xdapa.github.io/escalatam-web-lab/28-alta-cocina/) | Restaurante de autor · Valparaíso | restaurantes de autor, menús degustación, bodegas, chefs privados | [Central Restaurante (Lima)](https://centralrestaurante.com.pe/) | Descenso por profundidades: el fondo interpola crema → mar → abismo con el scroll + medidor sticky | 1.7 KB | 636.9 KB | 95 / 95 / 100 / 100 |
+| 29 | [Brote](https://0xdapa.github.io/escalatam-web-lab/29-cafe-brunch/) | Café de brunch · Valencia | cafeterías, panaderías, heladerías, brunch, tiendas de barrio | [Amici (Awwwards SOTD)](https://restaurant-amici.com/) | Polaroids arrastrables, pizarra del día, carrusel automático y tarjeta de sellos interactiva | 1.9 KB | 696.7 KB | 100 / 97 / 100 / 100 |
+| 30 | [Lacada Nail Studio](https://0xdapa.github.io/escalatam-web-lab/30-nail-studio/) | Estudio de uñas · Lima | uñas, peluquerías, barberías, pestañas y cejas, maquillaje, spa | [Les Nanas Studio Floral (Awwwards HM)](https://lesnanas-studiofloral.com/) | Probador de uñas en SVG: color, acabado, forma y precio en vivo que viaja a la reserva | 1.8 KB | 187.7 KB | 100 / 100 / 100 / 100 |
+| 31 | [Kinesia](https://0xdapa.github.io/escalatam-web-lab/31-fisioterapia/) | Kinesiología y fisioterapia · Santiago | fisioterapeutas, quiroprácticos, osteópatas, clínicas de salud, centros médicos | [Parsley Health](https://www.parsleyhealth.com/) | Mapa corporal SVG clicable + nivel de dolor que da consejo + próxima hora libre | 1.7 KB | 439.9 KB | 100 / 97 / 100 / 100 |
+| 32 | [Ocre Estudio](https://0xdapa.github.io/escalatam-web-lab/32-estudio-interiorismo/) | Interiorismo · Montevideo | interioristas, arquitectos, reformas, tiendas de muebles, home staging | [Elite Design Studio (Awwwards SOTD)](https://www.elite-designstudio.com/) | Parallax por capas, manifiesto palabra a palabra, vista previa que sigue al cursor y paleta de materiales en vivo | 1.6 KB | 436.8 KB | 100 / 96 / 100 / 100 |
+| 33 | [Velo](https://0xdapa.github.io/escalatam-web-lab/33-bodas-eventos/) | Wedding planner · Cartagena | wedding planners, fotógrafos de boda, fincas para eventos, catering, floristerías | [Alessandra Zanghi (Awwwards SOTD)](https://alessandrazanghi.studio/) | Calendario de disponibilidad + estimador de presupuesto + galería B/N→color | 1.8 KB | 421.2 KB | 100 / 100 / 100 / 100 |
+| 34 | [Savia Nutrición](https://0xdapa.github.io/escalatam-web-lab/34-nutricion/) | Nutricionistas · Buenos Aires | nutricionistas, dietistas, entrenadores personales, psicólogos, terapeutas | [Function Health](https://www.functionhealth.com/) | Test de 3 preguntas con recomendación + plato en donut SVG animado + toggle de precios | 2.5 KB | 598.7 KB | 94 / 97 / 100 / 100 |
+
+Lighthouse: preset móvil (CPU ×4, 4G simulada) contra localhost en Chrome headless con GPU por software. Fotos: StockSnap (CC0), créditos en el README de cada carpeta.
+<!-- TANDA3:END -->
+
 ## Elegir variante en 10 segundos
 
 - **Lo más ligero posible** (gama baja, 1–3 KB de JS): `09-css3d`, `10-svg`, `01-webgl2-puro`, `06-shader-raymarch`.

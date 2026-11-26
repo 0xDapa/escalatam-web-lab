@@ -1,7 +1,7 @@
 /* 33 · Velo — inspirado en el lenguaje de Alessandra Zanghi (wedding planner): monocromo, display art déco fina (Poiret One), sans pequeña espaciada, botones negros cuadrados "BOOK A DATE", fotos en blanco y negro y lista larga de guías. Código propio. */
 @font-face{font-family:'Poiret One';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/poiret-one-normal-400.woff2) format('woff2')}
 @font-face{font-family:'Montserrat';font-style:normal;font-weight:300 600;font-display:swap;src:url(fonts/montserrat-normal-300-600.woff2) format('woff2')}
-:root{--bg:#fbfaf8;--ink:#111;--mut:#777;--line:#1111171f;--champ:#b9a27a;--g:clamp(16px,3.4vw,56px);--d:'Poiret One',Didot,serif;--f:'Montserrat',system-ui,sans-serif}
+:root{--bg:#fbfaf8;--ink:#111;--mut:#5f5f5f;--line:#1111171f;--champ:#b9a27a;--g:clamp(16px,3.4vw,56px);--d:'Poiret One',Didot,serif;--f:'Montserrat',system-ui,sans-serif}
 *{margin:0;padding:0;box-sizing:border-box}
 html{background:var(--bg);color:var(--ink);scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
 body{font:300 15.5px/1.75 var(--f);overflow-x:hidden}

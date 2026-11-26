@@ -438,5 +438,245 @@
    "fps_hero": 60.0,
    "fps_scroll": 61.0
   }
+ },
+ {
+  "id": "23-marca-personal",
+  "js_kb": 3.7,
+  "js_gz_kb": 1.8,
+  "page_gz_kb": 203.6,
+  "desk": {
+   "fcp_ms": 892,
+   "lcp_ms": 892,
+   "load_ms": 290,
+   "fps_hero": 60.0,
+   "fps_scroll": 59.0
+  },
+  "mob": {
+   "fcp_ms": 180,
+   "lcp_ms": 180,
+   "load_ms": 132,
+   "fps_hero": 60.3,
+   "fps_scroll": 61.0
+  }
+ },
+ {
+  "id": "24-dental-premium",
+  "js_kb": 3.6,
+  "js_gz_kb": 1.9,
+  "page_gz_kb": 232.9,
+  "desk": {
+   "fcp_ms": 260,
+   "lcp_ms": 260,
+   "load_ms": 138,
+   "fps_hero": 60.0,
+   "fps_scroll": 61.3
+  },
+  "mob": {
+   "fcp_ms": 116,
+   "lcp_ms": 116,
+   "load_ms": 92,
+   "fps_hero": 59.7,
+   "fps_scroll": 60.0
+  }
+ },
+ {
+  "id": "25-abogados",
+  "js_kb": 1.6,
+  "js_gz_kb": 0.9,
+  "page_gz_kb": 31.8,
+  "desk": {
+   "fcp_ms": 224,
+   "lcp_ms": 224,
+   "load_ms": 110,
+   "fps_hero": 60.3,
+   "fps_scroll": 60.3
+  },
+  "mob": {
+   "fcp_ms": 84,
+   "lcp_ms": 84,
+   "load_ms": 66,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.0
+  }
+ },
+ {
+  "id": "26-inmobiliaria-lujo",
+  "js_kb": 3.9,
+  "js_gz_kb": 1.9,
+  "page_gz_kb": 575.4,
+  "desk": {
+   "fcp_ms": 188,
+   "lcp_ms": 188,
+   "load_ms": 119,
+   "fps_hero": 60.0,
+   "fps_scroll": 59.3
+  },
+  "mob": {
+   "fcp_ms": 108,
+   "lcp_ms": 108,
+   "load_ms": 75,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.3
+  }
+ },
+ {
+  "id": "27-hotel-boutique",
+  "js_kb": 2.3,
+  "js_gz_kb": 1.2,
+  "page_gz_kb": 486.1,
+  "desk": {
+   "fcp_ms": 160,
+   "lcp_ms": 160,
+   "load_ms": 75,
+   "fps_hero": 60.0,
+   "fps_scroll": 57.0
+  },
+  "mob": {
+   "fcp_ms": 92,
+   "lcp_ms": 92,
+   "load_ms": 66,
+   "fps_hero": 60.0,
+   "fps_scroll": 61.3
+  }
+ },
+ {
+  "id": "28-alta-cocina",
+  "js_kb": 3.4,
+  "js_gz_kb": 1.7,
+  "page_gz_kb": 636.9,
+  "desk": {
+   "fcp_ms": 112,
+   "lcp_ms": 172,
+   "load_ms": 68,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.0
+  },
+  "mob": {
+   "fcp_ms": 128,
+   "lcp_ms": 128,
+   "load_ms": 79,
+   "fps_hero": 60.0,
+   "fps_scroll": 59.0
+  }
+ },
+ {
+  "id": "29-cafe-brunch",
+  "js_kb": 3.4,
+  "js_gz_kb": 1.9,
+  "page_gz_kb": 696.7,
+  "desk": {
+   "fcp_ms": 228,
+   "lcp_ms": 228,
+   "load_ms": 79,
+   "fps_hero": 60.0,
+   "fps_scroll": 59.3
+  },
+  "mob": {
+   "fcp_ms": 96,
+   "lcp_ms": 96,
+   "load_ms": 56,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.7
+  }
+ },
+ {
+  "id": "30-nail-studio",
+  "js_kb": 3.5,
+  "js_gz_kb": 1.8,
+  "page_gz_kb": 187.7,
+  "desk": {
+   "fcp_ms": 276,
+   "lcp_ms": 276,
+   "load_ms": 104,
+   "fps_hero": 60.0,
+   "fps_scroll": 54.7
+  },
+  "mob": {
+   "fcp_ms": 132,
+   "lcp_ms": 132,
+   "load_ms": 94,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.0
+  }
+ },
+ {
+  "id": "31-fisioterapia",
+  "js_kb": 3.1,
+  "js_gz_kb": 1.7,
+  "page_gz_kb": 439.9,
+  "desk": {
+   "fcp_ms": 196,
+   "lcp_ms": 196,
+   "load_ms": 88,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.3
+  },
+  "mob": {
+   "fcp_ms": 116,
+   "lcp_ms": 116,
+   "load_ms": 62,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.3
+  }
+ },
+ {
+  "id": "32-estudio-interiorismo",
+  "js_kb": 3.0,
+  "js_gz_kb": 1.6,
+  "page_gz_kb": 436.8,
+  "desk": {
+   "fcp_ms": 136,
+   "lcp_ms": 136,
+   "load_ms": 87,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.0
+  },
+  "mob": {
+   "fcp_ms": 64,
+   "lcp_ms": 64,
+   "load_ms": 70,
+   "fps_hero": 60.0,
+   "fps_scroll": 59.3
+  }
+ },
+ {
+  "id": "33-bodas-eventos",
+  "js_kb": 3.6,
+  "js_gz_kb": 1.8,
+  "page_gz_kb": 421.2,
+  "desk": {
+   "fcp_ms": 172,
+   "lcp_ms": 172,
+   "load_ms": 85,
+   "fps_hero": 53.7,
+   "fps_scroll": 59.0
+  },
+  "mob": {
+   "fcp_ms": 128,
+   "lcp_ms": 128,
+   "load_ms": 82,
+   "fps_hero": 60.3,
+   "fps_scroll": 60.0
+  }
+ },
+ {
+  "id": "34-nutricion",
+  "js_kb": 4.9,
+  "js_gz_kb": 2.5,
+  "page_gz_kb": 598.7,
+  "desk": {
+   "fcp_ms": 96,
+   "lcp_ms": 140,
+   "load_ms": 64,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.3
+  },
+  "mob": {
+   "fcp_ms": 140,
+   "lcp_ms": 140,
+   "load_ms": 77,
+   "fps_hero": 60.0,
+   "fps_scroll": 61.3
+  }
  }
 ]

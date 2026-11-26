@@ -4,6 +4,7 @@ from PIL import Image
 ROOT=os.path.join(os.path.dirname(os.path.abspath(__file__)),'..'); sys.path.insert(0,os.path.join(ROOT,'src'))
 from variants import V
 from variants2 import V2
+from variants3 import V3
 SITE=ROOT; SH=os.path.join(ROOT,'shots')
 perf={r['id']:r for r in json.load(open(os.path.join(ROOT,'perf.json')))}
 os.makedirs(os.path.join(SITE,'thumbs'),exist_ok=True)
@@ -26,6 +27,21 @@ for v in V2:
   <dl class="m"><div><dt>JS gzip</dt><dd>{p.get('js_gz_kb','?')} KB</dd></div><div><dt>Página gzip</dt><dd>{p.get('page_gz_kb','?')} KB</dd></div><div><dt>Lighthouse móvil</dt><dd>{l.get('performance','?')}</dd></div></dl>
   <div class="ac"><a class="pill f m" href="{v['id']}/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/{v['id']}">Código y notas</a></div></div>
 </article>'''
+cards3=''
+for v in V3:
+    Image.open(f"{SH}/t3/{v['id']}-desk-hero.png").convert('RGB').resize((800,500),Image.LANCZOS).save(f"{SITE}/thumbs/{v['id']}.webp",quality=80)
+    Image.open(f"{SH}/t3/{v['id']}-mob-hero.png").convert('RGB').resize((180,390),Image.LANCZOS).save(f"{SITE}/thumbs/{v['id']}-m.webp",quality=80)
+    p=perf.get(v['id'],{}); l=lh.get(v['id'],{})
+    lum=lambda h:(0.2126*int(h[1:3],16)+0.7152*int(h[3:5],16)+0.0722*int(h[5:7],16))/255
+    acc=v['acc'] if lum(v['acc'])>.12 else '#d9d4c7'
+    cards3+=f'''<article class="v" style="--a:{acc};--af:{'#111' if lum(acc)>.55 else '#fff'}">
+  <a class="th" href="{v['id']}/"><img src="thumbs/{v['id']}.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de {e(v['name'])}"><img class="ph" src="thumbs/{v['id']}-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">{v['id'][:2]} · inspirada en {e(v['ref'])}</span><h2 class="d">{e(v['name'])}</h2><p class="niche">{e(v['niche'])}</p>
+  <p class="niche"><b>Ideal para:</b> {e(v['ideal'])}</p>
+  <p class="tech m">{e(v['tech'])}</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>{p.get('js_gz_kb','?')} KB</dd></div><div><dt>Página gzip</dt><dd>{p.get('page_gz_kb','?')} KB</dd></div><div><dt>Lighthouse móvil</dt><dd>{l.get('performance','?')}</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="{v['id']}/">Abrir demo</a><a class="pill m" href="{v['ref_url']}" rel="noopener">Referencia</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/{v['id']}">Código y notas</a></div></div>
+</article>'''
 cards=''
 for i,v in enumerate(V):
     p=perf.get(v['id'],{}); c=v['colors']
@@ -38,7 +54,7 @@ for i,v in enumerate(V):
 </article>'''
 page=f'''<!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Escalatam Web Lab — 22 demos ligeras de webs premium</title>
+<title>Escalatam Web Lab — 34 demos ligeras de webs premium</title>
 <meta name="description" content="Laboratorio de Escalatam: la misma web premium (titular glitch, objeto 3D, horizonte, cifras fijadas, servicios) hecha con 12 tecnologías ligeras distintas.">
 <link rel="icon" href="data:,">
 <style>
@@ -81,10 +97,12 @@ dl{{display:flex;gap:18px;margin-top:10px;font-size:10px;color:#8a8f9c}} dd{{col
 footer{{border-top:1px solid #24242a;padding:24px clamp(20px,4vw,56px);font-size:11px;color:#8a8f9c;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}}
 </style></head>
 <body><main>
-<header class="m"><b>Escalatam</b><span>Web Lab · {len(V)+len(V2)} demos</span></header>
-<section class="hero"><p class="over">Laboratorio de demos para leads</p><h1 class="d"><span>Una web premium,</span><span>{len(V)+len(V2)} demos ligeras</span></h1>
-<p class="l"><b>Tanda 1:</b> la misma estructura (titular con glitch, objeto 3D en el hero, transición de horizonte, cifras que cuentan y servicios en scroll horizontal) construida con {len(V)} tecnologías distintas, cada una aplicada a un nicho real de clientes. <b>Tanda 2:</b> 10 webs completas con 10 lenguajes de diseño distintos, sobre todo restaurantes. Todos los negocios son ficticios y las cifras son de ejemplo.</p>
-<div class="links"><a class="pill f m" href="https://github.com/0xDapa/escalatam-web-lab">Repositorio + SOP</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/blob/main/PROMPTS.md">Prompts reutilizables</a><a class="pill m" href="#tanda-2">Tanda 2 · 10 estilos</a><a class="pill m" href="https://0xdapa.github.io/escalatam-demo-3d/">Demo original (Three.js)</a></div></section>
+<header class="m"><b>Escalatam</b><span>Web Lab · {len(V)+len(V2)+len(V3)} demos</span></header>
+<section class="hero"><p class="over">Laboratorio de demos para leads</p><h1 class="d"><span>Una web premium,</span><span>{len(V)+len(V2)+len(V3)} demos ligeras</span></h1>
+<p class="l"><b>Tanda 1:</b> la misma estructura (titular con glitch, objeto 3D en el hero, transición de horizonte, cifras que cuentan y servicios en scroll horizontal) construida con {len(V)} tecnologías distintas, cada una aplicada a un nicho real de clientes. <b>Tanda 2:</b> 10 webs completas con 10 lenguajes de diseño distintos, sobre todo restaurantes. <b>Tanda 3:</b> 12 webs completas que adaptan el diseño de webs reales premiadas (Awwwards) a nichos vendibles, con fotos CC0 y reserva por WhatsApp. Todos los negocios son ficticios y las cifras son de ejemplo.</p>
+<div class="links"><a class="pill f m" href="https://github.com/0xDapa/escalatam-web-lab">Repositorio + SOP</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/blob/main/PROMPTS.md">Prompts reutilizables</a><a class="pill m" href="#tanda-3">Tanda 3 · 12 nichos</a><a class="pill m" href="#tanda-2">Tanda 2 · 10 estilos</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/blob/main/REFERENCIAS.md">Referencias analizadas</a><a class="pill m" href="https://0xdapa.github.io/escalatam-demo-3d/">Demo original (Three.js)</a></div></section>
+<section class="t2h" id="tanda-3"><p class="over">Tanda 3 · nuevo</p><h2 class="d">12 nichos, 12 referencias premiadas</h2><p class="l">Cada demo toma el lenguaje de diseño de una web real (dental de lujo, despacho, residencial, hotel, alta cocina, café, uñas, salud, interiorismo, bodas, nutrición, marca personal) y lo adapta con código propio. Lista lista para vender: hero, servicios, testimonios de ejemplo, galería y reserva por WhatsApp.</p></section>
+<section class="grid">{cards3}</section>
 <section class="t2h"><p class="over">Tanda 1</p><h2 class="d">La misma web, {len(V)} motores 3D</h2></section>
 <section class="grid">{cards}</section>
 <section class="t2h" id="tanda-2"><p class="over">Tanda 2</p><h2 class="d">10 webs, 10 lenguajes de diseño</h2><p class="l">Cada una con una estética y una técnica distinta: solo CSS, tipografía cinética, liquid glass, bento, scroll horizontal, secuencia de fotogramas, shader, retro pixel, mapa interactivo y configurador. Sin librerías: todo vanilla.</p></section>

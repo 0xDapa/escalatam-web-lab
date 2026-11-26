@@ -7,7 +7,7 @@ muneca:['Muñeca y mano',['Túnel carpiano','Tendinitis de De Quervain','Esguinc
 rodilla:['Rodilla',['Dolor patelofemoral','Post operatorio de LCA','Desgaste meniscal'],'Fuerza de cadera y cuádriceps, análisis de tu carrera y retorno progresivo.','8–12'],
 tobillo:['Tobillo y pie',['Esguince recurrente','Fascitis plantar','Tendón de Aquiles'],'Propiocepción, fuerza del pie y plan de carga para volver a caminar o correr sin dolor.','5–8']};
 const btns=$$('.zbtns button'),dots=$$('.z');
-function pick(k){const z=Z[k];btns.forEach(b=>b.setAttribute('aria-selected',b.dataset.k===k));dots.forEach(d=>d.classList.toggle('on',d.dataset.k===k));
+function pick(k){const z=Z[k];btns.forEach(b=>b.setAttribute('aria-pressed',b.dataset.k===k));dots.forEach(d=>d.classList.toggle('on',d.dataset.k===k));
  $('#zh').textContent=z[0];$('#zc').innerHTML=z[1].map(c=>`<li>${c}</li>`).join('');$('#zt').textContent=z[2];$('#zs').textContent=z[3];
  $('#zcta').textContent='Agendar para '+z[0].toLowerCase();const o=[...$('#fz').options].find(o=>z[0].startsWith(o.text));if(o)$('#fz').value=o.text}
 btns.forEach(b=>b.addEventListener('click',()=>pick(b.dataset.k)));dots.forEach(d=>{d.setAttribute('tabindex','0');d.setAttribute('role','button');d.addEventListener('click',()=>pick(d.dataset.k));d.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();pick(d.dataset.k)}})});
