@@ -8,7 +8,7 @@ más ligeras que Three.js**, cada una aplicada a un nicho real de nuestros leads
 
 **Tanda 2 (13–22):** 10 webs completas con 10 lenguajes de diseño y técnicas distintas (ver [Tanda 2](#tanda-2--10-webs-10-lenguajes-de-diseño)).
 
-> ⚠️ **Todo es demostración.** Los 22 negocios son **ficticios**, las **cifras y textos son de ejemplo** y no hay fotos: las imágenes
+> ⚠️ **Todo es demostración.** Los 44 negocios son **ficticios**, las **cifras y textos son de ejemplo** y no hay fotos: las imágenes
 > son gradientes CSS y objetos generados por código. Antes de enseñar una demo a un cliente hay que poner sus datos reales
 > (ver `SOP.md`, paso 10). No se usa ningún logo ni marca de terceros. No se publica ningún asset ni prompt de Viktor Oddy.
 
@@ -21,6 +21,10 @@ Demo anterior (Three.js r170, ~150 KB gz de JS): https://0xdapa.github.io/escala
 | [`SOP.md`](SOP.md) | Procedimiento completo paso a paso: investigación del lead, tokens, prompt superdetallado, assets, construcción, presupuesto de rendimiento, pruebas, publicación y checklist por lead |
 | [`METODO-VIKTOR-ODDY.md`](METODO-VIKTOR-ODDY.md) | Todo lo aprendido del método de Viktor Oddy, con enlaces a sus posts |
 | [`PROMPTS.md`](PROMPTS.md) | 6 prompts para pegar en el agente cloud y sacar una demo por lead |
+| [`VALOR-DE-VENTA.md`](VALOR-DE-VENTA.md) | **Qué vender y cuánto cobrar:** 18 funciones que suben el ticket (WhatsApp, reservas, cotizador, configurador, carrito→WhatsApp, antes/después, reseñas, SEO local, GBP, multilingüe, QR, CMS-light, IA…), matriz por nicho, qué demo enseña cada una, paquetes sugeridos LatAm/España/EE. UU., mensualidades, guion de pitch y snippets ligeros |
+| [`LIBRERIAS.md`](LIBRERIAS.md) | 15 webs premiadas rápidas analizadas (librerías detectadas, peso, LCP) y comparativa medida de Three.js, OGL, GSAP (+plugins), Lenis, Motion, anime.js, Barba, Swup, Taxi, View Transitions, Lottie/dotLottie, Rive, Spline, Theatre, PixiJS, Swiper… con licencias y cuándo usar cada una |
+| [`REFERENCIAS.md`](REFERENCIAS.md) | Webs reales analizadas para las tandas 3 y 4 |
+| [`METODO-EMIL-KOWALSKI.md`](METODO-EMIL-KOWALSKI.md) | Principios de animación Emil Kowalski + Apple con snippets propios (tanda 4) |
 | `<id>/README.md` | Notas de cada variante: técnica, cómo funciona el hero, tamaños y rendimiento |
 
 ## Las 12 variantes
