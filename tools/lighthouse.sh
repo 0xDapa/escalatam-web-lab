@@ -1,7 +1,8 @@
 #!/bin/bash
 # Lighthouse (móvil simulado, por defecto) para cada variante → lighthouse/<id>.json + lighthouse/resumen.json
 cd "$(dirname "$0")/.."; mkdir -p lighthouse
-for d in [0-9][0-9]-*/ ; do id=${d%/}
+IDS=${@:-$(ls -d [0-9][0-9]-*/)}
+for d in $IDS ; do id=${d%/}
   CHROME_PATH=/usr/bin/google-chrome timeout 180 ./node_modules/.bin/lighthouse "http://localhost:8817/$id/" --only-categories=performance,accessibility,best-practices,seo --chrome-flags="--headless=new --no-sandbox --use-gl=angle --use-angle=swiftshader" --output=json --output-path="lighthouse/$id.json" --quiet || echo "fallo $id"
 done
 python3 - <<'PY'

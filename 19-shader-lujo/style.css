@@ -1,0 +1,64 @@
+@font-face{font-family:'Bodoni Moda';font-style:italic;font-weight:400 900;font-display:swap;src:url(fonts/bodoni-moda-italic-400-900.woff2) format('woff2')}
+@font-face{font-family:'Bodoni Moda';font-style:normal;font-weight:400 900;font-display:swap;src:url(fonts/bodoni-moda-normal-400-900.woff2) format('woff2')}
+@font-face{font-family:'Hanken Grotesk';font-style:normal;font-weight:300 600;font-display:swap;src:url(fonts/hanken-grotesk-normal-300-600.woff2) format('woff2')}
+/* 19 · Atelier Nube — fondo de seda con un único fragment shader (WebGL1, sin librerías) + tipografía de lujo minimalista. */
+:root{--paper:#f5f0ea;--ink:#231c18;--mut:#8a7d72;--acc:#9c6b55;--serif:'Bodoni Moda',Didot,serif;--sans:'Hanken Grotesk',system-ui,sans-serif;--g:clamp(20px,4vw,64px)}
+html{background:var(--paper)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{color:var(--ink);-webkit-font-smoothing:antialiased}
+body{font:300 16px/1.65 var(--sans)}
+::selection{background:var(--ink);color:var(--paper)}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:1px solid var(--ink);outline-offset:4px}
+.lb{font:500 10.5px/1 var(--sans);letter-spacing:.32em;text-transform:uppercase}
+.hero{position:relative;height:100svh;min-height:600px;overflow:hidden;color:#2a201b;background:#e9dccb}
+#silk{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.08;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+.corner{position:absolute;z-index:2;display:flex;gap:28px}
+.tl{top:26px;left:var(--g)}.tr{top:26px;right:var(--g)}.bl{bottom:28px;left:var(--g)}.br{bottom:28px;right:var(--g)}
+.corner a{position:relative}.corner a::after{content:"";position:absolute;left:0;right:0;bottom:-5px;height:1px;background:currentColor;transform:scaleX(0);transition:transform .5s cubic-bezier(.22,1,.36,1)}
+.corner a:hover::after{transform:scaleX(1)}
+.mark{position:absolute;inset:0;display:grid;place-items:center;text-align:center;z-index:2;pointer-events:none}
+.mark h1{font:400 clamp(70px,13.5vw,240px)/.86 var(--serif);font-variation-settings:"opsz" 96;letter-spacing:-.035em}
+.mark h1 i{font-style:italic;font-weight:400}
+.mark p{margin-top:clamp(18px,2.4vw,30px)}
+.mark .cta{pointer-events:auto;display:inline-flex;margin-top:28px;border:1px solid currentColor;border-radius:99px;padding:14px 28px;transition:background .4s,color .4s}
+.mark .cta:hover{background:#2a201b;color:#efe6da}
+.fade{opacity:0;transform:translateY(14px);animation:up 1.4s cubic-bezier(.16,1,.3,1) forwards}
+.d1{animation-delay:.2s}.d2{animation-delay:.45s}.d3{animation-delay:.7s}
+@keyframes up{to{opacity:1;transform:none}}
+section{padding:clamp(90px,12vw,180px) var(--g)}
+.intro{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,6vw,100px);align-items:end;max-width:1280px;margin:0 auto}
+.intro h2{font:400 clamp(40px,5vw,78px)/1.02 var(--serif);letter-spacing:-.02em}
+.intro h2 i{color:var(--acc)}
+.intro p{color:var(--mut);max-width:30rem}
+.svc{max-width:1280px;margin:0 auto}
+.svc ol{list-style:none;margin-top:40px;border-top:1px solid #231c1826}
+.svc li{display:grid;grid-template-columns:70px 1fr 140px 120px;gap:20px;align-items:baseline;padding:26px 0;border-bottom:1px solid #231c1826;cursor:default;transition:padding .5s cubic-bezier(.22,1,.36,1)}
+.svc li:hover{padding-left:16px}
+.svc li .n{color:var(--mut)}
+.svc li h3{font:400 clamp(28px,3vw,46px)/1 var(--serif);letter-spacing:-.02em;transition:font-style .3s}
+.svc li:hover h3{font-style:italic}
+.svc li p{grid-column:2/-1;max-height:0;overflow:hidden;color:var(--mut);transition:max-height .6s cubic-bezier(.22,1,.36,1),opacity .4s;opacity:0}
+.svc li:hover p,.svc li:focus-within p{max-height:80px;opacity:1}
+.svc .pr{text-align:right;font:400 22px var(--serif)}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,40px);max-width:1280px;margin:40px auto 0}
+.st{display:grid;gap:14px}
+.st .ph{aspect-ratio:3/4;border-radius:300px 300px 0 0;background:linear-gradient(160deg,#eadfd2,#cdb9a7);display:grid;place-items:center;font:italic 400 clamp(70px,8vw,120px)/1 var(--serif);color:#f8f3ed;position:relative;overflow:hidden}
+.st .ph::after{content:"";position:absolute;inset:0;background:radial-gradient(120% 60% at 30% 10%,rgba(255,255,255,.45),transparent 60%)}
+.st h3{font:400 30px/1 var(--serif)}
+.st span{color:var(--mut);font-size:14px}
+.book{background:#231c18;color:#efe6da;text-align:center}
+.book h2{font:400 clamp(48px,8vw,140px)/.9 var(--serif);letter-spacing:-.03em}
+.book h2 i{color:#d9b8a2}
+.sel{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:40px}
+.sel select{height:54px;border-radius:99px;background:transparent;border:1px solid #efe6da55;color:#efe6da;padding:0 22px;font:400 15px var(--sans);color-scheme:dark}
+.sel button{height:54px;border-radius:99px;border:0;background:#efe6da;color:#231c18;padding:0 30px;font:500 12px var(--sans);letter-spacing:.24em;text-transform:uppercase;cursor:pointer;transition:background .3s}
+.sel button:hover{background:#d9b8a2}
+#msg{margin-top:22px;font:italic 400 22px var(--serif);min-height:1.4em}
+footer{background:#231c18;color:#a59888;padding:0 var(--g) 36px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+.rv{opacity:0;transform:translateY(30px);transition:opacity 1.2s cubic-bezier(.16,1,.3,1),transform 1.2s cubic-bezier(.16,1,.3,1)}.rv.in{opacity:1;transform:none}
+@media (max-width:860px){.intro{grid-template-columns:1fr}.team{grid-template-columns:1fr 1fr}.svc li{grid-template-columns:40px 1fr auto}.svc li .du{display:none}.tr a:not(:last-child){display:none}.bl{display:none}}
+@media (max-width:520px){.team{grid-template-columns:1fr}.corner{gap:16px}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.fade,.rv{opacity:1;transform:none}}
+@media (max-width:520px){.mark h1{font-size:21vw}}

@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Escalatam Web Lab — 12 variantes ligeras de webs premium</title>
+<title>Escalatam Web Lab — 22 demos ligeras de webs premium</title>
 <meta name="description" content="Laboratorio de Escalatam: la misma web premium (titular glitch, objeto 3D, horizonte, cifras fijadas, servicios) hecha con 12 tecnologías ligeras distintas.">
 <link rel="icon" href="data:,">
 <style>
@@ -22,7 +22,7 @@ h1 span{display:block} h1 span:last-child{color:#2f63ff}
 .hero p.l{margin-top:26px;max-width:640px;color:#a9adb8;font-size:clamp(15px,1.3vw,19px)}
 .links{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
 .pill{display:inline-flex;align-items:center;height:40px;padding:0 20px;border-radius:99px;border:1.3px solid var(--a,#2f63ff);color:var(--a,#2f63ff);font-size:11px;transition:.25s}
-.pill.f{background:var(--a,#2f63ff);color:#fff;mix-blend-mode:normal}
+.pill.f{background:var(--a,#2f63ff);color:var(--af,#fff);mix-blend-mode:normal}
 .pill:not(.f){color:#ececec}
 .pill:hover{background:#fff;border-color:#fff;color:#0d0d0f}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));gap:clamp(18px,2vw,28px);padding:0 clamp(20px,4vw,56px) 12vh}
@@ -38,14 +38,16 @@ h1 span{display:block} h1 span:last-child{color:#2f63ff}
 .tech{font-size:10.5px;color:#e6e6e6;margin-top:4px}
 dl{display:flex;gap:18px;margin-top:10px;font-size:10px;color:#8a8f9c} dd{color:#fff;font-size:13px;margin-top:3px}
 .ac{margin-top:auto;padding-top:16px;display:flex;flex-wrap:wrap;gap:10px}
+.t2h{padding:4vh clamp(20px,4vw,56px) 4vh} .t2h h2{font-size:clamp(40px,6vw,96px);line-height:.92;margin-top:10px} .t2h .l{margin-top:16px;max-width:720px;color:#a9adb8}
 .note{padding:0 clamp(20px,4vw,56px) 10vh;color:#8a8f9c;font-size:13px;max-width:900px}
 footer{border-top:1px solid #24242a;padding:24px clamp(20px,4vw,56px);font-size:11px;color:#8a8f9c;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 </style></head>
 <body><main>
-<header class="m"><b>Escalatam</b><span>Web Lab · 12 variantes</span></header>
-<section class="hero"><p class="over">Laboratorio de demos para leads</p><h1 class="d"><span>Una web premium,</span><span>12 motores ligeros</span></h1>
-<p class="l">La misma estructura (titular con glitch, objeto 3D en el hero, transición de horizonte, cifras que cuentan y servicios en scroll horizontal) construida con 12 tecnologías distintas, cada una aplicada a un nicho real de clientes. Todos los negocios son ficticios y las cifras son de ejemplo.</p>
-<div class="links"><a class="pill f m" href="https://github.com/0xDapa/escalatam-web-lab">Repositorio + SOP</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/blob/main/PROMPTS.md">Prompts reutilizables</a><a class="pill m" href="https://0xdapa.github.io/escalatam-demo-3d/">Demo original (Three.js)</a></div></section>
+<header class="m"><b>Escalatam</b><span>Web Lab · 22 demos</span></header>
+<section class="hero"><p class="over">Laboratorio de demos para leads</p><h1 class="d"><span>Una web premium,</span><span>22 demos ligeras</span></h1>
+<p class="l"><b>Tanda 1:</b> la misma estructura (titular con glitch, objeto 3D en el hero, transición de horizonte, cifras que cuentan y servicios en scroll horizontal) construida con 12 tecnologías distintas, cada una aplicada a un nicho real de clientes. <b>Tanda 2:</b> 10 webs completas con 10 lenguajes de diseño distintos, sobre todo restaurantes. Todos los negocios son ficticios y las cifras son de ejemplo.</p>
+<div class="links"><a class="pill f m" href="https://github.com/0xDapa/escalatam-web-lab">Repositorio + SOP</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/blob/main/PROMPTS.md">Prompts reutilizables</a><a class="pill m" href="#tanda-2">Tanda 2 · 10 estilos</a><a class="pill m" href="https://0xdapa.github.io/escalatam-demo-3d/">Demo original (Three.js)</a></div></section>
+<section class="t2h"><p class="over">Tanda 1</p><h2 class="d">La misma web, 12 motores 3D</h2></section>
 <section class="grid"><article class="v" style="--a:#ff5a1f">
   <a class="th" href="01-webgl2-puro/"><img src="thumbs/01-webgl2-puro.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Brasa Norte"><img class="ph" src="thumbs/01-webgl2-puro-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
   <div class="meta"><span class="m n">01</span><h2 class="d">Brasa Norte</h2><p class="niche">Restaurante / asador</p>
@@ -118,6 +120,68 @@ footer{border-top:1px solid #24242a;padding:24px clamp(20px,4vw,56px);font-size:
   <p class="tech m">Motion (mini) + partículas Canvas 2D vanilla</p>
   <dl class="m"><div><dt>JS gzip</dt><dd>8.6 KB</dd></div><div><dt>Página gzip</dt><dd>77.0 KB</dd></div><div><dt>FPS móvil*</dt><dd>36.3</dd></div></dl>
   <div class="ac"><a class="pill f m" href="12-motion-particulas/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/12-motion-particulas">Código y notas</a></div></div>
+</article></section>
+<section class="t2h" id="tanda-2"><p class="over">Tanda 2</p><h2 class="d">10 webs, 10 lenguajes de diseño</h2><p class="l">Cada una con una estética y una técnica distinta: solo CSS, tipografía cinética, liquid glass, bento, scroll horizontal, secuencia de fotogramas, shader, retro pixel, mapa interactivo y configurador. Sin librerías: todo vanilla.</p></section>
+<section class="grid"><article class="v" style="--a:#c2410c;--af:#fff">
+  <a class="th" href="13-editorial-css/"><img src="thumbs/13-editorial-css.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Sobremesa"><img class="ph" src="thumbs/13-editorial-css-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">13 · Editorial de revista (serif display, columnas, filetes)</span><h2 class="d">Sobremesa</h2><p class="niche">Restaurante de temporada · Valencia</p>
+  <p class="tech m">Solo CSS: scroll-driven animations + View Transitions entre páginas (0 KB de JS)</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>0.0 KB</dd></div><div><dt>Página gzip</dt><dd>185.5 KB</dd></div><div><dt>Lighthouse móvil</dt><dd>99</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="13-editorial-css/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/13-editorial-css">Código y notas</a></div></div>
+</article><article class="v" style="--a:#2f3cff;--af:#fff">
+  <a class="th" href="14-brutalista-kinetica/"><img src="thumbs/14-brutalista-kinetica.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Bar Trueno"><img class="ph" src="thumbs/14-brutalista-kinetica-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">14 · Neo-brutalismo con tipografía cinética</span><h2 class="d">Bar Trueno</h2><p class="niche">Coctelería · Ciudad de México</p>
+  <p class="tech m">Fuente variable (ejes ancho+peso) movida por puntero y velocidad de scroll, JS vanilla</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>2.1 KB</dd></div><div><dt>Página gzip</dt><dd>127.8 KB</dd></div><div><dt>Lighthouse móvil</dt><dd>100</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="14-brutalista-kinetica/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/14-brutalista-kinetica">Código y notas</a></div></div>
+</article><article class="v" style="--a:#4f8a74;--af:#fff">
+  <a class="th" href="15-liquid-glass/"><img src="thumbs/15-liquid-glass.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Aura Dermoestética"><img class="ph" src="thumbs/15-liquid-glass-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">15 · Liquid glass suave (cristal refractivo, tonos piel)</span><h2 class="d">Aura Dermoestética</h2><p class="niche">Clínica de estética · Madrid</p>
+  <p class="tech m">backdrop-filter + filtro SVG de desplazamiento (lente refractiva) + esferas con gradientes CSS</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>2.0 KB</dd></div><div><dt>Página gzip</dt><dd>79.9 KB</dd></div><div><dt>Lighthouse móvil</dt><dd>100</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="15-liquid-glass/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/15-liquid-glass">Código y notas</a></div></div>
+</article><article class="v" style="--a:#c6f432;--af:#111">
+  <a class="th" href="16-bento-microinteracciones/"><img src="thumbs/16-bento-microinteracciones.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Núcleo"><img class="ph" src="thumbs/16-bento-microinteracciones-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">16 · Bento grid oscuro tipo dashboard</span><h2 class="d">Núcleo</h2><p class="niche">Gimnasio de fuerza · Lima</p>
+  <p class="tech m">Microinteracciones: spotlight de borde con variables CSS, Canvas 2D (ECG), SVG (anillos/gauges)</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>3.2 KB</dd></div><div><dt>Página gzip</dt><dd>114.5 KB</dd></div><div><dt>Lighthouse móvil</dt><dd>100</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="16-bento-microinteracciones/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/16-bento-microinteracciones">Código y notas</a></div></div>
+</article><article class="v" style="--a:#b5562f;--af:#fff">
+  <a class="th" href="17-scroll-horizontal/"><img src="thumbs/17-scroll-horizontal.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Hotel Salitre"><img class="ph" src="thumbs/17-scroll-horizontal-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">17 · Relato horizontal con capas de paralaje (ilustración)</span><h2 class="d">Hotel Salitre</h2><p class="niche">Hotel boutique · Cabo de Gata</p>
+  <p class="tech m">Sección sticky con pista horizontal + paralaje por capas SVG, 1 KB de JS</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>1.0 KB</dd></div><div><dt>Página gzip</dt><dd>118.8 KB</dd></div><div><dt>Lighthouse móvil</dt><dd>100</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="17-scroll-horizontal/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/17-scroll-horizontal">Código y notas</a></div></div>
+</article><article class="v" style="--a:#ffc21a;--af:#111">
+  <a class="th" href="18-secuencia-canvas/"><img src="thumbs/18-secuencia-canvas.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Doble Smash"><img class="ph" src="thumbs/18-secuencia-canvas-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">18 · Producto explotado con secuencia de fotogramas (estilo Apple)</span><h2 class="d">Doble Smash</h2><p class="niche">Hamburguesería · Santiago de Chile</p>
+  <p class="tech m">Secuencia de 60 fotogramas WebP pintados en Canvas según el scroll (scrubbing)</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>1.4 KB</dd></div><div><dt>Página gzip</dt><dd>1473.1 KB</dd></div><div><dt>Lighthouse móvil</dt><dd>100</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="18-secuencia-canvas/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/18-secuencia-canvas">Código y notas</a></div></div>
+</article><article class="v" style="--a:#b08d57;--af:#111">
+  <a class="th" href="19-shader-lujo/"><img src="thumbs/19-shader-lujo.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Atelier Nube"><img class="ph" src="thumbs/19-shader-lujo-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">19 · Lujo editorial minimal (serif Didone, mucho aire)</span><h2 class="d">Atelier Nube</h2><p class="niche">Salón de peluquería de autor · Buenos Aires</p>
+  <p class="tech m">Shader de seda en WebGL1 (un solo fragment shader, sin librería), media resolución y pausa fuera de pantalla</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>1.9 KB</dd></div><div><dt>Página gzip</dt><dd>137.4 KB</dd></div><div><dt>Lighthouse móvil</dt><dd>100</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="19-shader-lujo/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/19-shader-lujo">Código y notas</a></div></div>
+</article><article class="v" style="--a:#ffd84d;--af:#111">
+  <a class="th" href="20-retro-pixel/"><img src="thumbs/20-retro-pixel.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Barbería Píxel"><img class="ph" src="thumbs/20-retro-pixel-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">20 · Retro escritorio 8-bit / Y2K</span><h2 class="d">Barbería Píxel</h2><p class="niche">Barbería · Bogotá</p>
+  <p class="tech m">Ventanas arrastrables (Pointer Events) + simulador de corte en pixel art (Canvas 32×32) + modo CRT</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>2.2 KB</dd></div><div><dt>Página gzip</dt><dd>44.6 KB</dd></div><div><dt>Lighthouse móvil</dt><dd>100</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="20-retro-pixel/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/20-retro-pixel">Código y notas</a></div></div>
+</article><article class="v" style="--a:#e0532b;--af:#fff">
+  <a class="th" href="21-mapa-interactivo/"><img src="thumbs/21-mapa-interactivo.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Raíz Inmobiliaria"><img class="ph" src="thumbs/21-mapa-interactivo-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">21 · Cartografía ilustrada (mapa como interfaz)</span><h2 class="d">Raíz Inmobiliaria</h2><p class="niche">Inmobiliaria de barrio · Montevideo</p>
+  <p class="tech m">Mapa SVG procedural con zoom/pan/pellizco y rutas animadas, sin librería de mapas</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>4.8 KB</dd></div><div><dt>Página gzip</dt><dd>115.3 KB</dd></div><div><dt>Lighthouse móvil</dt><dd>97</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="21-mapa-interactivo/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/21-mapa-interactivo">Código y notas</a></div></div>
+</article><article class="v" style="--a:#e2412b;--af:#fff">
+  <a class="th" href="22-configurador-menu/"><img src="thumbs/22-configurador-menu.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de La Lumbre"><img class="ph" src="thumbs/22-configurador-menu-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">22 · Ilustración plana, cálida y juguetona</span><h2 class="d">La Lumbre</h2><p class="niche">Taquería al carbón · Guadalajara</p>
+  <p class="tech m">Configurador “arma tu taco” con SVG en vivo + carta filtrable con View Transitions + pedido por WhatsApp</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>5.7 KB</dd></div><div><dt>Página gzip</dt><dd>38.9 KB</dd></div><div><dt>Lighthouse móvil</dt><dd>100</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="22-configurador-menu/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/22-configurador-menu">Código y notas</a></div></div>
 </article></section>
 <p class="note">* FPS medidos en Chrome headless con GPU por software (SwiftShader) en un servidor sin tarjeta gráfica: es el peor caso. En un móvil o portátil real con GPU las variantes WebGL/Canvas suelen ir a la tasa de refresco de la pantalla. Detalle completo en el README del repositorio.</p>
 </main><footer class="m"><span>Escalatam · Web Lab</span><span>Demos conceptuales · negocios ficticios · cifras de ejemplo</span></footer></body></html>

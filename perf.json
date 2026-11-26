@@ -238,5 +238,205 @@
    "fps_hero": 36.3,
    "fps_scroll": 55.3
   }
+ },
+ {
+  "id": "13-editorial-css",
+  "js_kb": 0.0,
+  "js_gz_kb": 0.0,
+  "page_gz_kb": 185.5,
+  "desk": {
+   "fcp_ms": 868,
+   "lcp_ms": 868,
+   "load_ms": 22,
+   "fps_hero": 60.0,
+   "fps_scroll": 51.0
+  },
+  "mob": {
+   "fcp_ms": 164,
+   "lcp_ms": 208,
+   "load_ms": 44,
+   "fps_hero": 60.0,
+   "fps_scroll": 56.7
+  }
+ },
+ {
+  "id": "14-brutalista-kinetica",
+  "js_kb": 3.9,
+  "js_gz_kb": 2.1,
+  "page_gz_kb": 127.8,
+  "desk": {
+   "fcp_ms": 296,
+   "lcp_ms": 296,
+   "load_ms": 172,
+   "fps_hero": 41.7,
+   "fps_scroll": 55.3
+  },
+  "mob": {
+   "fcp_ms": 124,
+   "lcp_ms": 124,
+   "load_ms": 69,
+   "fps_hero": 60.0,
+   "fps_scroll": 61.0
+  }
+ },
+ {
+  "id": "15-liquid-glass",
+  "js_kb": 4.1,
+  "js_gz_kb": 2.0,
+  "page_gz_kb": 79.9,
+  "desk": {
+   "fcp_ms": 632,
+   "lcp_ms": 632,
+   "load_ms": 62,
+   "fps_hero": 45.7,
+   "fps_scroll": 25.3
+  },
+  "mob": {
+   "fcp_ms": 120,
+   "lcp_ms": 120,
+   "load_ms": 46,
+   "fps_hero": 60.0,
+   "fps_scroll": 49.7
+  }
+ },
+ {
+  "id": "16-bento-microinteracciones",
+  "js_kb": 6.0,
+  "js_gz_kb": 3.2,
+  "page_gz_kb": 114.5,
+  "desk": {
+   "fcp_ms": 372,
+   "lcp_ms": 372,
+   "load_ms": 262,
+   "fps_hero": 56.3,
+   "fps_scroll": 52.0
+  },
+  "mob": {
+   "fcp_ms": 112,
+   "lcp_ms": 856,
+   "load_ms": 92,
+   "fps_hero": 60.0,
+   "fps_scroll": 59.7
+  }
+ },
+ {
+  "id": "17-scroll-horizontal",
+  "js_kb": 1.7,
+  "js_gz_kb": 1.0,
+  "page_gz_kb": 118.8,
+  "desk": {
+   "fcp_ms": 152,
+   "lcp_ms": 152,
+   "load_ms": 89,
+   "fps_hero": 60.0,
+   "fps_scroll": 36.7
+  },
+  "mob": {
+   "fcp_ms": 144,
+   "lcp_ms": 144,
+   "load_ms": 76,
+   "fps_hero": 60.0,
+   "fps_scroll": 50.3
+  }
+ },
+ {
+  "id": "18-secuencia-canvas",
+  "js_kb": 2.4,
+  "js_gz_kb": 1.4,
+  "page_gz_kb": 1473.1,
+  "desk": {
+   "fcp_ms": 176,
+   "lcp_ms": 176,
+   "load_ms": 86,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.0
+  },
+  "mob": {
+   "fcp_ms": 92,
+   "lcp_ms": 92,
+   "load_ms": 132,
+   "fps_hero": 60.3,
+   "fps_scroll": 61.0
+  }
+ },
+ {
+  "id": "19-shader-lujo",
+  "js_kb": 3.7,
+  "js_gz_kb": 1.9,
+  "page_gz_kb": 137.4,
+  "desk": {
+   "fcp_ms": 252,
+   "lcp_ms": 252,
+   "load_ms": 81,
+   "fps_hero": 23.0,
+   "fps_scroll": 46.7
+  },
+  "mob": {
+   "fcp_ms": 152,
+   "lcp_ms": 152,
+   "load_ms": 68,
+   "fps_hero": 22.7,
+   "fps_scroll": 50.7
+  }
+ },
+ {
+  "id": "20-retro-pixel",
+  "js_kb": 4.8,
+  "js_gz_kb": 2.2,
+  "page_gz_kb": 44.6,
+  "desk": {
+   "fcp_ms": 196,
+   "lcp_ms": 396,
+   "load_ms": 61,
+   "fps_hero": 60.3,
+   "fps_scroll": 61.0
+  },
+  "mob": {
+   "fcp_ms": 112,
+   "lcp_ms": 348,
+   "load_ms": 49,
+   "fps_hero": 57.7,
+   "fps_scroll": 60.0
+  }
+ },
+ {
+  "id": "21-mapa-interactivo",
+  "js_kb": 10.3,
+  "js_gz_kb": 4.8,
+  "page_gz_kb": 115.3,
+  "desk": {
+   "fcp_ms": 624,
+   "lcp_ms": 624,
+   "load_ms": 111,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.0
+  },
+  "mob": {
+   "fcp_ms": 88,
+   "lcp_ms": 88,
+   "load_ms": 103,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.0
+  }
+ },
+ {
+  "id": "22-configurador-menu",
+  "js_kb": 13.4,
+  "js_gz_kb": 5.7,
+  "page_gz_kb": 38.9,
+  "desk": {
+   "fcp_ms": 216,
+   "lcp_ms": 216,
+   "load_ms": 35,
+   "fps_hero": 60.3,
+   "fps_scroll": 60.7
+  },
+  "mob": {
+   "fcp_ms": 104,
+   "lcp_ms": 104,
+   "load_ms": 73,
+   "fps_hero": 60.0,
+   "fps_scroll": 61.0
+  }
  }
 ]

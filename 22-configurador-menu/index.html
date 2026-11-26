@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Lumbre — Taquería al carbón · Arma tu taco · Guadalajara</title>
+<meta name="description" content="La Lumbre, taquería al carbón en Guadalajara: arma tu taco, explora la carta con filtros y manda tu pedido por WhatsApp. Demo de configurador de Escalatam.">
+<meta name="theme-color" content="#fff3df"><link rel="icon" href="data:,">
+<link rel="preload" href="fonts/lilita-one-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a class="logo" href="#"><svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><path d="M13 2c3 5 8 7 8 13a8 8 0 0 1-16 0c0-4 3-6 4-9 1 3 3 4 4 4-1-3-1-5 0-8z" fill="#e2412b"/></svg>La Lumbre</a>
+<nav aria-label="Principal"><a href="#arma">Arma tu taco</a><a href="#carta">Carta</a><a href="#pedido">Pedido</a></nav>
+<button class="cartb" id="cartb" type="button" onclick="location.hash='pedido'">Pedido <b id="cc">0</b></button></header>
+<main>
+<section class="build" id="arma" aria-labelledby="h1">
+<div><h1 class="d" id="h1">Arma tu taco.<br><span>Nosotros lo ponemos al carbón.</span></h1>
+<p class="lede">Elige tortilla, proteína, salsa y toppings: lo ves armarse en vivo, con precio y nivel de picante. Luego lo mandas por WhatsApp.</p>
+<div class="step"><h2><i>1</i>Tortilla</h2><div class="opts" data-k="tor"></div></div>
+<div class="step"><h2><i>2</i>Proteína</h2><div class="opts" data-k="pro"></div></div>
+<div class="step"><h2><i>3</i>Salsa</h2><div class="opts" data-k="sal"></div></div>
+<div class="step"><h2><i>4</i>Toppings <small style="font-weight:500;letter-spacing:0;text-transform:none;color:var(--mut)">(varios)</small></h2><div class="opts" data-k="top" data-multi></div></div>
+</div>
+<div class="stage" aria-label="Vista previa del taco"><svg id="taco" viewBox="0 0 500 400" role="img" aria-labelledby="tk-t"><title id="tk-t">Tu taco</title></svg>
+<div class="ticket"><div><h3 id="tk-n">Taco al pastor</h3><p id="tk-d"></p><div class="spice" id="sp" role="img" aria-label="Nivel de picante"></div></div><div><div class="qty"><button type="button" id="qm" aria-label="Menos">−</button><output id="q">3</output><button type="button" id="qp" aria-label="Más">+</button></div><div class="price" id="tk-p">$0</div></div>
+<button class="btn" id="addT" type="button">Añadir al pedido</button></div></div>
+</section>
+<section class="menu" id="carta" aria-labelledby="mh"><div class="menu-h"><h2 class="d" id="mh">La carta,<br><span>a tu manera.</span></h2><p style="max-width:26rem;color:#d9c2a8">Filtra por lo que te apetece. Todo se hace al momento, en carbón de encino.</p></div>
+<div class="tabs" role="tablist" id="tabs"></div><div class="filters" id="fls" role="group" aria-label="Filtros"></div><div class="grid" id="grid" aria-live="polite"></div></section>
+<section class="order" id="pedido" aria-labelledby="oh"><div class="obox"><div><h2 class="d" id="oh">Tu pedido</h2><ul class="lines" id="lines"></ul><p class="tot"><span>Total</span><span id="tot">$0</span></p></div>
+<div><p style="font-weight:700;margin-bottom:8px">Mensaje que se enviará por WhatsApp</p><p class="wa" id="wa"></p><div style="display:flex;gap:10px;margin-top:14px;flex-wrap:wrap"><a class="btn" id="send" href="#" target="_blank" rel="noopener">Enviar por WhatsApp</a><button class="btn alt" id="clr" type="button">Vaciar</button></div></div></div></section>
+</main>
+<footer><span>La Lumbre · Taquería al carbón · Guadalajara</span><span>Demo de Escalatam · taquería ficticia · precios de ejemplo (MXN)</span></footer>
+<script src="app.js" defer></script>
+</body></html>

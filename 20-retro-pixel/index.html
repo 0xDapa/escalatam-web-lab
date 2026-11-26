@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Barbería Píxel — Cortes, fades y barba · Bogotá</title>
+<meta name="description" content="Barbería Píxel en Chapinero: fades, cortes clásicos y arreglo de barba. Prueba tu corte en el simulador 8-bit y reserva turno. Demo retro de Escalatam.">
+<meta name="theme-color" content="#2a1b6e"><link rel="icon" href="data:,">
+<link rel="preload" href="fonts/press-start-2p-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<main class="desk" id="desk">
+<nav class="icons" aria-label="Accesos del escritorio">
+<button class="ic" data-w="w-main"><svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="2" width="12" height="10" fill="#c3c3c3"/><rect x="3" y="3" width="10" height="7" fill="#1a1aa8"/><rect x="5" y="12" width="6" height="2" fill="#7b7b7b"/><rect x="4" y="5" width="3" height="3" fill="#ffe14d"/></svg><span>Inicio</span></button>
+<button class="ic" data-w="w-sim"><svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="4" y="2" width="8" height="3" fill="#3b2412"/><rect x="4" y="5" width="8" height="7" fill="#f1b98a"/><rect x="6" y="7" width="1" height="1" fill="#000"/><rect x="9" y="7" width="1" height="1" fill="#000"/><rect x="5" y="10" width="6" height="3" fill="#3b2412"/></svg><span>Simulador</span></button>
+<button class="ic" data-w="w-pr"><svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="3" y="1" width="10" height="14" fill="#fff"/><rect x="5" y="4" width="6" height="1" fill="#000"/><rect x="5" y="7" width="6" height="1" fill="#000"/><rect x="5" y="10" width="4" height="1" fill="#000"/></svg><span>Precios</span></button>
+<button class="ic" data-w="w-ag"><svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="2" y="3" width="12" height="11" fill="#fff"/><rect x="2" y="3" width="12" height="3" fill="#ff4fd8"/><rect x="4" y="8" width="2" height="2" fill="#1a1aa8"/><rect x="7" y="8" width="2" height="2" fill="#1a1aa8"/><rect x="10" y="8" width="2" height="2" fill="#ffe14d"/></svg><span>Agenda</span></button>
+<button class="ic" id="crt"><svg viewBox="0 0 16 16" shape-rendering="crispEdges" aria-hidden="true"><rect x="1" y="2" width="14" height="10" fill="#7b7b7b"/><rect x="2" y="3" width="12" height="8" fill="#39ff6a"/><rect x="2" y="5" width="12" height="1" fill="#1d8a38"/><rect x="2" y="8" width="12" height="1" fill="#1d8a38"/></svg><span>Modo CRT</span></button>
+</nav>
+<section class="win" id="w-main" aria-labelledby="h1"><div class="tb"><span>BARBERIA_PIXEL.EXE</span><button aria-label="Minimizar" data-min>_</button><button aria-label="Cerrar" data-min>x</button></div>
+<div class="body hero"><p class="chrome" aria-hidden="true">PÍXEL</p><h1 id="h1">Cortes con estilo <em>8-bit</em>, acabado 4K.</h1>
+<p>Barbería en Chapinero, Bogotá. Fades a navaja, barba con toalla caliente y cero filas: reserva tu turno en 20 segundos<span class="blink">_</span></p>
+<div class="row"><button class="btn go" data-w="w-ag">▶ Reservar turno</button><button class="btn" data-w="w-sim">Probar mi corte</button></div></div></section>
+<section class="win" id="w-sim" aria-labelledby="sim-h"><div class="tb"><span id="sim-h">SIMULADOR_DE_CORTE.EXE</span><button aria-label="Minimizar" data-min>_</button></div>
+<div class="body sim"><canvas id="av" width="32" height="32" aria-label="Vista previa pixelada del corte elegido" role="img"></canvas>
+<div class="opts"><div>CORTE<div class="g" id="o-hair"></div></div><div>BARBA<div class="g" id="o-beard"></div></div><div>COLOR<div class="g" id="o-col"></div></div></div>
+<p class="bev" id="sim-p" aria-live="polite">Fade medio + barba candado · 35.000 COP</p></div></section>
+<section class="win" id="w-pr" aria-labelledby="pr-h"><div class="tb"><span id="pr-h">PRECIOS.TXT — Bloc de notas</span><button aria-label="Minimizar" data-min>_</button></div>
+<div class="body"><div class="bev note">== CARTA DE SERVICIOS ==
+<b>Corte clásico</b> ........ 25.000
+<b>Fade a navaja</b> ........ 30.000
+<b>Arreglo de barba</b> ..... 18.000
+<b>Corte + barba</b> ........ 40.000
+<b>Afeitado con toalla</b> .. 28.000
+<b>Diseño / líneas</b> ...... +8.000
+
+* Precios en COP (ejemplo)
+* Martes 2x1 para estudiantes
+* Café o cerveza incluidos</div></div></section>
+<section class="win" id="w-ag" aria-labelledby="ag-h"><div class="tb"><span id="ag-h">AGENDA.EXE — Turnos de hoy</span><button aria-label="Minimizar" data-min>_</button></div>
+<div class="body"><p>Elige una hora libre:</p><div class="slots" id="slots"></div><button class="btn go" id="book">Confirmar turno</button><div class="prog" aria-hidden="true"><i id="pb"></i></div><p id="ag-msg" role="status"></p></div></section>
+</main>
+<footer>Barbería Píxel · Chapinero, Bogotá — Demo de Escalatam · negocio ficticio · precios de ejemplo</footer>
+<div class="task" role="toolbar" aria-label="Barra de tareas"><button class="btn start" data-w="w-main" aria-label="Inicio"><svg width="16" height="16" viewBox="0 0 8 8" shape-rendering="crispEdges" aria-hidden="true"><rect width="4" height="4" fill="#ff4fd8"/><rect x="4" width="4" height="4" fill="#1a1aa8"/><rect y="4" width="4" height="4" fill="#ffe14d"/><rect x="4" y="4" width="4" height="4" fill="#39ff6a"/></svg><span>INICIO</span></button>
+<div class="tasks" id="tasks"></div><div class="ticker"><span>*** HOY: 3 turnos libres por la tarde *** NUEVO: diseño de líneas a mano alzada *** MARTES 2X1 ESTUDIANTES *** CAFÉ GRATIS MIENTRAS ESPERAS ***</span></div><div class="clock" id="clk">00:00</div></div>
+<script src="app.js" defer></script>
+</body></html>

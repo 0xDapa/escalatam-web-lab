@@ -9,10 +9,12 @@ INIT="""window.__raf=0;(function f(){window.__raf++;requestAnimationFrame(f)})()
 new PerformanceObserver(l=>{for(const e of l.getEntries())window.__lcp=e.startTime}).observe({type:'largest-contentful-paint',buffered:true});"""
 async def one(b,vid):
     d=os.path.join(SITE,vid); out={'id':vid}
-    out['js_kb']=round(os.path.getsize(os.path.join(d,'app.js'))/1024,1); out['js_gz_kb']=round(gz(os.path.join(d,'app.js'))/1024,1)
+    js=[os.path.join(r,f) for r,_,fs in os.walk(d) for f in fs if f.endswith('.js')]
+    out['js_kb']=round(sum(os.path.getsize(f) for f in js)/1024,1); out['js_gz_kb']=round(sum(gz(f) for f in js)/1024,1)
     tot=0
     for r,_,fs in os.walk(d):
         for f in fs:
+            if f.endswith('.md') or f=='faces.css': continue
             p=os.path.join(r,f); tot+= os.path.getsize(p) if f.endswith('.woff2') else gz(p)
     out['page_gz_kb']=round(tot/1024,1)
     for name,vp,dsf in [('desk',{'width':1440,'height':900},1),('mob',{'width':390,'height':844},2)]:

@@ -1,12 +1,14 @@
-# Escalatam Web Lab — 12 variantes ligeras de una web premium
+# Escalatam Web Lab — 22 demos ligeras de webs premium
 
 **Galería en vivo:** https://0xdapa.github.io/escalatam-web-lab/
 
-La misma web “estilo Viktor Oddy” (titular condensado con glitch, nav mono, un solo color de acento, objeto 3D en el hero,
+**Tanda 1 (01–12):** la misma web “estilo Viktor Oddy” (titular condensado con glitch, nav mono, un solo color de acento, objeto 3D en el hero,
 transición de horizonte con brillo, cifras fijadas que cuentan y servicios en scroll horizontal) reconstruida con **12 tecnologías
 más ligeras que Three.js**, cada una aplicada a un nicho real de nuestros leads.
 
-> ⚠️ **Todo es demostración.** Los 12 negocios son **ficticios**, las **cifras y textos son de ejemplo** y no hay fotos: las imágenes
+**Tanda 2 (13–22):** 10 webs completas con 10 lenguajes de diseño y técnicas distintas (ver [Tanda 2](#tanda-2--10-webs-10-lenguajes-de-diseño)).
+
+> ⚠️ **Todo es demostración.** Los 22 negocios son **ficticios**, las **cifras y textos son de ejemplo** y no hay fotos: las imágenes
 > son gradientes CSS y objetos generados por código. Antes de enseñar una demo a un cliente hay que poner sus datos reales
 > (ver `SOP.md`, paso 10). No se usa ningún logo ni marca de terceros. No se publica ningún asset ni prompt de Viktor Oddy.
 
@@ -44,6 +46,30 @@ En móviles y portátiles reales con GPU, las variantes WebGL y Canvas suelen ir
 FPS bajos en esta tabla (06 raymarching, 08 globo Canvas 2D, 12 partículas) son las que más dependen de la GPU/rasterizado.
 Lighthouse: preset móvil por defecto (CPU ×4 más lenta, red 4G simulada), servido desde localhost.
 
+<!-- TANDA2:START -->
+## Tanda 2 — 10 webs, 10 lenguajes de diseño
+
+Después de la tanda 1 (la misma web con 12 motores 3D), la tanda 2 son **10 webs completas que no se parecen entre sí**:
+cada una con una estética y una técnica distinta, priorizando restaurantes. **Cero librerías** (todo vanilla, nada que
+vendorizar), fuentes OFL autoalojadas y todo lo visual generado por código. Negocios ficticios, cifras de ejemplo.
+
+| # | Demo en vivo | Nicho | Lenguaje de diseño | Técnica | JS gzip | Página gzip | Lighthouse móvil (Perf / A11y / BP / SEO) | LCP | TBT | CLS |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 13 | [Sobremesa](https://0xdapa.github.io/escalatam-web-lab/13-editorial-css/) | Restaurante de temporada · Valencia | Editorial de revista (serif display, columnas, filetes) | Solo CSS: scroll-driven animations + View Transitions entre páginas (0 KB de JS) | 0.0 KB | 185.5 KB | 99 / 100 / 100 / 100 | 0.9 s | 100 ms | 0 |
+| 14 | [Bar Trueno](https://0xdapa.github.io/escalatam-web-lab/14-brutalista-kinetica/) | Coctelería · Ciudad de México | Neo-brutalismo con tipografía cinética | Fuente variable (ejes ancho+peso) movida por puntero y velocidad de scroll, JS vanilla | 2.1 KB | 127.8 KB | 100 / 100 / 100 / 100 | 1.2 s | 0 ms | 0.009 |
+| 15 | [Aura Dermoestética](https://0xdapa.github.io/escalatam-web-lab/15-liquid-glass/) | Clínica de estética · Madrid | Liquid glass suave (cristal refractivo, tonos piel) | backdrop-filter + filtro SVG de desplazamiento (lente refractiva) + esferas con gradientes CSS | 2.0 KB | 79.9 KB | 100 / 100 / 100 / 100 | 1.1 s | 0 ms | 0 |
+| 16 | [Núcleo](https://0xdapa.github.io/escalatam-web-lab/16-bento-microinteracciones/) | Gimnasio de fuerza · Lima | Bento grid oscuro tipo dashboard | Microinteracciones: spotlight de borde con variables CSS, Canvas 2D (ECG), SVG (anillos/gauges) | 3.2 KB | 114.5 KB | 100 / 100 / 100 / 100 | 1.7 s | 0 ms | 0 |
+| 17 | [Hotel Salitre](https://0xdapa.github.io/escalatam-web-lab/17-scroll-horizontal/) | Hotel boutique · Cabo de Gata | Relato horizontal con capas de paralaje (ilustración) | Sección sticky con pista horizontal + paralaje por capas SVG, 1 KB de JS | 1.0 KB | 118.8 KB | 100 / 96 / 100 / 100 | 1.2 s | 0 ms | 0.001 |
+| 18 | [Doble Smash](https://0xdapa.github.io/escalatam-web-lab/18-secuencia-canvas/) | Hamburguesería · Santiago de Chile | Producto explotado con secuencia de fotogramas (estilo Apple) | Secuencia de 60 fotogramas WebP pintados en Canvas según el scroll (scrubbing) | 1.4 KB | 1473.1 KB | 100 / 100 / 100 / 100 | 0.9 s | 0 ms | 0 |
+| 19 | [Atelier Nube](https://0xdapa.github.io/escalatam-web-lab/19-shader-lujo/) | Salón de peluquería de autor · Buenos Aires | Lujo editorial minimal (serif Didone, mucho aire) | Shader de seda en WebGL1 (un solo fragment shader, sin librería), media resolución y pausa fuera de pantalla | 1.9 KB | 137.4 KB | 100 / 100 / 100 / 100 | 1.1 s | 0 ms | 0 |
+| 20 | [Barbería Píxel](https://0xdapa.github.io/escalatam-web-lab/20-retro-pixel/) | Barbería · Bogotá | Retro escritorio 8-bit / Y2K | Ventanas arrastrables (Pointer Events) + simulador de corte en pixel art (Canvas 32×32) + modo CRT | 2.2 KB | 44.6 KB | 100 / 100 / 100 / 100 | 1.2 s | 0 ms | 0 |
+| 21 | [Raíz Inmobiliaria](https://0xdapa.github.io/escalatam-web-lab/21-mapa-interactivo/) | Inmobiliaria de barrio · Montevideo | Cartografía ilustrada (mapa como interfaz) | Mapa SVG procedural con zoom/pan/pellizco y rutas animadas, sin librería de mapas | 4.8 KB | 115.3 KB | 97 / 100 / 100 / 100 | 1.2 s | 190 ms | 0 |
+| 22 | [La Lumbre](https://0xdapa.github.io/escalatam-web-lab/22-configurador-menu/) | Taquería al carbón · Guadalajara | Ilustración plana, cálida y juguetona | Configurador “arma tu taco” con SVG en vivo + carta filtrable con View Transitions + pedido por WhatsApp | 5.7 KB | 38.9 KB | 100 / 100 / 100 / 100 | 1.0 s | 30 ms | 0 |
+
+Página gzip = todo lo que hay en la carpeta (HTML, CSS, JS con gzip -9 + woff2 + imágenes). En 18 incluye los 60 fotogramas WebP.
+Lighthouse: preset móvil (CPU ×4, 4G simulada) contra localhost. Cada carpeta tiene su README con cómo funciona.
+<!-- TANDA2:END -->
+
 ## Elegir variante en 10 segundos
 
 - **Lo más ligero posible** (gama baja, 1–3 KB de JS): `09-css3d`, `10-svg`, `01-webgl2-puro`, `06-shader-raymarch`.
@@ -75,7 +101,7 @@ Cada carpeta `NN-*` funciona sola: se puede copiar a cualquier hosting (Netlify,
 cd pkg && npm install && cd .. && ln -s pkg/node_modules node_modules
 python3 src/build.py && python3 -m http.server 8817   # http://localhost:8817/
 python3 tools/shoot.py 01-webgl2-puro && python3 tools/perf.py && ./tools/lighthouse.sh
-python3 tools/gallery.py && python3 tools/docs.py
+python3 tools/gallery.py && python3 tools/docs.py && python3 tools/docs2.py   # docs2 = README de 13–22 + bloque Tanda 2
 ```
 
 ## Créditos y licencias

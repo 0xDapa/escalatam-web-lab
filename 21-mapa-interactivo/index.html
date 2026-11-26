@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Raíz Inmobiliaria — Casas y apartamentos en el mapa · Montevideo</title>
+<meta name="description" content="Raíz Inmobiliaria: explora venta y alquiler en un mapa interactivo del barrio, con tiempos a pie a la rambla, el colegio y el transporte. Demo de Escalatam.">
+<meta name="theme-color" content="#f3f0ea"><link rel="icon" href="data:,">
+<link rel="preload" href="fonts/syne-normal-400-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a class="logo" href="#"><i aria-hidden="true"></i>Raíz</a><nav class="mono" aria-label="Principal"><a href="#mapa">Mapa</a><a href="#por-que">Por qué Raíz</a><a href="#mapa">Tasación gratis</a></nav><a class="btn" href="#mapa">Hablar con un agente</a></header>
+<main>
+<section class="intro"><h1>Elige el barrio,<br>después <span>la casa.</span></h1><p>Ocho propiedades verificadas en Pocitos. Toca una y te mostramos cuánto tardas andando a la rambla, al colegio y al ómnibus. Mapa ilustrado, propiedades y datos de ejemplo.</p></section>
+<section class="app" id="mapa" aria-label="Mapa de propiedades">
+<aside class="side"><div class="filters" role="group" aria-label="Filtros"><button class="chip" data-f="all" aria-pressed="true">Todas</button><button class="chip" data-f="venta" aria-pressed="false">Venta</button><button class="chip" data-f="alquiler" aria-pressed="false">Alquiler</button><button class="chip" data-f="dorm" aria-pressed="false">3+ dorm.</button><button class="chip" data-f="pet" aria-pressed="false">Admite mascotas</button></div>
+<p class="count mono" id="count" aria-live="polite"></p><ul class="list" id="list"></ul></aside>
+<div class="mapw" id="mapw"><svg id="map" aria-label="Mapa ilustrado del barrio con calles, parques y la rambla" role="img"></svg><div class="pins" id="pins"></div>
+<div class="ctrl"><button id="zin" aria-label="Acercar">+</button><button id="zout" aria-label="Alejar">−</button><button id="zre" aria-label="Ver todo">⤢</button></div>
+<p class="hint mono" id="hint">Arrastra · rueda o pellizca para hacer zoom</p>
+<div class="detail" id="detail" aria-live="polite"><button class="x" id="dx" aria-label="Cerrar ficha">×</button><p class="mono" id="d-op"></p><h2 id="d-t"></h2><p class="pr" id="d-p"></p><p id="d-f" class="mono" style="color:var(--mut);margin-top:6px"></p>
+<div class="walk"><div><b id="w1"></b><span>🌊 a la rambla</span></div><div><b id="w2"></b><span>🎒 al colegio</span></div><div><b id="w3"></b><span>🚌 al ómnibus</span></div></div>
+<div class="row"><button class="btn" type="button" id="visit">Agendar visita</button><button class="btn" type="button" style="background:#fff;color:var(--ink);box-shadow:inset 0 0 0 1px var(--line)" id="share">Compartir</button></div></div>
+</div></section>
+<section class="why" id="por-que"><div><b>8 min</b><p>Tiempo medio que tardan nuestros clientes en descartar una casa que no les sirve, gracias a ver el barrio primero.</p></div><div><b>100 %</b><p>Propiedades visitadas y fotografiadas por un agente antes de publicarse (dato de ejemplo).</p></div><div><b>24 h</b><p>Para responder cualquier consulta, también por WhatsApp.</p></div></section>
+</main>
+<footer class="mono"><span>Raíz Inmobiliaria · Pocitos, Montevideo</span><span>Demo de Escalatam · inmobiliaria, calles y precios ficticios</span></footer>
+<script src="app.js" defer></script>
+</body></html>

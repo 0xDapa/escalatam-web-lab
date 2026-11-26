@@ -1,0 +1,87 @@
+@font-face{font-family:'Lilita One';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/lilita-one-normal-400.woff2) format('woff2')}
+@font-face{font-family:'Familjen Grotesk';font-style:normal;font-weight:400 700;font-display:swap;src:url(fonts/familjen-grotesk-normal-400-700.woff2) format('woff2')}
+/* 22 · La Lumbre — configurador "arma tu taco" con SVG que se construye en vivo + explorador de carta con filtros y View Transitions. */
+:root{--bg:#fff3df;--ink:#2a160d;--mut:#7c6553;--acc:#e2412b;--corn:#f4b52c;--card:#fffaf1;--line:#2a160d1f;--disp:'Lilita One',system-ui,sans-serif;--sans:'Familjen Grotesk',system-ui,sans-serif;--g:clamp(16px,3.5vw,52px)}
+html{background:var(--bg)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{color:var(--ink);-webkit-font-smoothing:antialiased}
+body{font:400 16px/1.5 var(--sans);overflow-x:hidden}
+::selection{background:var(--acc);color:#fff}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:3px solid var(--acc);outline-offset:2px}
+.d{font-family:var(--disp);font-weight:400;letter-spacing:.005em;line-height:.92}
+header{display:flex;justify-content:space-between;align-items:center;padding:16px var(--g);gap:14px;position:sticky;top:0;z-index:20;background:color-mix(in srgb,var(--bg) 88%,transparent);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.logo{font:400 26px/1 var(--disp);display:flex;align-items:center;gap:8px;color:var(--acc)}
+header nav{display:flex;gap:22px;font-weight:600}
+.cartb{display:inline-flex;align-items:center;gap:10px;height:44px;padding:0 8px 0 18px;border-radius:99px;background:var(--ink);color:var(--bg);font:600 14px var(--sans);border:0;cursor:pointer}
+.cartb b{min-width:28px;height:28px;border-radius:99px;background:var(--corn);color:var(--ink);display:grid;place-items:center;font-size:13px;padding:0 6px}
+.cartb.bump b{animation:bump .5s cubic-bezier(.34,1.8,.5,1)}
+@keyframes bump{30%{transform:scale(1.5)}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:52px;padding:0 26px;border-radius:99px;background:#cc3520;color:#fff;font:600 16px var(--sans);border:0;cursor:pointer;transition:transform .2s,box-shadow .2s;box-shadow:0 5px 0 #a72a17}
+.btn:hover{transform:translateY(-2px);box-shadow:0 7px 0 #a72a17}.btn:active{transform:translateY(4px);box-shadow:0 1px 0 #a72a17}
+.btn.alt{background:var(--card);color:var(--ink);box-shadow:0 5px 0 #2a160d33}
+/* configurador */
+.build{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:clamp(20px,3vw,48px);padding:clamp(18px,3vw,40px) var(--g) clamp(50px,7vw,90px);align-items:start}
+.build h1{font-size:clamp(50px,7vw,112px)}
+.build h1 span{color:var(--acc)}
+.lede{color:var(--mut);max-width:30rem;margin:16px 0 22px;font-size:17px}
+.step{border-top:2px dashed var(--line);padding:14px 0}
+.step h2{font:700 13px/1 var(--sans);letter-spacing:.14em;text-transform:uppercase;display:flex;gap:10px;align-items:center}
+.step h2 i{font-style:normal;width:24px;height:24px;border-radius:50%;background:var(--ink);color:var(--bg);display:grid;place-items:center;font-size:12px;letter-spacing:0}
+.opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.opt{display:inline-flex;align-items:center;gap:8px;height:42px;padding:0 14px 0 8px;border-radius:99px;border:2px solid var(--line);background:var(--card);font:600 14px var(--sans);cursor:pointer;color:var(--ink);transition:border-color .2s,background .2s,transform .15s}
+.opt:active{transform:scale(.96)}
+.opt .sw{width:26px;height:26px;border-radius:50%;border:2px solid #2a160d22}
+.opt small{color:var(--mut);font-weight:500}
+.opt[aria-pressed=true]{border-color:var(--ink);background:var(--ink);color:var(--bg)}
+.opt[aria-pressed=true] small{color:#ffd9a0}
+.stage{position:sticky;top:86px;background:radial-gradient(90% 80% at 50% 40%,#ffe2ad 0%,#ffd08a 55%,#f7b863 100%);border-radius:36px;padding:clamp(16px,2.5vw,30px);overflow:hidden}
+.stage::before{content:"";position:absolute;inset:0;background:repeating-conic-gradient(from 0deg at 50% 120%,#ffffff18 0 6deg,transparent 6deg 12deg);pointer-events:none}
+#taco{width:100%;height:auto;display:block;position:relative}
+.ticket{position:relative;display:grid;grid-template-columns:1fr auto;gap:12px;align-items:end;background:var(--card);border-radius:22px;padding:16px 18px;margin-top:6px;box-shadow:0 10px 30px -14px #7a3b0a66}
+.ticket h3{font:400 26px/1 var(--disp)}
+.ticket p{color:var(--mut);font-size:14px}
+.spice{display:flex;gap:3px;margin-top:6px}.spice i{width:16px;height:6px;border-radius:3px;background:#2a160d1a}.spice i.on{background:var(--acc)}
+.price{font:400 40px/1 var(--disp);text-align:right}
+.qty{display:flex;align-items:center;gap:6px;justify-content:flex-end;margin-bottom:8px}
+.qty button{width:34px;height:34px;border-radius:50%;border:2px solid var(--line);background:#fff;font:700 18px var(--sans);cursor:pointer;color:var(--ink)}
+.qty output{min-width:24px;text-align:center;font:700 18px var(--sans)}
+.ticket .btn{grid-column:1/-1;width:100%}
+/* explorador de carta */
+.menu{padding:clamp(50px,8vw,110px) var(--g);background:var(--ink);color:var(--bg);border-radius:40px 40px 0 0}
+.menu-h{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.menu h2{font-size:clamp(48px,7vw,110px)}
+.menu h2 span{color:var(--corn)}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-top:28px}
+.tab{height:46px;padding:0 20px;border-radius:99px;border:2px solid #fff3df33;background:none;color:var(--bg);font:400 20px var(--disp);cursor:pointer;transition:background .2s,color .2s}
+.tab[aria-selected=true]{background:var(--corn);color:var(--ink);border-color:var(--corn)}
+.filters{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.fl{height:36px;padding:0 14px;border-radius:99px;border:1.5px dashed #fff3df55;background:none;color:var(--bg);font:600 13px var(--sans);cursor:pointer}
+.fl[aria-pressed=true]{border-style:solid;background:#fff3df;color:var(--ink)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:14px;margin-top:26px}
+.it{background:#3a2216;border-radius:24px;padding:18px;display:flex;flex-direction:column;gap:8px;min-height:250px;transition:transform .3s cubic-bezier(.22,1,.36,1)}
+.it:hover{transform:translateY(-4px) rotate(-.6deg)}
+.it svg{width:84px;height:84px}
+.it h3{font:400 26px/1 var(--disp)}
+.it p{color:#d9c2a8;font-size:14px}
+.tags{display:flex;gap:6px;flex-wrap:wrap}.tags span{font:700 10.5px var(--sans);letter-spacing:.1em;text-transform:uppercase;border-radius:99px;padding:4px 8px;background:#fff3df1a}
+.it .row{margin-top:auto;display:flex;justify-content:space-between;align-items:center}
+.it .row b{font:400 26px var(--disp);color:var(--corn)}
+.plus{width:42px;height:42px;border-radius:50%;border:0;background:var(--corn);color:var(--ink);font:700 22px var(--sans);cursor:pointer;transition:transform .25s cubic-bezier(.34,1.6,.5,1)}
+.plus:active{transform:scale(.85) rotate(90deg)}
+.empty{color:#d9c2a8;padding:30px 0}
+/* pedido */
+.order{background:var(--ink);color:var(--bg);padding:0 var(--g) clamp(50px,7vw,90px)}
+.obox{background:var(--bg);color:var(--ink);border-radius:28px;padding:clamp(20px,3vw,36px);display:grid;grid-template-columns:1fr 1fr;gap:clamp(20px,3vw,44px)}
+.obox h2{font-size:clamp(40px,5vw,72px)}
+.lines{list-style:none;margin-top:12px}
+.lines li{display:flex;justify-content:space-between;gap:10px;padding:10px 0;border-bottom:1.5px dashed var(--line);font-weight:600}
+.lines li small{color:var(--mut);font-weight:500;display:block}
+.tot{display:flex;justify-content:space-between;font:400 34px var(--disp);margin-top:14px}
+.wa{background:#fff;border-radius:18px;padding:14px;font-size:14px;white-space:pre-wrap;color:var(--mut);min-height:120px;border:1.5px solid var(--line)}
+footer{background:var(--ink);color:#bfa58b;padding:0 var(--g) 36px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13px}
+::view-transition-group(*){animation-duration:.35s;animation-timing-function:cubic-bezier(.22,1,.36,1)}
+@media (max-width:960px){.build{grid-template-columns:1fr}.stage{position:relative;top:0;order:-1}.obox{grid-template-columns:1fr}header nav{display:none}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@media (max-width:960px){.build>div:first-child{display:contents}.build h1{order:0}.lede{order:1;margin:0}.stage{order:2}.step{order:3}.build{gap:14px}}
+@media (min-width:961px){#taco{max-height:calc(100vh - 330px);min-height:300px;width:auto;max-width:100%;margin:0 auto}}

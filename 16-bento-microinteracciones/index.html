@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Núcleo — Gimnasio de fuerza y clases con datos · Lima</title>
+<meta name="description" content="Núcleo, gimnasio de fuerza en Miraflores: aforo en vivo, clases reservables, planes sin permanencia. Demo bento de Escalatam.">
+<meta name="theme-color" content="#09090a"><link rel="icon" href="data:,">
+<link rel="preload" href="fonts/bricolage-grotesque-normal-300-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a class="logo" href="#"><i><svg width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="3.5" fill="#0a0a0a"/></svg></i>Núcleo</a>
+<nav aria-label="Principal"><a href="#clases">Clases</a><a href="#planes">Planes</a><a href="#coaches">Coaches</a><a href="#sede">Sede</a></nav><a class="btn" href="#planes">Prueba gratis</a></header>
+<main>
+<div class="intro"><h1>Entrena con datos, <span>no con suerte.</span></h1><p>Fuerza, acondicionamiento y coaches que miran tus números. Todo lo que necesitas saber del gimnasio, en una sola pantalla.</p></div>
+<div class="bento">
+<section class="c hero" aria-labelledby="hh"><svg class="rings" viewBox="0 0 340 340" aria-hidden="true"><g fill="none" stroke="#c6f432"><circle cx="170" cy="170" r="160" stroke-opacity=".08"/><circle cx="170" cy="170" r="122" stroke-opacity=".12"/><circle cx="170" cy="170" r="84" stroke-opacity=".2"/><circle cx="170" cy="170" r="46" stroke-opacity=".35"/></g></svg>
+<div class="top"><span class="mono">Miraflores · Lima</span><span class="mono live">Abierto · 5:00–23:00</span></div>
+<div><h2 id="hh">Tu primera semana es <em>gratis</em>. Sin permanencia, sin letra pequeña.</h2>
+<div class="row"><a class="btn" href="#planes">Empezar prueba →</a><a class="btn sec" href="#clases">Ver clases de hoy</a></div></div></section>
+<section class="c occ" aria-labelledby="oh"><div class="top"><h3 id="oh">Aforo ahora</h3><span class="mono live">En vivo</span></div>
+<div class="gauge"><svg viewBox="0 0 150 150" aria-hidden="true"><circle cx="75" cy="75" r="62" fill="none" stroke="#222226" stroke-width="12" stroke-dasharray="292 390" transform="rotate(135 75 75)" stroke-linecap="round"/><circle id="arc" cx="75" cy="75" r="62" fill="none" stroke="#c6f432" stroke-width="12" stroke-dasharray="0 390" transform="rotate(135 75 75)" stroke-linecap="round" style="transition:stroke-dasharray .8s cubic-bezier(.22,1,.36,1)"/></svg>
+<div><div class="v"><span id="occ">0</span>%</div><p id="occt">Calculando…</p></div></div>
+<div class="bars" id="bars" role="img" aria-label="Afluencia por hora"></div><div class="mono" style="display:flex;justify-content:space-between;margin-top:6px"><span>5h</span><span>14h</span><span>23h</span></div></section>
+<section class="c hr" aria-label="Ritmo cardíaco de la clase"><div class="top"><h3>Clase en curso</h3><span class="mono">HIIT · Sala 2</span></div><div class="bpm"><span id="bpm">142</span> <span class="mono">bpm medio</span></div><canvas id="ecg" aria-hidden="true"></canvas></section>
+<section class="c sched" id="clases" aria-labelledby="sh"><div class="top"><h3 id="sh">Clases</h3><div class="tabs" role="tablist" id="tabs"><span class="ind" id="ind"></span></div></div><ul class="classes" id="cls"></ul></section>
+<section class="c goal" aria-label="Objetivo semanal"><svg viewBox="0 0 132 132" aria-hidden="true"><circle cx="66" cy="66" r="54" fill="none" stroke="#222226" stroke-width="14"/><circle id="ring" cx="66" cy="66" r="54" fill="none" stroke="#c6f432" stroke-width="14" stroke-linecap="round" stroke-dasharray="0 340" transform="rotate(-90 66 66)" style="transition:stroke-dasharray 1.2s cubic-bezier(.22,1,.36,1)"/><text x="66" y="74" text-anchor="middle" fill="#f4f4f2" font-family="Bricolage Grotesque" font-weight="600" font-size="26" id="gt">0/4</text></svg>
+<div><h3>Objetivo semanal</h3><p>Socios que entrenan 4 días mejoran su fuerza un 18 % en 12 semanas (dato de ejemplo).</p><div class="week" id="week"></div></div></section>
+<section class="c plan" id="planes" aria-labelledby="ph"><div class="top"><h3 id="ph">Plan Núcleo</h3><span class="mono">Más elegido</span></div>
+<div class="switch">Mensual <button class="sw" id="sw" role="switch" aria-checked="false" aria-label="Pago anual"></button> Anual <span class="mono" style="color:var(--acc)">−20 %</span></div>
+<div class="price">S/<span id="pr">189</span><small> /mes</small></div>
+<ul class="feat"><li>Acceso 5:00–23:00</li><li>Clases ilimitadas</li><li>Evaluación InBody mensual</li><li>App con tus marcas</li></ul><button class="btn" id="join" type="button">Unirme ahora</button></section>
+<section class="c coach" id="coaches" aria-labelledby="ch"><div class="top"><h3 id="ch">Coaches</h3><span class="mono">8 certificados</span></div>
+<div class="avs"><span style="--i:0;background:#c6f432">AR</span><span style="--i:1;background:#9ad1ff">VM</span><span style="--i:2;background:#ffb547">JT</span><span style="--i:3;background:#f4f4f2">+5</span></div>
+<p class="quote" id="q" aria-live="polite"></p><p class="mono" id="qa"></p></section>
+<section class="c heat" aria-labelledby="eh"><div class="top"><h3 id="eh">Constancia de la comunidad</h3><span class="mono">Últimos 90 días</span></div><p>Cada cuadro es un día; cuanto más intenso, más socios entrenaron.</p><div class="cal" id="cal" aria-hidden="true"></div></section>
+<section class="c loc" id="sede" aria-labelledby="lh"><div><p class="mono">Sede</p><h3 id="lh">Av. Ficticia 1234, Miraflores</h3><p style="margin-top:8px">Estacionamiento para bicis, duchas con agua caliente y lockers con candado digital. A 4 minutos del parque Kennedy (ejemplo).</p><div style="display:flex;gap:10px;margin-top:18px;flex-wrap:wrap"><a class="btn" href="#">Cómo llegar</a><a class="btn sec" href="#">Escribir por WhatsApp</a></div></div>
+<div class="minimap" aria-hidden="true"><svg viewBox="0 0 600 200" preserveAspectRatio="xMidYMid slice"><g stroke="#232327" stroke-width="10" fill="none"><path d="M-10 60H610M-10 140H610M90-10V210M230-10V210M380-10V210M520-10V210"/><path d="M-10 200 L250 -10M300 210 L610 20" stroke-width="16"/></g><path d="M120 170 L 230 140 L 380 140 L 350 92" fill="none" stroke="#c6f432" stroke-width="3" stroke-dasharray="6 6"/></svg><span class="pin"></span></div></section>
+</div></main>
+<footer class="mono"><span>Núcleo · Gimnasio de fuerza</span><span>Demo de Escalatam · negocio ficticio · datos de ejemplo</span></footer>
+<script src="app.js" defer></script>
+</body></html>

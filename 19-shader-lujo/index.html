@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Atelier Nube — Salón de peluquería y color · Buenos Aires</title>
+<meta name="description" content="Atelier Nube: color, corte y tratamientos capilares con cita previa en Palermo. Demo minimalista de lujo con fondo de seda en WebGL, de Escalatam.">
+<meta name="theme-color" content="#e9dccb"><link rel="icon" href="data:,">
+<link rel="preload" href="fonts/bodoni-moda-normal-400-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<main>
+<section class="hero" style="padding:0" aria-labelledby="h1">
+<canvas id="silk" aria-hidden="true"></canvas>
+<div class="corner tl lb"><span>Palermo · Buenos Aires</span></div>
+<nav class="corner tr lb" aria-label="Principal"><a href="#servicios">Servicios</a><a href="#equipo">Equipo</a><a href="#cita">Cita</a></nav>
+<div class="corner bl lb"><span>Martes a sábado · 10—20 h</span></div>
+<div class="corner br lb"><span>Desliza ↓</span></div>
+<div class="mark"><div><p class="lb fade">Salón de color & corte</p><h1 id="h1" class="fade d1">Atelier<br><i>Nube</i></h1><p class="lb fade d2">El color se piensa. Después se aplica.</p><a class="cta lb fade d3" href="#cita">Reservar cita</a></div></div>
+</section>
+<section><div class="intro"><h2 class="rv">Un salón pequeño, <i>un sólo cliente</i> a la vez.</h2><p class="rv">Trabajamos con cita previa y sin prisas: cada servicio empieza con una conversación de quince minutos frente al espejo y una prueba de color con luz natural.</p></div></section>
+<section class="svc" id="servicios" style="padding-top:0"><p class="lb rv">Servicios</p><ol>
+<li class="rv" tabindex="0"><span class="n lb">01</span><h3>Corte & forma</h3><span class="du lb">60 min</span><span class="pr">$38.000</span><p>Corte estudiado para tu textura, con secado y una pauta de peinado para casa.</p></li>
+<li class="rv" tabindex="0"><span class="n lb">02</span><h3>Color a mano alzada</h3><span class="du lb">150 min</span><span class="pr">$96.000</span><p>Balayage pintado a mano, matiz y tratamiento de enlaces incluidos.</p></li>
+<li class="rv" tabindex="0"><span class="n lb">03</span><h3>Color de raíz</h3><span class="du lb">90 min</span><span class="pr">$54.000</span><p>Retoque de raíz con fórmula guardada en tu ficha para que nunca cambie.</p></li>
+<li class="rv" tabindex="0"><span class="n lb">04</span><h3>Ritual de seda</h3><span class="du lb">45 min</span><span class="pr">$32.000</span><p>Tratamiento de brillo con masaje craneal y secado liso.</p></li>
+</ol></section>
+<section id="equipo" style="padding-top:0"><p class="lb rv" style="max-width:1280px;margin:0 auto">Equipo</p><div class="team">
+<div class="st rv"><div class="ph" aria-hidden="true">V</div><h3>Valentina</h3><span>Directora · especialista en color</span></div>
+<div class="st rv"><div class="ph" aria-hidden="true" style="background:linear-gradient(160deg,#e4d6cc,#b9a08f)">T</div><h3>Tomás</h3><span>Corte y forma</span></div>
+<div class="st rv"><div class="ph" aria-hidden="true" style="background:linear-gradient(160deg,#efe4d8,#d6c1ae)">R</div><h3>Renata</h3><span>Tratamientos y rituales</span></div>
+</div></section>
+<section class="book" id="cita"><p class="lb" style="color:#b9a99b">Cita previa</p><h2 style="margin-top:20px">Te <i>esperamos</i>.</h2>
+<div class="sel"><select aria-label="Servicio" id="s1"><option>Corte & forma</option><option>Color a mano alzada</option><option>Color de raíz</option><option>Ritual de seda</option></select><select aria-label="Profesional" id="s2"><option>Sin preferencia</option><option>Valentina</option><option>Tomás</option><option>Renata</option></select><button id="go" type="button">Pedir cita</button></div><p id="msg" role="status"></p></section>
+</main>
+<footer class="lb"><span>Atelier Nube · Palermo Soho</span><span>Demo de Escalatam · salón ficticio · precios de ejemplo</span></footer>
+<script src="app.js" defer></script>
+</body></html>
