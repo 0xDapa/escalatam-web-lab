@@ -99,3 +99,4 @@ footer{padding:30px var(--g) 40px;display:flex;justify-content:space-between;fle
 @media (max-width:1000px){.grid{grid-template-columns:1fr 1fr}.diag,.book{grid-template-columns:1fr}}
 @media (max-width:640px){.grid{grid-template-columns:1fr}.t{min-height:0}.nav a.l{display:none}.nav{padding-left:16px}.days{gap:5px}.day{border-radius:12px;font-size:11px}.day b{font-size:17px}.stat{min-width:0;flex:1}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.rv{opacity:1;transform:none}}
+html{overflow-x:clip}
