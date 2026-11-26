@@ -4,3 +4,4 @@ shots/
 lighthouse/*.json
 __pycache__/
 *.pyc
+!lighthouse/resumen.json
