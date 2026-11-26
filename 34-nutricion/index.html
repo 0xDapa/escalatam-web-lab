@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Savia Nutrición — Nutricionistas en Palermo, Buenos Aires y online</title>
+<meta name="description" content="Planes de alimentación sin dietas imposibles. Consultas presenciales en Palermo y online, seguimiento por WhatsApp y recetas reales.">
+<meta name="theme-color" content="#fdf8ee">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23b05a36'/%3E%3Cpath d='M10 22c0-8 5-12 12-12 0 8-5 12-12 12zm0 0 7-7' stroke='%23fdf8ee' stroke-width='1.8' fill='none'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/source-serif-4-normal-300-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" imagesrcset="img/bowl-560.webp 560w, img/bowl-960.webp 960w" imagesizes="(max-width:900px) 92vw, 46vw" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="top" id="top"><a class="logo" href="#top">savia<span>·</span></a><nav aria-label="Principal"><a href="#como">Cómo funciona</a><a href="#test">Test</a><a href="#planes">Planes</a><a href="#recetas">Recetas</a></nav><a class="btn sm" href="#turno">Pedir turno</a></header>
+<main id="main">
+<section class="hero" aria-labelledby="h1">
+  <div class="hero-copy">
+    <p class="mono">Nutrición clínica y deportiva · Buenos Aires</p>
+    <h1 id="h1">Comé mejor.<br><em>No menos.</em></h1>
+    <p class="lead">Un plan hecho para tu vida real —tu horario, tu presupuesto, tu familia— con una nutricionista que te acompaña por WhatsApp entre consultas.</p>
+    <div class="cta"><a class="btn" href="#test">Hacer el test (1 min)</a><a class="link" href="#planes">Ver planes →</a></div>
+  </div>
+  <figure class="hero-img"><img src="img/bowl-960.webp" srcset="img/bowl-560.webp 560w, img/bowl-960.webp 960w" sizes="(max-width:900px) 92vw, 46vw" width="960" height="720" alt="Bowl de ensalada con verduras y legumbres" fetchpriority="high">
+    <figcaption class="tag"><span class="mono">Hoy en tu plan</span><b>Bowl tibio de garbanzos</b><span class="mono">32 g proteína · 12 min</span></figcaption></figure>
+</section>
+
+<section class="stats" aria-label="Datos"><div><b data-n="3">0</b><span>consultas para tener tu plan andando</span></div><div><b data-n="120">0</b><span>recetas de menos de 20 minutos</span></div><div><b data-n="0">0</b><span>alimentos prohibidos</span></div><div><b data-n="48">0</b><span>horas máximo para responderte</span></div></section>
+
+<section class="how" id="como" aria-labelledby="ht">
+  <h2 id="ht">Comer bien es <em>simple</em> (cuando alguien lo ordena)</h2>
+  <ol>
+    <li><span class="mono">01 — Consulta</span><h3>Te conocemos</h3><p>60 minutos: hábitos, análisis clínicos si los tenés, objetivos y gustos. Sin balanza si no querés.</p></li>
+    <li><span class="mono">02 — Plan</span><h3>Armamos tu plato</h3><p>Menú flexible de 2 semanas, lista del súper y recetas. Nada de pesar cada gramo.</p></li>
+    <li><span class="mono">03 — Seguimiento</span><h3>Ajustamos juntas</h3><p>Fotos de tus comidas por WhatsApp, control cada 3–4 semanas y cambios cuando tu vida cambia.</p></li>
+  </ol>
+</section>
+
+<section class="quiz" id="test" aria-labelledby="qt">
+  <div class="q-card">
+    <p class="mono">Test · <span id="qn">1</span>/3</p>
+    <h2 id="qt" class="sr">Test de objetivos</h2>
+    <div id="qbody" aria-live="polite"></div>
+    <div class="q-bar"><i id="qbar"></i></div>
+  </div>
+</section>
+
+<section class="plate" aria-labelledby="plt">
+  <div class="pl-copy"><p class="mono">Herramienta</p><h2 id="plt">Tu plato, <em>de un vistazo</em></h2><p>Elegí una comida y mirá cómo lo armaríamos. Es la base que después ajustamos a tu objetivo.</p>
+    <div class="meals" role="tablist" aria-label="Comida"><button role="tab" data-k="des">Desayuno</button><button role="tab" data-k="alm" aria-selected="true">Almuerzo</button><button role="tab" data-k="mer">Merienda</button><button role="tab" data-k="cen">Cena</button></div>
+    <ul class="legend" id="legend"></ul>
+    <p class="idea" id="idea"></p>
+  </div>
+  <figure class="donut-wrap"><svg viewBox="0 0 200 200" class="donut" id="donut" role="img" aria-label="Proporciones del plato"><circle cx="100" cy="100" r="70" fill="none" stroke="#efe5d3" stroke-width="34"/></svg><figcaption id="dc"><b>½</b><span>verduras</span></figcaption></figure>
+</section>
+
+<section class="plans" id="planes" aria-labelledby="pt">
+  <div class="p-head"><h2 id="pt">Planes</h2><div class="toggle" role="group" aria-label="Periodo"><button aria-pressed="true" data-p="m">Mensual</button><button aria-pressed="false" data-p="t">Trimestral <span>−20 %</span></button></div></div>
+  <div class="p-grid">
+    <article><p class="mono">Esencial</p><p class="price"><b data-m="38000" data-t="30400">$38.000</b><span>/mes</span></p><ul><li>1 consulta mensual</li><li>Plan y lista del súper</li><li>Recetario digital</li></ul><a class="btn ghost" href="#turno" data-plan="Esencial">Elegir</a></article>
+    <article class="hl"><p class="mono">Acompañamiento · el más elegido</p><p class="price"><b data-m="62000" data-t="49600">$62.000</b><span>/mes</span></p><ul><li>2 consultas mensuales</li><li>Seguimiento diario por WhatsApp</li><li>Ajustes ilimitados del plan</li><li>Lectura de análisis clínicos</li></ul><a class="btn" href="#turno" data-plan="Acompañamiento">Elegir</a></article>
+    <article><p class="mono">Deportivo</p><p class="price"><b data-m="74000" data-t="59200">$74.000</b><span>/mes</span></p><ul><li>Todo lo de Acompañamiento</li><li>Plan de competencia e hidratación</li><li>Antropometría ISAK</li></ul><a class="btn ghost" href="#turno" data-plan="Deportivo">Elegir</a></article>
+  </div>
+  <p class="mono c">Precios de ejemplo en ARS · factura para reintegro de prepagas</p>
+</section>
+
+<section class="recipes" id="recetas" aria-labelledby="rt">
+  <h2 id="rt">Recetas que <em>sí</em> vas a hacer</h2>
+  <div class="r-grid">
+    <article><img src="img/ensalada-560.webp" width="560" height="420" loading="lazy" alt="Ensalada verde con tostadas"><p class="mono">15 min · almuerzo</p><h3>Verdes con tostadas de masa madre</h3></article>
+    <article><img src="img/desayuno-560.webp" width="560" height="373" loading="lazy" alt="Bowl de yogur con frutas y frutos secos"><p class="mono">5 min · desayuno</p><h3>Yogur, frutos rojos y nueces</h3></article>
+    <article><img src="img/huerta-560.webp" width="560" height="403" loading="lazy" alt="Cajón de verduras de huerta"><p class="mono">guía · súper</p><h3>Qué comprar en la verdulería esta semana</h3></article>
+    <article><img src="img/limon-560.webp" width="560" height="373" loading="lazy" alt="Kiwi, palta y limón sobre madera"><p class="mono">10 min · merienda</p><h3>Tostada de palta, kiwi y limón</h3></article>
+  </div>
+</section>
+
+<section class="voices" aria-labelledby="vt">
+  <figure><img src="img/mano-560.webp" width="560" height="373" loading="lazy" alt="Persona comiendo de un bowl con palillos"></figure>
+  <div><h2 id="vt" class="sr">Testimonios</h2><blockquote>“Dejé de hacer dietas en enero. Bajé 8 kilos en el año y, lo mejor, dejé de pensar en comida todo el día.”</blockquote><p class="mono">Lucía, 38 · plan Acompañamiento · testimonio de ejemplo</p>
+  <blockquote class="sm">“Mis análisis mejoraron en tres meses y sigo comiendo asado los domingos.”</blockquote><p class="mono">Martín, 52 · testimonio de ejemplo</p></div>
+</section>
+
+<section class="faq" aria-labelledby="ft"><h2 id="ft">Preguntas</h2><div>
+  <details><summary>¿Atienden por obra social o prepaga?</summary><p>Damos factura para que pidas reintegro. Muchas prepagas reintegran entre el 40 y el 70 %.</p></details>
+  <details><summary>¿Es online o presencial?</summary><p>Las dos cosas: consultorio en Palermo y videollamada para todo el país.</p></details>
+  <details><summary>¿Hacen planes vegetarianos o veganos?</summary><p>Sí, con control de B12, hierro y proteína.</p></details>
+  <details><summary>¿Y si no me gusta cocinar?</summary><p>Armamos el plan con opciones de compra lista y viandas. Cero culpa.</p></details></div></section>
+
+<section class="book" id="turno" aria-labelledby="bt">
+  <h2 id="bt">Pedí tu <em>primer turno</em></h2>
+  <form id="form">
+    <label>Nombre<input name="n" required autocomplete="name"></label>
+    <label>Plan<select name="p" id="fp"><option>Acompañamiento</option><option>Esencial</option><option>Deportivo</option><option>No sé, quiero consultar</option></select></label>
+    <label>Modalidad<select name="mo"><option>Presencial (Palermo)</option><option>Online</option></select></label>
+    <label>Objetivo<input name="o" id="fo" placeholder="Ej.: comer más ordenado"></label>
+    <button class="btn" type="submit">Pedir turno por WhatsApp</button>
+  </form>
+  <ul class="info mono"><li>Calle de ejemplo 4520, Palermo, CABA</li><li><a href="tel:+541140000000">+54 11 4000 0000</a></li><li>Lun–Vie 8–20 h</li></ul>
+</section>
+</main>
+<footer class="foot"><p class="logo">savia<span>·</span></p><p class="mono">Demo de Escalatam · consultorio ficticio · fotos CC0 (StockSnap) · <a href="#top">arriba ↑</a></p></footer>
+<script src="app.js" defer></script>
+</body></html>

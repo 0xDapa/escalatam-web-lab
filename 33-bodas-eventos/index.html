@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Velo — Bodas y eventos en Cartagena de Indias</title>
+<meta name="description" content="Planificación y coordinación de bodas en Cartagena y el Caribe colombiano. Consulta fechas disponibles y reserva la tuya por WhatsApp.">
+<meta name="theme-color" content="#fbfaf8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23111'/%3E%3Cpath d='M9 9l7 15 7-15' stroke='%23fbfaf8' stroke-width='1.5' fill='none'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/poiret-one-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" imagesrcset="img/atardecer-560.webp 560w, img/atardecer-960.webp 960w" imagesizes="100vw" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="top" id="top"><nav class="l" aria-label="Secciones"><a href="#servicios">Servicios</a><a href="#galeria">Galería</a></nav><a class="logo" href="#top">VELO<small>bodas &amp; eventos</small></a><nav class="r" aria-label="Acciones"><a href="#guias">Guías</a><a class="sq" href="#fecha">Reservar fecha</a></nav></header>
+<main id="main">
+<section class="hero" aria-labelledby="h1">
+  <figure class="hero-img"><img src="img/atardecer-960.webp" srcset="img/atardecer-560.webp 560w, img/atardecer-960.webp 960w" sizes="100vw" width="960" height="640" alt="Pareja de novios mirando el atardecer" fetchpriority="high"></figure>
+  <div class="hero-txt"><p class="kick">Cartagena de Indias · Caribe colombiano</p><h1 id="h1">Bodas que se sienten<br>como ustedes</h1><a class="sq light" href="#fecha">Consultar fecha</a></div>
+</section>
+
+<section class="intro" aria-label="Presentación">
+  <p class="num">— desde 2014 · 260 bodas —</p>
+  <p class="big">Somos un equipo pequeño de planners en la ciudad amurallada. Nos ocupamos de todo —proveedores, permisos, lluvia, tías— para que ustedes solo tengan que <em>estar</em>.</p>
+  <a class="sq" href="#fecha">Book a date · Reservar fecha</a>
+  <p class="ex">Cifras de ejemplo</p>
+</section>
+
+<section class="services" id="servicios" aria-labelledby="st">
+  <h2 id="st">Servicios</h2>
+  <div class="s-grid">
+    <article><img src="img/manos-560.webp" width="560" height="373" loading="lazy" alt="Novios tomados de la mano con ramo"><h3>Coordinación del día</h3><p>Tomamos el mando 8 semanas antes: cronograma, ensayo y coordinación de proveedores el día B.</p><p class="pr">desde $9.000.000 COP</p></article>
+    <article><img src="img/salon-560.webp" width="560" height="373" loading="lazy" alt="Salón de banquete con luces cálidas"><h3>Planificación completa</h3><p>Desde la búsqueda del lugar hasta el último brindis. Diseño, presupuesto, invitados y logística.</p><p class="pr">desde $28.000.000 COP</p></article>
+    <article><img src="img/votos-560.webp" width="560" height="425" loading="lazy" alt="Pareja intercambiando votos"><h3>Boda destino</h3><p>Para parejas que vienen de fuera: alojamiento de invitados, traslados, trámites civiles y plan B de clima.</p><p class="pr">a medida</p></article>
+  </div>
+  <p class="ex c">Precios de ejemplo</p>
+</section>
+
+<section class="dates" id="fecha" aria-labelledby="dt">
+  <div class="d-head"><h2 id="dt">Fechas disponibles</h2><p>Aceptamos un máximo de 3 bodas al mes. Elige un día para consultarlo.</p></div>
+  <div class="cal-wrap">
+    <div class="cal">
+      <div class="cal-nav"><button id="prev" aria-label="Mes anterior">←</button><p id="mon" aria-live="polite"></p><button id="next" aria-label="Mes siguiente">→</button></div>
+      <div class="dow" aria-hidden="true"><span>L</span><span>M</span><span>M</span><span>J</span><span>V</span><span>S</span><span>D</span></div>
+      <div class="days" id="days" role="grid" aria-label="Días del mes"></div>
+      <ul class="legend"><li><i class="free"></i>Libre</li><li><i class="few"></i>Pocos cupos</li><li><i class="full"></i>Reservado</li></ul>
+    </div>
+    <div class="est">
+      <p class="lbl">Tu fecha</p><p class="picked" id="picked">Elige un día</p>
+      <label>Invitados <output id="go">120</output><input type="range" id="guests" min="20" max="300" step="10" value="120"></label>
+      <label>Estilo<select id="style"><option value="1">Íntima y relajada</option><option value="1.35" selected>Clásica elegante</option><option value="1.8">Gran celebración</option></select></label>
+      <p class="lbl">Presupuesto total orientativo</p><p class="total" id="total"></p>
+      <p class="ex">Incluye lugar, banquete, decoración y planner. Estimado de ejemplo.</p>
+      <button class="sq" id="book">Reservar esta fecha</button>
+    </div>
+  </div>
+</section>
+
+<section class="gallery" id="galeria" aria-labelledby="gt">
+  <h2 id="gt">Galería</h2><p class="hint">Pasa el cursor (o desliza) para ver el color</p>
+  <div class="g-grid">
+    <figure class="g1"><img src="img/beso-960.webp" width="960" height="640" loading="lazy" alt="Pareja besándose en primer plano"></figure>
+    <figure class="g2"><img src="img/ramo-560.webp" width="560" height="374" loading="lazy" alt="Novia sosteniendo un ramo de flores"></figure>
+    <figure class="g3"><img src="img/anillos-560.webp" width="560" height="373" loading="lazy" alt="Dos anillos sobre terciopelo"></figure>
+    <figure class="g4"><img src="img/mesa-960.webp" width="960" height="548" loading="lazy" alt="Mesa del banquete con tarjeta y cubiertos"></figure>
+    <figure class="g5"><img src="img/salon-960.webp" width="960" height="640" loading="lazy" alt="Salón de madera decorado con luces"></figure>
+  </div>
+</section>
+
+<section class="words" aria-labelledby="wt">
+  <h2 id="wt">Kind words</h2><p class="ex c">Testimonios de ejemplo</p>
+  <div class="w-track" id="wtrack">
+    <blockquote><p>“Llovió a las cinco y nadie se enteró. El plan B era más bonito que el A.”</p><cite>Laura &amp; Andrés · Getsemaní</cite></blockquote>
+    <blockquote><p>“Organizamos todo desde Madrid sin viajar ni una vez antes. Increíble.”</p><cite>Marta &amp; Julián · Islas del Rosario</cite></blockquote>
+    <blockquote><p>“Nos devolvieron la calma. Y la tía Rosa todavía habla del ensayo.”</p><cite>Valentina &amp; Sebastián · Centro histórico</cite></blockquote>
+  </div>
+  <div class="w-dots" id="wdots" role="tablist" aria-label="Testimonios"></div>
+</section>
+
+<section class="guides" id="guias" aria-labelledby="gut">
+  <h2 id="gut">Guías para novios</h2>
+  <ol class="g-list">
+    <li><a href="#fecha"><span>01</span>Cuándo casarse en Cartagena: clima mes a mes<i>→</i></a></li>
+    <li><a href="#fecha"><span>02</span>Boda civil para extranjeros en Colombia, paso a paso<i>→</i></a></li>
+    <li><a href="#fecha"><span>03</span>Diez lugares en la ciudad amurallada (y sus aforos)<i>→</i></a></li>
+    <li><a href="#fecha"><span>04</span>Cómo repartir el presupuesto sin peleas<i>→</i></a></li>
+    <li><a href="#fecha"><span>05</span>Calendario de 12 meses antes del gran día<i>→</i></a></li>
+    <li><a href="#fecha"><span>06</span>Playa o patio colonial: pros y contras reales<i>→</i></a></li>
+  </ol>
+</section>
+
+<section class="contact" aria-labelledby="ct">
+  <h2 id="ct">Hablemos de su boda</h2>
+  <form id="form">
+    <label>Nombres<input name="n" required placeholder="Ana &amp; Tomás" autocomplete="name"></label>
+    <label>Fecha tentativa<input name="d" type="month" id="fd"></label>
+    <label class="full">Cuéntennos lo que imaginan<textarea name="m" rows="3" placeholder="Atardecer, pocos invitados, mucha música…"></textarea></label>
+    <button class="sq" type="submit">Escribir por WhatsApp</button>
+  </form>
+  <ul class="info"><li>Calle de ejemplo 34-12, Centro, Cartagena</li><li><a href="tel:+576050000000">+57 605 000 0000</a></li><li>Visitas con cita · lun–sáb</li></ul>
+</section>
+</main>
+<footer class="foot"><p class="logo">VELO</p><p>Demo de Escalatam · negocio ficticio · fotos CC0 (StockSnap) · <a href="#top">arriba ↑</a></p></footer>
+<script src="app.js" defer></script>
+</body></html>
