@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-en="Bruma Lodge — cabins in the Minca cloud forest · Escalatam demo">Bruma Lodge — cabañas en el bosque de niebla de Minca · Demo Escalatam</title>
+<meta name="description" content="Lodge de 9 cabañas en Minca, Sierra Nevada de Santa Marta. Elige habitación, fechas y huéspedes y reserva directo por WhatsApp. Demo conceptual de Escalatam.">
+<meta name="theme-color" content="#20302c">
+<meta name="wa" content="">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%2320302c'/%3E%3Cpath d='M6 20h20M9 24h14' stroke='%23e8e3c4' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="alternate" hreflang="es" href="https://0xdapa.github.io/escalatam-web-lab/49-hotel-montana/">
+<link rel="alternate" hreflang="en" href="https://0xdapa.github.io/escalatam-web-lab/49-hotel-montana/?lang=en">
+<link rel="preload" href="img/cabana-800.webp" fetchpriority="high" as="image" type="image/webp" imagesrcset="img/cabana-800.webp 800w, img/cabana-1600.webp 1600w" imagesizes="100vw">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="module" src="js/main.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Hotel","name":"Bruma Lodge","url":"https://0xdapa.github.io/escalatam-web-lab/49-hotel-montana/","telephone":"+57 300 000 0000","priceRange":"$$$","numberOfRooms":9,"checkinTime":"15:00","checkoutTime":"11:00","petsAllowed":false,"address":{"@type":"PostalAddress","streetAddress":"Vereda El Campano km 3 (demo)","addressLocality":"Minca, Santa Marta","addressRegion":"Magdalena","addressCountry":"CO"},"geo":{"@type":"GeoCoordinates","latitude":11.1420,"longitude":-74.1170},"amenityFeature":[{"@type":"LocationFeatureSpecification","name":"Piscina","value":true},{"@type":"LocationFeatureSpecification","name":"Desayuno incluido","value":true},{"@type":"LocationFeatureSpecification","name":"Wifi","value":true}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#principal" data-en="Skip to content">Saltar al contenido</a>
+<header class="top">
+  <a class="logo" href="#principal">Bruma</a>
+  <button class="burger" data-menu aria-controls="nav" aria-expanded="false" aria-label="Menú" data-en-aria="Menu"><i></i><i></i></button>
+  <nav id="nav" aria-label="Secciones" data-en-aria="Sections"><a href="#cabanas" data-en="Cabins">Cabañas</a><a href="#dia" data-en="A day here">Un día aquí</a><a href="#llegar" data-en="Getting here">Cómo llegar</a></nav>
+  <div class="lang" role="group" aria-label="Idioma" data-en-aria="Language"><button data-lang-btn="es" aria-pressed="true">ES</button><button data-lang-btn="en" aria-pressed="false">EN</button></div>
+</header>
+<main id="principal">
+<section class="hero">
+  <div class="hero-media"><img id="hero" src="img/cabana-800.webp" srcset="img/cabana-800.webp 800w, img/cabana-1600.webp 1600w" sizes="100vw" width="800" height="600" alt="Cabaña de madera entre árboles altos del bosque" data-en-alt="Timber cabin among tall forest trees" fetchpriority="high"><canvas id="dither" aria-hidden="true"></canvas></div>
+  <div class="hero-t">
+    <h1 id="h1" data-en="Nine cabins<br>above the cloud line.">Nueve cabañas<br>encima de las nubes.</h1>
+    <p data-en="Minca, Sierra Nevada de Santa Marta · 1,100 m above sea level">Minca, Sierra Nevada de Santa Marta · 1.100 m s. n. m.</p>
+  </div>
+  <form class="book" id="book" aria-label="Reserva" data-en-aria="Booking">
+    <label><span data-en="Arrival">Llegada</span><input type="date" id="in" required></label>
+    <label><span data-en="Departure">Salida</span><input type="date" id="out" required></label>
+    <label><span data-en="Guests">Huéspedes</span><select id="guests"><option>1</option><option selected>2</option><option>3</option><option>4</option></select></label>
+    <label><span data-en="Cabin">Cabaña</span><select id="room"></select></label>
+    <div class="sum"><b id="total">—</b><small id="nights"></small></div>
+    <a class="btn" id="bookwa" href="#" target="_blank" rel="noopener" data-en="Book on WhatsApp">Reservar por WhatsApp</a>
+  </form>
+</section>
+
+<section class="cabanas" id="cabanas" aria-labelledby="c-h">
+  <h2 id="c-h" data-split data-en="Three ways to sleep in the forest.">Tres formas de dormir en el bosque.</h2>
+  <div class="rooms" id="rooms"></div>
+</section>
+
+<section class="dia" id="dia" aria-labelledby="d-h">
+  <h2 id="d-h" class="sticky" data-en="A day<br>at Bruma">Un día<br>en Bruma</h2>
+  <ol class="hours">
+    <li><time>5:40</time><p data-en="The mist rises from the valley. Coffee from our own plot, at the door of your cabin.">La niebla sube del valle. Café de nuestra propia finca, en la puerta de tu cabaña.</p></li>
+    <li><time>8:00</time><p data-en="Breakfast with arepa, fruit from Minca and eggs from the neighbouring farm.">Desayuno con arepa, fruta de Minca y huevos de la finca vecina.</p></li>
+    <li><time>10:30</time><p data-en="Guided walk to the Marinka waterfalls (2 h round trip, included).">Caminata guiada a las cascadas de Marinka (2 h ida y vuelta, incluida).</p></li>
+    <li><time>16:00</time><p data-en="Pool facing the valley. On clear days you can see Santa Marta bay.">Piscina mirando al valle. Los días claros se ve la bahía de Santa Marta.</p></li>
+    <li><time>19:30</time><p data-en="Dinner for 18 at a single table. Ask for the vegetarian menu when you book.">Cena para 18 en una sola mesa. Pide el menú vegetariano al reservar.</p></li>
+  </ol>
+  <figure class="dia-img"><img src="img/valle-1600.webp" width="1600" height="1067" loading="lazy" alt="Piscina sobre un valle verde con montañas" data-en-alt="Pool above a green valley with mountains"></figure>
+</section>
+
+<section class="llegar" id="llegar" aria-labelledby="l-h">
+  <div><h2 id="l-h" data-en="Getting here">Cómo llegar</h2>
+  <p data-en="45 min from Santa Marta airport. We pick you up in a 4x4 for $120,000 COP per trip (up to 4 people).">A 45 min del aeropuerto de Santa Marta. Te recogemos en 4x4 por $120.000 COP el trayecto (hasta 4 personas).</p>
+  <a class="link" href="https://www.google.com/maps/dir/?api=1&amp;destination=Minca%2C%20Magdalena" target="_blank" rel="noopener" data-en="Open route in Maps">Abrir ruta en Maps</a></div>
+  <blockquote><p data-en="“We woke up inside a cloud. The 4x4 pick-up made the whole trip easy.”">“Despertamos dentro de una nube. La recogida en 4x4 nos resolvió todo el viaje.”</p><cite data-en="Laura &amp; Tomás, Bogotá · sample review">Laura y Tomás, Bogotá · reseña de ejemplo</cite></blockquote>
+</section>
+</main>
+<footer class="foot"><p>© Bruma Lodge · <span data-en="Concept demo by Escalatam. Fictional hotel; prices and availability are samples.">Demo conceptual por Escalatam. Hotel ficticio; precios y disponibilidad de ejemplo.</span></p><p data-en="Photos: WordPress Photo Directory (CC0).">Fotos: WordPress Photo Directory (CC0).</p></footer>
+</body>
+</html>

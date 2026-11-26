@@ -1,4 +1,4 @@
-# Escalatam Web Lab — 44 demos ligeras de webs premium
+# Escalatam Web Lab — 52 demos ligeras de webs premium
 
 **Galería en vivo:** https://0xdapa.github.io/escalatam-web-lab/
 
@@ -125,6 +125,30 @@ Cada demo aplica esos principios con código propio a un nicho vendible. Método
 
 Lighthouse: preset móvil (CPU ×4, 4G simulada) contra localhost en Chrome headless con GPU por software. Collage local (no se publica, `shots/` está en .gitignore): `python3 tools/collage4.py` → `shots/collage-tanda4.png`.
 <!-- TANDA4:END -->
+
+<!-- TANDA5:START -->
+## Tanda 5 — 8 webs que replican referencias premiadas con nuestro enfoque
+
+Tomamos las mejores webs de la investigación t5 (Crav Burgers, Odyssée, ERA Residence, OH Architecture, MERSI, Son Daven, Lando Norris, Mana, Scout Motors)
+y replicamos su **técnica y sensación** con código, marca y copy propios, en nichos con demanda y con lo que vende Escalatam: **reserva/pedido por WhatsApp,
+calculadoras, configuradores, schema LocalBusiness y ES/EN**. Reglas visuales de [`ANTI-AI-SLOP.md`](ANTI-AI-SLOP.md); cada demo tiene su `DESIGN.md`.
+
+- Stack: **GSAP 3.15 (ScrollTrigger, SplitText, Flip) + Lenis** en todas; **OGL** (49) y **Three.js** (51) cargados por intención; **View Transitions API** (48).
+- Cada demo: JSON-LD (`Restaurant`, `MedicalClinic`, `RealEstateAgent`, `ProfessionalService`, `Hotel`, `Store`, `AutoDealer`), conmutador ES/EN, WhatsApp prellenado por servicio, menú móvil, un solo momento orquestado (nada de fade-up en cada sección).
+
+| # | Demo en vivo | Nicho | Replica | Tecnología | Función clave | JS inicial gzip | Lighthouse móvil (Perf / A11y / BP / SEO) |
+|---|---|---|---|---|---|---|---|
+| 45 | [Brava Smash Club](https://0xdapa.github.io/escalatam-web-lab/45-smash-burger/) | Hamburguesería smash (Guadalajara) | [Crav Burgers](https://cravburgers.shop/) | GSAP 3.15 (ScrollTrigger, SplitText) + Lenis | Carrito → pedido por WhatsApp (recoger o domicilio +$45, cantidades, guardado en localStorage) | 56.6 KB | 92 / 100 / 100 / 100 |
+| 46 | [Lúa Clínica](https://0xdapa.github.io/escalatam-web-lab/46-clinica-botanica/) | Clínica de medicina estética (Madrid) | [Odyssée Clinic](https://odysseeclinic.com.au/) | GSAP 3.15 (ScrollTrigger, SplitText) + Lenis | Reserva: tratamiento, 14 días (domingo cerrado), horas libres y confirmación por WhatsApp | 55.4 KB | 91 / 100 / 100 / 100 |
+| 47 | [Mirador del Faro](https://0xdapa.github.io/escalatam-web-lab/47-residencial-costa/) | Promoción inmobiliaria (Jávea) | [ERA Residence](https://www.era-residence.com/) | GSAP 3.15 (ScrollTrigger, SplitText, Flip) + Lenis | Filtro de viviendas por dormitorios/ático/disponibles con “Pedir plano” por WhatsApp | 63.9 KB | 94 / 97 / 100 / 100 |
+| 48 | [Pliegue Arquitectos](https://0xdapa.github.io/escalatam-web-lab/48-arquitectos/) | Estudio de arquitectura (Bogotá) | [OH Architecture + MERSI](https://www.oharchitecture.com.au/) · [www.mersi-architecture.com](https://www.mersi-architecture.com/) | GSAP 3.15 (ScrollTrigger, SplitText) + Lenis + View Transitions API | Calculadora de honorarios (tipo, m², alcance) con rango en COP y plazo → WhatsApp | 55.4 KB | 92 / 100 / 100 / 100 |
+| 49 | [Bruma Lodge](https://0xdapa.github.io/escalatam-web-lab/49-hotel-montana/) | Lodge / hotel boutique (Minca, Colombia) | [Son Daven](https://sondaven.com/en) | GSAP 3.15 (ScrollTrigger, SplitText, Flip) + Lenis + OGL | Barra de reserva: llegada, salida, huéspedes, cabaña → total con noches y huésped extra → WhatsApp | 64.4 KB | 100 / 100 / 100 / 100 |
+| 50 | [Martina Vega](https://0xdapa.github.io/escalatam-web-lab/50-marca-personal/) | Marca personal · entrenadora de tenis (Barcelona) | [Lando Norris](https://landonorris.com/) | GSAP 3.15 (ScrollTrigger, SplitText) + Lenis | Reserva de clase: tipo (privada, semiprivada, clínica, bono), día, hora libre → WhatsApp con nivel | 55.2 KB | 94 / 100 / 100 / 100 |
+| 51 | [Selva Mate](https://0xdapa.github.io/escalatam-web-lab/51-mate-bebida/) | Marca de bebida / e-commerce (CDMX) | [Mana Yerba Mate](https://manayerbamate.com/) | GSAP 3.15 (ScrollTrigger) + Lenis + Three.js 0.187 | Configurador de caja 6/12/24 mezclando sabores (deben sumar el tamaño) con precio por lata | 55.6 KB | 98 / 100 / 100 / 100 |
+| 52 | [Andes 4x4](https://0xdapa.github.io/escalatam-web-lab/52-autos-configurador/) | Concesionario / preparador 4x4 (Santiago de Chile) | [Scout Motors](https://www.scoutmotors.com/) | GSAP 3.15 (ScrollTrigger, SplitText) + Lenis | Configurador con precio al instante en CLP | 55.3 KB | 98 / 100 / 100 / 100 |
+
+Lighthouse: preset móvil (CPU ×4, 4G simulada) contra localhost en Chrome headless. Collage local (no se publica): `python3 tools/collage5.py` → `shots/collage-tanda5.png`.
+<!-- TANDA5:END -->
 
 ## Elegir variante en 10 segundos
 

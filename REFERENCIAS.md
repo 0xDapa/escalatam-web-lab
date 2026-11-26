@@ -154,3 +154,22 @@ De cada referencia tomamos principios y medidas, nunca código.
 | [Active Theory](https://activetheory.net/) | Shaders como identidad, partículas | 41, 42 |
 | [Igloo Inc](https://www.igloo.inc/) | Objeto 3D protagonista con materiales físicos y scroll narrativo | 35, 42 |
 | [Bruno Simon](https://bruno-simon.com/) | Escenas procedurales con personalidad | 37 |
+
+<!-- T5REF:START -->
+---
+
+# Tanda 5 — webs replicadas (técnica y sensación, nunca código)
+
+Capturas, mediciones y detección de librerías en `research-refs/t5/` (fuera del repositorio, .gitignore). Licencia GSAP: gratuita desde 3.13 (incluye SplitText, Flip, ScrollTrigger).
+
+| Referencia | Qué replicamos | Demo |
+|---|---|---|
+| [Crav Burgers](https://cravburgers.shop/) | Hamburguesa SVG que se apila con rebote; sección del método fijada con espátula, queso y vapor ligados al scroll (0→230 °C); cuerda de ingredientes con física Verlet que sigue al cursor. | 45 · Brava Smash Club |
+| [Odyssée Clinic](https://odysseeclinic.com.au/) | Fotos en duotono CSS (salvia + vino) con carrusel de barra única y revelado por clip-path; manifiesto cuyas palabras pasan de tenue a tinta con el scroll; vista previa que sigue al tratamiento bajo el cursor. | 46 · Lúa Clínica |
+| [ERA Residence](https://www.era-residence.com/) | El plano de la vivienda se dibuja como hero (muros → puertas → rótulos con stroke-dashoffset); botón día/noche que cambia paleta y foto; filtro de 12 viviendas animado con GSAP Flip. | 47 · Mirador del Faro |
+| [OH Architecture + MERSI](https://www.oharchitecture.com.au/) · [www.mersi-architecture.com](https://www.mersi-architecture.com/) | Tira de proyectos horizontal fijada al scroll (MERSI); al abrir un proyecto la foto “vuela” a pantalla completa con la View Transitions API nativa; foto del hero que se abre desde una franja (OH). | 48 · Pliegue Arquitectos |
+| [Son Daven](https://sondaven.com/en) | Shader OGL de dither ordenado (Bayer 4×4) sobre la foto del hero: la imagen se revela desde puntos y el cursor abre un claro nítido; se carga por intención. Cabañas que se expanden con GSAP Flip. | 49 · Bruma Lodge |
+| [Lando Norris](https://landonorris.com/) | El nombre gigante “respira” animando el eje de ancho de la fuente (50 → 150 %) y una firma SVG se escribe encima; con el scroll “Martina” se comprime y “Vega” se desplaza. | 50 · Martina Vega |
+| [Mana Yerba Mate](https://manayerbamate.com/) | Lata 3D en Three.js con etiqueta pintada en un canvas (sin modelos descargados) que sustituye a un póster SVG al primer gesto; el sabor cambia la lata, la etiqueta y el color de toda la página. | 51 · Selva Mate |
+| [Scout Motors](https://www.scoutmotors.com/) | Configurador SVG propio: color, neumáticos (la rueda crece y sigue apoyada en el suelo), suspensión +2", carpa de techo, snorkel y winche cambian la silueta; el 4x4 entra rodando y la suspensión rebota al frenar. | 52 · Andes 4x4 |
+<!-- T5REF:END -->

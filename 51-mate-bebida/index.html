@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es" data-flavor="clasico">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title data-en="Selva Mate — sparkling yerba mate in a can · Escalatam demo">Selva Mate — yerba mate con gas, en lata · Demo Escalatam</title>
+<meta name="description" content="Mate con gas en tres sabores. Arma tu caja de 6, 12 o 24 latas mezclando sabores y pídela por WhatsApp en CDMX. Demo conceptual de Escalatam.">
+<meta name="theme-color" content="#1f5a32">
+<meta name="wa" content="">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='8' y='3' width='16' height='26' rx='4' fill='%231f5a32'/%3E%3Cpath d='M8 13h16' stroke='%23f3efd8' stroke-width='3'/%3E%3C/svg%3E">
+<link rel="alternate" hreflang="es" href="https://0xdapa.github.io/escalatam-web-lab/51-mate-bebida/">
+<link rel="alternate" hreflang="en" href="https://0xdapa.github.io/escalatam-web-lab/51-mate-bebida/?lang=en">
+<link rel="preload" href="fonts/shrikhand-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+<script type="module" src="js/main.js"></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Store","name":"Selva Mate","url":"https://0xdapa.github.io/escalatam-web-lab/51-mate-bebida/","telephone":"+52 55 0000 0000","priceRange":"$","address":{"@type":"PostalAddress","streetAddress":"Calle de ejemplo 00, Col. Roma Norte","addressLocality":"Ciudad de México","addressCountry":"MX"},"geo":{"@type":"GeoCoordinates","latitude":19.4170,"longitude":-99.1600},"makesOffer":[{"@type":"Offer","name":"Caja 6 latas","price":"219","priceCurrency":"MXN"},{"@type":"Offer","name":"Caja 12 latas","price":"419","priceCurrency":"MXN"},{"@type":"Offer","name":"Caja 24 latas","price":"799","priceCurrency":"MXN"}]}
+</script>
+</head>
+<body>
+<a class="skip" href="#principal" data-en="Skip to content">Saltar al contenido</a>
+<header class="top">
+  <a class="logo" href="#principal">Selva</a>
+  <button class="burger" data-menu aria-controls="nav" aria-expanded="false" aria-label="Menú" data-en-aria="Menu"><i></i><i></i></button>
+  <nav id="nav" aria-label="Secciones" data-en-aria="Sections"><a href="#lleva" data-en="What's inside">Qué lleva</a><a href="#caja" data-en="Build a box">Arma tu caja</a></nav>
+  <div class="lang" role="group" aria-label="Idioma" data-en-aria="Language"><button data-lang-btn="es" aria-pressed="true">ES</button><button data-lang-btn="en" aria-pressed="false">EN</button></div>
+  <button class="cartbtn" id="cartbtn" aria-label="Ver pedido" data-en-aria="View order"><span data-en="Order">Pedido</span> <b id="cartn">0</b></button>
+</header>
+<main id="principal">
+<section class="hero">
+  <div class="hero-t">
+    <h1 id="h1" data-en="Mate that<br>goes fizz.">Mate que<br>hace fsss.</h1>
+    <p id="fdesc"></p>
+    <div class="flavors" role="radiogroup" aria-label="Sabor" data-en-aria="Flavour">
+      <button role="radio" data-f="clasico" aria-checked="true" data-en="Classic lemon">Clásico limón</button>
+      <button role="radio" data-f="maracuya" aria-checked="false" data-en="Passion fruit">Maracuyá</button>
+      <button role="radio" data-f="jamaica" aria-checked="false" data-en="Hibiscus">Jamaica</button>
+    </div>
+    <a class="btn" href="#caja" data-en="Build my box">Armar mi caja</a>
+  </div>
+  <div class="stage" id="stage">
+    <svg class="poster" id="poster" viewBox="0 0 200 360" role="img" aria-label="Lata de Selva Mate" data-en-aria="Selva Mate can">
+      <defs><linearGradient id="sh" x1="0" x2="1"><stop offset="0" stop-color="#000" stop-opacity=".35"/><stop offset=".3" stop-color="#fff" stop-opacity=".25"/><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".4"/></linearGradient></defs>
+      <ellipse cx="100" cy="350" rx="70" ry="8" fill="#000" opacity=".18"/>
+      <rect x="30" y="22" width="140" height="322" rx="16" class="can-body"/>
+      <rect x="36" y="12" width="128" height="18" rx="6" fill="#c9cdd0"/>
+      <text x="100" y="170" text-anchor="middle" class="can-word" transform="rotate(-90 100 170)">Selva</text>
+      <rect x="30" y="22" width="140" height="322" rx="16" fill="url(#sh)"/>
+    </svg>
+    <canvas id="can3d" aria-hidden="true"></canvas>
+  </div>
+</section>
+
+<section class="lleva" id="lleva" aria-labelledby="l-h">
+  <h2 id="l-h" data-en="Four things.<br>Nothing else.">Cuatro cosas.<br>Nada más.</h2>
+  <div class="label" role="table" aria-label="Información nutrimental por lata de 355 ml" data-en-aria="Nutrition facts per 355 ml can">
+    <div class="lt" role="row"><span role="columnheader" data-en="Per 355 ml can">Por lata de 355 ml</span></div>
+    <div role="row"><span role="cell" data-en="Energy">Energía</span><b role="cell">35 kcal</b></div>
+    <div role="row"><span role="cell" data-en="Natural caffeine (yerba)">Cafeína natural (yerba)</span><b role="cell">80 mg</b></div>
+    <div role="row"><span role="cell" data-en="Cane sugar">Azúcar de caña</span><b role="cell">7 g</b></div>
+    <div role="row"><span role="cell" data-en="Sweeteners">Edulcorantes</span><b role="cell">0</b></div>
+    <p class="ing" data-en="Ingredients: carbonated water, Misiones yerba mate infusion, cane sugar, fruit juice of the flavour.">Ingredientes: agua carbonatada, infusión de yerba mate de Misiones, azúcar de caña, jugo de la fruta del sabor.</p>
+  </div>
+  <p class="m" data-en="Sample nutrition values for the demo; a real brand must use its lab-certified label.">Valores nutrimentales de ejemplo para la demo; una marca real debe usar su etiqueta certificada.</p>
+</section>
+
+<section class="caja" id="caja" aria-labelledby="c-h">
+  <h2 id="c-h" data-en="Build your box">Arma tu caja</h2>
+  <div class="sizes" role="radiogroup" aria-label="Tamaño de caja" data-en-aria="Box size" id="sizes"></div>
+  <div class="mix" id="mix"></div>
+  <div class="boxbar"><p id="boxst"></p><button class="btn" id="addbox" disabled data-en="Add box to order">Añadir caja al pedido</button></div>
+</section>
+
+<section class="donde" aria-labelledby="d-h">
+  <h2 id="d-h" data-en="Delivery in CDMX, Tuesday and Friday.">Entregamos en CDMX martes y viernes.</h2>
+  <p data-en="Free shipping from 2 boxes. Also at 14 cafés in Roma, Condesa and Juárez (sample list).">Envío gratis desde 2 cajas. También en 14 cafeterías de Roma, Condesa y Juárez (lista de ejemplo).</p>
+</section>
+</main>
+<footer class="foot"><p>© Selva Mate · <span data-en="Concept demo by Escalatam. Fictional brand; prices and values are samples.">Demo conceptual por Escalatam. Marca ficticia; precios y valores de ejemplo.</span></p><p data-en="Can rendered in the browser (Three.js). No stock photos.">Lata renderizada en el navegador (Three.js). Sin fotos de stock.</p></footer>
+
+<aside class="drawer" id="drawer" aria-labelledby="dr-h" hidden>
+  <div class="dr-in">
+    <div class="dr-top"><h2 id="dr-h" data-en="Your order">Tu pedido</h2><button class="x" id="close" aria-label="Cerrar" data-en-aria="Close">×</button></div>
+    <ul id="lines"></ul>
+    <label class="zone"><span data-en="Neighbourhood">Colonia</span><input id="zone" autocomplete="address-level3" placeholder="Roma Norte" data-en-ph="Roma Norte"></label>
+    <p class="tot"><span data-en="Total">Total</span><b id="tot">$0</b></p>
+    <a class="btn wide" id="send" href="#" target="_blank" rel="noopener" data-en="Send order on WhatsApp">Enviar pedido por WhatsApp</a>
+  </div>
+</aside>
+</body>
+</html>
