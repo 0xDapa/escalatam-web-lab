@@ -31,8 +31,8 @@ Código fuente legible en [`src/t4/37-arquitectura/`](../src/t4/37-arquitectura/
 | JS inicial gzip (main.js) | 2.5 KB |
 | JS total gzip (incluye el chunk de Three.js, que solo se descarga tras la primera interacción) | 138.1 KB |
 | Carpeta completa gzip | 2455.5 KB |
-| Lighthouse móvil (rendimiento / accesibilidad / buenas prácticas / SEO) | 100 / 100 / 100 / 100 |
-| FCP / LCP / TBT / CLS | 0.8 s / 0.8 s / 60 ms / 0 |
+| Lighthouse móvil (rendimiento / accesibilidad / buenas prácticas / SEO) | 98 / 100 / 100 / 100 |
+| FCP / LCP / TBT / CLS | 0.8 s / 0.8 s / 170 ms / 0 |
 
 Comprobado en Chrome headless (1440 px y 390 px): sin errores de consola, sin scroll horizontal. Respeta `prefers-reduced-motion` (fundidos en lugar de movimiento; los scroll-scrub se convierten en contenido estático).
 
