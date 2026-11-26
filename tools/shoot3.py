@@ -17,7 +17,7 @@ async def shoot(b,vid):
         while y<H:
             y+=500; await pg.evaluate(f'window.scrollTo(0,{y})'); await pg.wait_for_timeout(120)
         await pg.wait_for_timeout(900)
-        ov=await pg.evaluate('document.documentElement.scrollWidth-innerWidth')
+        ov=await pg.evaluate(f'Math.max(document.documentElement.scrollWidth,innerWidth)-{vp["width"]}')  # con is_mobile el viewport de layout se ensancha: comparar con el ancho real
         wide=await pg.evaluate('[...document.querySelectorAll("body *")].filter(e=>{const r=e.getBoundingClientRect();return r.right>innerWidth+1&&getComputedStyle(e).position!=="fixed"}).slice(0,6).map(e=>e.tagName+"."+e.className.toString().slice(0,30)+" r="+Math.round(e.getBoundingClientRect().right))')
         await pg.evaluate('window.scrollTo(0,0)'); await pg.wait_for_timeout(600)
         if name=='desk': await pg.screenshot(path=f'{OUT}/{vid}-{name}-full.png',full_page=True)

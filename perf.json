@@ -525,18 +525,18 @@
   "js_gz_kb": 1.2,
   "page_gz_kb": 486.1,
   "desk": {
-   "fcp_ms": 160,
-   "lcp_ms": 160,
-   "load_ms": 75,
+   "fcp_ms": 524,
+   "lcp_ms": 524,
+   "load_ms": 157,
    "fps_hero": 60.0,
-   "fps_scroll": 57.0
+   "fps_scroll": 54.3
   },
   "mob": {
-   "fcp_ms": 92,
-   "lcp_ms": 92,
-   "load_ms": 66,
+   "fcp_ms": 96,
+   "lcp_ms": 96,
+   "load_ms": 69,
    "fps_hero": 60.0,
-   "fps_scroll": 61.3
+   "fps_scroll": 60.7
   }
  },
  {
@@ -545,18 +545,18 @@
   "js_gz_kb": 1.7,
   "page_gz_kb": 636.9,
   "desk": {
-   "fcp_ms": 112,
-   "lcp_ms": 172,
-   "load_ms": 68,
+   "fcp_ms": 156,
+   "lcp_ms": 156,
+   "load_ms": 100,
    "fps_hero": 60.0,
    "fps_scroll": 60.0
   },
   "mob": {
-   "fcp_ms": 128,
-   "lcp_ms": 128,
-   "load_ms": 79,
+   "fcp_ms": 88,
+   "lcp_ms": 88,
+   "load_ms": 61,
    "fps_hero": 60.0,
-   "fps_scroll": 59.0
+   "fps_scroll": 60.3
   }
  },
  {

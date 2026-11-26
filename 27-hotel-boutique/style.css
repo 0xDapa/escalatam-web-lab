@@ -116,6 +116,7 @@ a{color:inherit;text-decoration:none}img{display:block;max-width:100%;height:aut
  .r-body{grid-template-columns:1fr}.r-body figure{border-right:0;border-bottom:1.5px solid #fff}
  .ag-list li{grid-template-columns:1fr auto;gap:4px 12px}.ag-list time{grid-column:1/-1}.ag-list span{grid-column:1}
  .eat-grid,.rv-grid{grid-template-columns:1fr}.rv-grid blockquote{border-right:0;border-bottom:1.5px solid var(--line)}
- .co-grid{grid-template-columns:1fr}.co-grid>*{border-right:0;border-bottom:1.5px solid var(--line);padding-left:0!important}
+ .co-grid{grid-template-columns:minmax(0,1fr)}.co-grid>*{border-right:0;border-bottom:1.5px solid var(--line);padding-left:0!important}
 }
 @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}}
+.slides{overflow:hidden}

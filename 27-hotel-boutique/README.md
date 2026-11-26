@@ -27,8 +27,8 @@ Hero · presentación/sobre · servicios con precios de ejemplo · interacción 
 |---|---|
 | JS (sin comprimir / gzip -9) | 2.3 KB / 1.2 KB |
 | Página completa gzip (HTML+CSS+JS+fuentes+imágenes) | 486.1 KB |
-| Lighthouse móvil (rendimiento / accesibilidad / buenas prácticas / SEO) | 98 / 100 / 100 / 100 |
-| FCP / LCP / TBT / CLS (Lighthouse móvil) | 0.8 s / 2.3 s / 50 ms / 0 |
+| Lighthouse móvil (rendimiento / accesibilidad / buenas prácticas / SEO) | 94 / 100 / 100 / 100 |
+| FCP / LCP / TBT / CLS (Lighthouse móvil) | 1.2 s / 2.3 s / 230 ms / 0 |
 
 Comprobado en Chrome headless: sin errores de consola y sin scroll horizontal a 390 px. Respeta `prefers-reduced-motion`.
 
