@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kinesia — Kinesiología y fisioterapia en Providencia, Santiago</title>
+<meta name="description" content="Kinesiología deportiva, traumatológica y de columna en Providencia. Evaluación completa, plan por escrito y horas hoy mismo. Fonasa e isapres.">
+<meta name="theme-color" content="#284849">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23284849'/%3E%3Cpath d='M10 24V8m0 8 10-8m-7 5 8 11' stroke='%23ebf2f0' stroke-width='2.4' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/literata-normal-300-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" imagesrcset="img/estiramiento-560.webp 560w, img/estiramiento-960.webp 960w" imagesizes="(max-width:900px) 92vw, 40vw" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<p class="promo">Noviembre: primera evaluación a <b>$19.990</b> (precio de ejemplo) · <a href="#agenda">Agenda aquí →</a></p>
+<header class="top" id="top"><a class="logo" href="#top">kinesia</a><nav aria-label="Principal"><a href="#dolor">¿Dónde te duele?</a><a href="#planes">Planes</a><a href="#equipo">Equipo</a><a href="#faq">Preguntas</a></nav><a class="pill" href="#agenda">Agendar</a></header>
+<main id="main">
+<section class="hero" aria-labelledby="h1">
+  <div class="hero-copy">
+    <h1 id="h1">Kinesiología que va al <em>origen</em> de tu dolor, no solo al síntoma.</h1>
+    <p>Evaluamos cómo te mueves, te explicamos qué pasa y armamos contigo un plan por escrito. Sesiones de 50 minutos, uno a uno, sin camillas en serie.</p>
+    <div class="cta"><a class="pill lg" href="#agenda">Agendar evaluación</a><a class="pill lg ghost" href="#cobertura">Ver cobertura</a></div>
+    <ul class="ticks"><li>Horas hoy mismo</li><li>Boleta para reembolso</li><li>Ejercicios por app</li></ul>
+  </div>
+  <figure class="hero-img"><img src="img/estiramiento-960.webp" srcset="img/estiramiento-560.webp 560w, img/estiramiento-960.webp 960w" sizes="(max-width:900px) 92vw, 40vw" width="960" height="1440" alt="Persona estirando al aire libre" fetchpriority="high">
+    <figcaption class="float"><span class="dot"></span><span><b>Próxima hora libre</b><br><span id="next">hoy · 18:30</span></span></figcaption></figure>
+</section>
+
+<section class="cover" id="cobertura" aria-label="Cobertura"><p>Atendemos particular, con <b>Fonasa</b> (libre elección) y reembolso en <b>todas las isapres</b>.</p><ul><li>Kinesiología deportiva</li><li>Traumatología</li><li>Columna</li><li>Suelo pélvico</li><li>Post operatorio</li><li>Adulto mayor</li></ul></section>
+
+<section class="pain" id="dolor" aria-labelledby="pt">
+  <div class="pain-head"><p class="eyebrow">Herramienta</p><h2 id="pt">¿Dónde te <em>duele</em>?</h2><p>Toca una zona del cuerpo para ver las causas más comunes y cómo lo trabajamos.</p></div>
+  <div class="pain-grid">
+    <svg class="body" viewBox="0 0 220 440" role="group" aria-label="Mapa del cuerpo">
+      <g fill="#dfe8e5" stroke="#284849" stroke-width="1.4" stroke-opacity=".35">
+        <circle cx="110" cy="40" r="26"/><rect x="98" y="64" width="24" height="18" rx="6"/>
+        <path d="M62 92 Q110 74 158 92 L152 210 Q110 222 68 210Z"/>
+        <path d="M60 94 L38 200 L30 250 L44 252 L58 205 L74 120Z"/><path d="M160 94 L182 200 L190 250 L176 252 L162 205 L146 120Z"/>
+        <path d="M70 210 Q110 226 150 210 L146 300 L140 420 L118 420 L112 300 L108 300 L102 420 L80 420 L74 300Z"/>
+      </g>
+      <g class="zones">
+        <circle class="z" data-k="cuello" cx="110" cy="74" r="13"><title>Cuello</title></circle>
+        <circle class="z" data-k="hombro" cx="66" cy="102" r="14"><title>Hombro</title></circle>
+        <circle class="z" data-k="espalda" cx="110" cy="196" r="16"><title>Espalda baja</title></circle>
+        <circle class="z" data-k="muneca" cx="38" cy="236" r="11"><title>Muñeca y mano</title></circle>
+        <circle class="z" data-k="rodilla" cx="134" cy="318" r="14"><title>Rodilla</title></circle>
+        <circle class="z" data-k="tobillo" cx="90" cy="404" r="12"><title>Tobillo y pie</title></circle>
+      </g>
+    </svg>
+    <div class="pain-panel" aria-live="polite">
+      <div class="zbtns" role="tablist" aria-label="Zonas"><button data-k="cuello">Cuello</button><button data-k="hombro">Hombro</button><button data-k="espalda" aria-selected="true">Espalda baja</button><button data-k="muneca">Muñeca</button><button data-k="rodilla">Rodilla</button><button data-k="tobillo">Tobillo</button></div>
+      <h3 id="zh">Espalda baja</h3>
+      <p class="lbl">Causas frecuentes</p><ul id="zc" class="chips"></ul>
+      <p class="lbl">Cómo lo trabajamos</p><p id="zt"></p>
+      <div class="meter"><span>Sesiones estimadas</span><b id="zs">6–8</b></div>
+      <label class="lvl">¿Cuánto te duele hoy? <output id="lvo">5</output>/10<input type="range" id="lv" min="0" max="10" value="5"></label>
+      <p class="advice" id="adv"></p>
+      <a class="pill" id="zcta" href="#agenda">Agendar para espalda baja</a>
+    </div>
+  </div>
+  <p class="fine">Orientativo: no reemplaza una evaluación profesional. Si el dolor es intenso, súbito o con fiebre, consulta en urgencias.</p>
+</section>
+
+<section class="plans" id="planes" aria-labelledby="pl">
+  <p class="eyebrow light">Cómo empezar</p><h2 id="pl">Dos formas de empezar</h2>
+  <div class="p-grid">
+    <article><p class="tag">Para un problema puntual</p><h3>Sesión individual</h3><ul class="steps"><li>Evaluación</li><li>Tratamiento</li><li>Pauta de ejercicios</li></ul><p class="price">$29.990 <span>por sesión</span></p><p class="mut">Reembolsable en isapre · 50 minutos</p><a class="pill light" href="#agenda">Agendar sesión</a></article>
+    <article class="hl"><p class="tag">Más elegido</p><h3>Plan de recuperación</h3><ul class="steps"><li>Evaluación + informe</li><li>8 sesiones</li><li>Seguimiento por app</li><li>Re-evaluación final</li></ul><p class="price">$199.990 <span>plan completo</span></p><p class="mut">Ahorras un 17 % · hasta 3 cuotas sin interés</p><a class="pill" href="#agenda">Empezar mi plan</a></article>
+  </div>
+  <p class="fine light">Precios de ejemplo en CLP</p>
+</section>
+
+<section class="big-q" aria-label="Testimonio de ejemplo"><p class="stars" aria-label="5 de 5 estrellas">★★★★★</p><blockquote>“Probé de todo durante dos años para mi lumbago. En Kinesia me explicaron por qué volvía y en seis semanas volví a correr.”</blockquote><p class="who">Camila R. · 34 años · testimonio de ejemplo</p></section>
+
+<section class="how" aria-labelledby="ht">
+  <h2 id="ht">Así es tu primera visita</h2>
+  <ol><li><b>01</b><h3>Conversamos</h3><p>Tu historia, tu trabajo, tu deporte y qué quieres volver a hacer.</p></li><li><b>02</b><h3>Evaluamos</h3><p>Pruebas de movilidad, fuerza y control motor. Sin apuro.</p></li><li><b>03</b><h3>Tratamos</h3><p>Terapia manual, ejercicio y, si hace falta, agentes físicos.</p></li><li><b>04</b><h3>Te llevas un plan</h3><p>Objetivos, número de sesiones y ejercicios en la app.</p></li></ol>
+</section>
+
+<section class="team" id="equipo" aria-labelledby="tt">
+  <h2 id="tt">Un equipo que te escucha</h2>
+  <div class="t-grid">
+    <article><figure><img src="img/sesion-560.webp" width="560" height="840" loading="lazy" alt="Ejercicio de estiramiento guiado"></figure><h3>Klgo. Matías Fuentes</h3><p>Deportiva · corredores y ciclistas</p></article>
+    <article><figure><img src="img/movilidad-560.webp" width="560" height="373" loading="lazy" alt="Ejercicio de movilidad de brazos"></figure><h3>Klga. Javiera Soto</h3><p>Columna y dolor crónico</p></article>
+    <article><figure><img src="img/masaje-560.webp" width="560" height="373" loading="lazy" alt="Terapia manual en camilla"></figure><h3>Klga. Ignacia Rojas</h3><p>Suelo pélvico y post parto</p></article>
+  </div>
+</section>
+
+<section class="faq" id="faq" aria-labelledby="ft">
+  <h2 id="ft">Preguntas frecuentes</h2>
+  <div><details><summary>¿Necesito orden médica?</summary><p>Para atenderte particular, no. Para reembolso en isapre o Fonasa, sí: si no la tienes te orientamos.</p></details>
+  <details><summary>¿Qué ropa llevo?</summary><p>Ropa cómoda que permita mover la zona afectada. Tenemos camarines y toallas.</p></details>
+  <details><summary>¿Atienden a domicilio?</summary><p>Sí, en Providencia, Ñuñoa y Las Condes para adultos mayores y post operatorio inmediato.</p></details>
+  <details><summary>¿Puedo cancelar?</summary><p>Hasta 6 horas antes sin costo, por WhatsApp.</p></details></div>
+</section>
+
+<section class="agenda" id="agenda" aria-labelledby="at">
+  <div><h2 id="at">Agenda tu <em>evaluación</em></h2><p>Te confirmamos por WhatsApp en minutos (horario hábil).</p>
+  <ul class="info"><li><b>Dirección</b>Av. de ejemplo 1234, Providencia</li><li><b>Horario</b>Lun–Vie 7:30–21:00 · Sáb 9:00–14:00</li><li><b>Teléfono</b><a href="tel:+56220000000">+56 2 2000 0000</a></li></ul></div>
+  <form id="form">
+    <label>Nombre<input name="n" required autocomplete="name"></label>
+    <label>Zona o motivo<select name="z" id="fz"><option>Espalda baja</option><option>Cuello</option><option>Hombro</option><option>Muñeca</option><option>Rodilla</option><option>Tobillo</option><option>Otro</option></select></label>
+    <label>Previsión<select name="p"><option>Particular</option><option>Fonasa</option><option>Isapre</option></select></label>
+    <label>Preferencia<select name="h"><option>Lo antes posible</option><option>Mañana</option><option>Tarde</option><option>Sábado</option></select></label>
+    <button class="pill lg" type="submit">Agendar por WhatsApp</button>
+  </form>
+</section>
+</main>
+<footer class="foot"><p class="logo">kinesia</p><p>Demo de Escalatam · centro ficticio · fotos CC0 (StockSnap) · <a href="#top">volver arriba ↑</a></p></footer>
+<script src="app.js" defer></script>
+</body></html>

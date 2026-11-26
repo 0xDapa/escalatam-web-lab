@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hotel Pasaje — Hotel boutique de 24 habitaciones en la Roma Norte, CDMX</title>
+<meta name="description" content="Hotel boutique en la Roma Norte: 24 habitaciones, cantina de mezcal, café de barrio y agenda cultural cada semana. Reserva directo y paga menos.">
+<meta name="theme-color" content="#222223">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='1' y='1' width='30' height='30' fill='%23fff' stroke='%23222' stroke-width='2'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' font-family='sans-serif' font-weight='700'%3EP%3C/text%3E%3C/svg%3E">
+<link rel="preload" href="fonts/schibsted-grotesk-normal-400-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/lobby-960.webp" as="image" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<header class="top" id="top">
+  <a class="wm" href="#top" aria-label="Hotel Pasaje, inicio"><span>Hotel</span><span>Pasaje</span></a>
+  <nav aria-label="Principal"><a href="#explora">El hotel</a><a href="#habitaciones">Habitaciones</a><a href="#comer">Comer + beber</a><a href="#agenda">Agenda</a><a href="#contacto">Contacto</a></nav>
+  <a class="box-btn" href="#reservar">Reservar</a>
+</header>
+<main id="main">
+<section class="hero" aria-label="Portada">
+  <div class="slides">
+    <img class="on" src="img/lobby-960.webp" srcset="img/lobby-560.webp 560w, img/lobby-960.webp 960w" sizes="100vw" width="960" height="641" alt="Habitación con zona de estar y madera cálida" fetchpriority="high">
+    <img src="img/bar-960.webp" width="960" height="641" alt="Copas en la barra de la cantina" loading="lazy">
+    <img src="img/patio-960.webp" width="960" height="639" alt="Huésped en el patio con plantas" loading="lazy">
+  </div>
+  <h1 class="boxed"><span>Conoce</span> <span>el</span> <span>Pasaje</span></h1>
+  <div class="thumbs" role="tablist" aria-label="Cambiar imagen">
+    <button role="tab" aria-selected="true" aria-label="Habitaciones"><img src="img/lobby-560.webp" alt="" width="560" height="374"></button>
+    <button role="tab" aria-selected="false" aria-label="Cantina"><img src="img/bar-560.webp" alt="" width="560" height="374" loading="lazy"></button>
+    <button role="tab" aria-selected="false" aria-label="Patio"><img src="img/patio-560.webp" alt="" width="560" height="373" loading="lazy"></button>
+  </div>
+  <p class="mono hero-tag">Roma Norte · Ciudad de México · 24 habitaciones</p>
+</section>
+
+<form class="book" id="reservar" aria-label="Reservar habitación">
+  <label><span class="mono">Llegada</span><input type="date" name="in" required></label>
+  <label><span class="mono">Salida</span><input type="date" name="out" required></label>
+  <label><span class="mono">Huéspedes</span><select name="g"><option>1 adulto</option><option selected>2 adultos</option><option>2 adultos + 1 niño</option><option>3 adultos</option></select></label>
+  <label><span class="mono">Habitación</span><select name="r"><option>Estudio</option><option>Balcón</option><option>Suite Pasaje</option></select></label>
+  <button type="submit">Ver disponibilidad →</button>
+  <p class="mono note">Reserva directa: desayuno incluido y salida tardía</p>
+</form>
+
+<section class="intro" aria-labelledby="in-t">
+  <p class="mono">(01) El hotel</p>
+  <h2 id="in-t">Un hotel pequeño donde la ciudad entra por la puerta: arte local, música en vivo, mezcal y un patio para no hacer nada.</h2>
+  <div class="intro-cols"><p>Ocupamos una casona de 1928 restaurada con artesanos del barrio. Cada habitación tiene piezas de un artista distinto y una lista de lugares que solo conocen los vecinos.</p><p>Abajo, la cantina abre hasta la una y el café desde las siete. Entre medias, una agenda que cambia cada semana.</p></div>
+</section>
+
+<section class="explore" id="explora" aria-label="Explora el hotel">
+  <a href="#habitaciones" class="card"><figure><img src="img/habitacion-960.webp" srcset="img/habitacion-560.webp 560w, img/habitacion-960.webp 960w" sizes="(max-width:900px) 100vw, 33vw" width="960" height="641" loading="lazy" alt="Habitación con cama doble y luz cálida"></figure><div><span class="mono">24 habitaciones</span><h3>Dormir</h3></div><i>→</i></a>
+  <a href="#comer" class="card"><figure><img src="img/desayuno-960.webp" srcset="img/desayuno-560.webp 560w, img/desayuno-960.webp 960w" sizes="(max-width:900px) 100vw, 33vw" width="960" height="585" loading="lazy" alt="Desayuno servido en bandeja de madera"></figure><div><span class="mono">Cantina + café</span><h3>Comer + beber</h3></div><i>→</i></a>
+  <a href="#agenda" class="card"><figure><img src="img/patio-960.webp" srcset="img/patio-560.webp 560w, img/patio-960.webp 960w" sizes="(max-width:900px) 100vw, 33vw" width="960" height="639" loading="lazy" alt="Patio interior con vegetación"></figure><div><span class="mono">Cada semana</span><h3>Arte + cultura</h3></div><i>→</i></a>
+</section>
+
+<section class="rooms" id="habitaciones" aria-labelledby="ro-t">
+  <div class="rooms-top"><p class="mono">(02) Habitaciones</p><h2 id="ro-t" class="boxed light"><span>Descubre</span> <span>tu</span> <span>cuarto</span></h2></div>
+  <p class="script" aria-hidden="true">Roma Norte</p>
+  <div class="room-ui">
+    <div class="r-tabs" role="tablist" aria-label="Tipos de habitación"><button role="tab" aria-selected="true" data-i="0">Estudio</button><button role="tab" aria-selected="false" data-i="1">Balcón</button><button role="tab" aria-selected="false" data-i="2">Suite Pasaje</button></div>
+    <div class="r-body">
+      <figure><img id="r-img" src="img/cama-960.webp" width="960" height="640" loading="lazy" alt="Cama con ropa blanca junto a la ventana"></figure>
+      <div class="r-info"><h3 id="r-h">Estudio</h3><p id="r-p">18 m² con cama queen, escritorio de nogal y ducha de lluvia. Para quien viene a caminar la ciudad.</p>
+      <dl><div><dt class="mono">Tamaño</dt><dd id="r-m">18 m²</dd></div><div><dt class="mono">Cama</dt><dd id="r-b">Queen</dd></div><div><dt class="mono">Desde</dt><dd id="r-pr">$2.450 MXN</dd></div></dl>
+      <a class="box-btn inv" href="#reservar">Reservar esta habitación</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="agenda" id="agenda" aria-labelledby="ag-t">
+  <div class="ticker" aria-hidden="true"><div><span>Jazz en el patio</span><span>✦</span><span>Mezcal + vinilo</span><span>✦</span><span>Mercado de diseño</span><span>✦</span><span>Cine de barrio</span><span>✦</span><span>Jazz en el patio</span><span>✦</span><span>Mezcal + vinilo</span><span>✦</span><span>Mercado de diseño</span><span>✦</span><span>Cine de barrio</span><span>✦</span></div></div>
+  <div class="ag-head"><p class="mono">(03) Agenda</p><h2 id="ag-t" class="boxed"><span>Qué</span> <span>pasa</span> <span>esta</span> <span>semana</span></h2></div>
+  <ul class="ag-list">
+    <li><time class="mono">Jue 27 nov · 20:00</time><b>Jazz en el patio</b><span>Trío Colonia Roma</span><a href="#contacto" class="box-btn sm">Info</a></li>
+    <li><time class="mono">Vie 28 nov · 19:00</time><b>Cata de mezcal + vinilo</b><span>Cantina Pasaje</span><a href="#contacto" class="box-btn sm">Info</a></li>
+    <li><time class="mono">Sáb 29 nov · 11:00</time><b>Mercado de diseño local</b><span>Patio</span><a href="#contacto" class="box-btn sm">Info</a></li>
+    <li><time class="mono">Dom 30 nov · 18:30</time><b>Cine de barrio</b><span>Azotea</span><a href="#contacto" class="box-btn sm">Info</a></li>
+  </ul>
+  <p class="mono fine">Programación de ejemplo</p>
+</section>
+
+<section class="eat" id="comer" aria-labelledby="ea-t">
+  <p class="mono">(04) Comer + beber</p><h2 id="ea-t" class="sr">Comer y beber</h2>
+  <div class="eat-grid">
+    <article><figure><img src="img/bar-960.webp" srcset="img/bar-560.webp 560w, img/bar-960.webp 960w" sizes="(max-width:900px) 100vw, 50vw" width="960" height="641" loading="lazy" alt="Copas sobre la barra"></figure><h3>Cantina Pasaje</h3><p>Mezcales de pequeños productores, cocina de antojitos y vinilos. Mar–Sáb 18:00–01:00.</p></article>
+    <article><figure><img src="img/desayuno-960.webp" srcset="img/desayuno-560.webp 560w, img/desayuno-960.webp 960w" sizes="(max-width:900px) 100vw, 50vw" width="960" height="585" loading="lazy" alt="Desayuno con café y fruta"></figure><h3>Café de la Esquina</h3><p>Pan de masa madre, café de Veracruz y desayunos hasta las 13:00. Todos los días desde las 7:00.</p></article>
+  </div>
+</section>
+
+<section class="reviews" aria-labelledby="rv-t">
+  <div class="rv-head"><h2 id="rv-t" class="boxed"><span>Huéspedes</span></h2><p class="mono">Reseñas de ejemplo · 4,8 / 5</p></div>
+  <div class="rv-grid">
+    <blockquote><p>“El patio a las ocho de la mañana con café y pan dulce es mi nuevo lugar feliz.”</p><cite class="mono">Ana · Madrid</cite></blockquote>
+    <blockquote><p>“Pequeño, con carácter y el mejor equipo de recepción que he conocido. Nos armaron la ruta de tacos.”</p><cite class="mono">Tom · Toronto</cite></blockquote>
+    <blockquote><p>“Habitación preciosa, cama increíble y la cantina de abajo es un plan en sí misma.”</p><cite class="mono">Lucía · Bogotá</cite></blockquote>
+  </div>
+</section>
+
+<section class="contact" id="contacto" aria-labelledby="co-t">
+  <h2 id="co-t" class="boxed"><span>Contacto</span></h2>
+  <div class="co-grid">
+    <div><p class="mono">Dirección</p><p>Calle de ejemplo 123, Roma Norte<br>06700 Ciudad de México</p></div>
+    <div><p class="mono">Recepción 24 h</p><p><a href="tel:+525500000000">+52 55 0000 0000</a><br><a href="mailto:hola@hotelpasaje.example">hola@hotelpasaje.example</a></p></div>
+    <div><p class="mono">WhatsApp</p><p><a class="box-btn inv" href="https://wa.me/?text=Hola%20Hotel%20Pasaje%2C%20quiero%20informaci%C3%B3n">Escríbenos</a></p></div>
+    <form class="news" id="news"><label class="mono" for="em">Boletín semanal de la agenda</label><div><input id="em" type="email" required placeholder="tu@email.com"><button type="submit">Suscribirme</button></div><p class="ok mono" hidden>¡Listo! Te escribimos el jueves.</p></form>
+  </div>
+</section>
+</main>
+<footer class="foot"><a class="wm big" href="#top"><span>Hotel</span><span>Pasaje</span></a><div class="f-row mono"><span>© Hotel Pasaje</span><span>Demo de Escalatam · hotel ficticio · fotos CC0 (StockSnap)</span><a href="#top">Arriba ↑</a></div></footer>
+<script src="app.js" defer></script>
+</body></html>

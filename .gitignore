@@ -6,3 +6,4 @@ __pycache__/
 *.pyc
 !lighthouse/resumen.json
 research-x/
+research-refs/
