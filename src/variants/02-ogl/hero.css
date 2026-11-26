@@ -1,0 +1,1 @@
+.stage::before{content:"";position:absolute;left:50%;top:52%;width:58vmin;height:58vmin;transform:translate(-50%,-50%);border-radius:50%;background:radial-gradient(closest-side,rgba(15,163,160,.22),rgba(127,214,255,.12) 55%,transparent);pointer-events:none}

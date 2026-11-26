@@ -1,0 +1,11 @@
+html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}.lenis.lenis-stopped{overflow:hidden}
+.cakewrap{position:absolute;inset:0;display:grid;place-items:center;perspective:900px;overflow:hidden}
+.cake{position:relative;width:340px;height:420px;display:flex;flex-direction:column-reverse;align-items:center;justify-content:flex-start;padding-bottom:40px;transform-style:preserve-3d;transform:rotateX(var(--rx,8deg)) rotateY(var(--ry,0deg));transition:transform .4s cubic-bezier(.2,.7,.2,1)}
+.plate{position:absolute;bottom:18px;width:360px;height:60px;border-radius:50%;background:radial-gradient(closest-side,#fff 70%,#f2cfd8 72%,#fff 76%,rgba(58,16,32,.12) 90%,transparent);}
+.tier{position:relative;width:var(--w);height:var(--h);margin-top:-14px;background:linear-gradient(90deg,color-mix(in srgb,var(--side) 80%,#3a1020) 0%,var(--side) 30%,color-mix(in srgb,var(--side) 60%,#fff) 55%,var(--side) 80%,color-mix(in srgb,var(--side) 75%,#3a1020));border-radius:0 0 50% 50%/0 0 22px 22px;z-index:calc(var(--n) + 1)}
+.tier::before{content:"";position:absolute;left:0;right:0;top:-22px;height:44px;border-radius:50%;background:radial-gradient(120% 120% at 40% 30%,#fff 0%,var(--top) 45%,color-mix(in srgb,var(--top) 85%,#3a1020) 100%)}
+.drip{position:absolute;left:4%;right:4%;top:0;height:26px;background:radial-gradient(circle at 10% 0,var(--top) 9px,transparent 10px) 0 0/34px 26px repeat-x;opacity:.95}
+.cherry{position:relative;width:34px;height:34px;margin-bottom:-10px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ff9ab8,#e0144f 55%,#8a0a2c);z-index:10;box-shadow:0 6px 10px rgba(58,16,32,.25)}
+.cherry::after{content:"";position:absolute;left:16px;top:-22px;width:2px;height:24px;background:#3a5a1a;transform:rotate(18deg);border-radius:2px}
+.spr{position:absolute;top:-20px;left:var(--x);width:5px;height:14px;border-radius:3px;background:var(--c);transform:rotate(var(--r));opacity:.9}
+@media (max-width:760px),(max-aspect-ratio:4/5){.cake{transform:scale(.78) rotateX(var(--rx,8deg)) rotateY(var(--ry,0deg))}}

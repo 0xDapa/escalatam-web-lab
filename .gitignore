@@ -1,0 +1,6 @@
+node_modules
+pkg/node_modules/
+shots/
+lighthouse/*.json
+__pycache__/
+*.pyc

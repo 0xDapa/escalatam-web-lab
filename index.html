@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Escalatam Web Lab — 12 variantes ligeras de webs premium</title>
+<meta name="description" content="Laboratorio de Escalatam: la misma web premium (titular glitch, objeto 3D, horizonte, cifras fijadas, servicios) hecha con 12 tecnologías ligeras distintas.">
+<link rel="icon" href="data:,">
+<style>
+@font-face{font-family:Display;src:url(assets/fonts/anton.woff2) format("woff2");font-display:swap}
+@font-face{font-family:Body;src:url(assets/fonts/archivo400.woff2) format("woff2");font-display:swap}
+@font-face{font-family:Mono;src:url(assets/fonts/mono.woff2) format("woff2");font-display:swap}
+*{margin:0;padding:0;box-sizing:border-box}
+html{background:#0d0d0f;color:#f2f2f2;-webkit-font-smoothing:antialiased}
+body{font-family:Body,system-ui,sans-serif;line-height:1.45}
+a{color:inherit;text-decoration:none}
+.d{font-family:Display,Impact,sans-serif;font-weight:400;text-transform:uppercase}
+.m{font-family:Mono,monospace;text-transform:uppercase;letter-spacing:.09em}
+header{padding:clamp(22px,3vw,40px) clamp(20px,4vw,56px) 0;display:flex;justify-content:space-between;align-items:center;font-size:12px}
+header b{font:700 20px/1 Body,sans-serif;letter-spacing:-.03em;text-transform:none}
+.hero{padding:12vh clamp(20px,4vw,56px) 8vh;max-width:1400px}
+.over{color:#2f63ff;font:700 14px/1 Body,sans-serif;text-transform:uppercase}
+h1{margin-top:14px;font-size:clamp(56px,11vw,180px);line-height:.9}
+h1 span{display:block} h1 span:last-child{color:#2f63ff}
+.hero p.l{margin-top:26px;max-width:640px;color:#a9adb8;font-size:clamp(15px,1.3vw,19px)}
+.links{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
+.pill{display:inline-flex;align-items:center;height:40px;padding:0 20px;border-radius:99px;border:1.3px solid var(--a,#2f63ff);color:var(--a,#2f63ff);font-size:11px;transition:.25s}
+.pill.f{background:var(--a,#2f63ff);color:#0d0d0f}
+.pill:hover{background:#fff;border-color:#fff;color:#0d0d0f}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));gap:clamp(18px,2vw,28px);padding:0 clamp(20px,4vw,56px) 12vh}
+.v{background:#16161a;border:1px solid #24242a;border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.th{position:relative;display:block;aspect-ratio:16/10;overflow:hidden;background:#000}
+.th img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.th .ph{position:absolute;right:14px;bottom:-30px;width:21%;height:auto;border-radius:10px;border:3px solid #0d0d0f;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.v:hover .th img:first-child{transform:scale(1.03)}
+.meta{padding:20px 22px 22px;display:flex;flex-direction:column;gap:6px;flex:1}
+.n{color:var(--a);font-size:11px}
+.meta h2{font-size:38px;line-height:1}
+.niche{color:#a9adb8;font-size:14px}
+.tech{font-size:10.5px;color:#e6e6e6;margin-top:4px}
+dl{display:flex;gap:18px;margin-top:10px;font-size:10px;color:#8a8f9c} dd{color:#fff;font-size:13px;margin-top:3px}
+.ac{margin-top:auto;padding-top:16px;display:flex;flex-wrap:wrap;gap:10px}
+.note{padding:0 clamp(20px,4vw,56px) 10vh;color:#8a8f9c;font-size:13px;max-width:900px}
+footer{border-top:1px solid #24242a;padding:24px clamp(20px,4vw,56px);font-size:11px;color:#8a8f9c;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+</style></head>
+<body><main>
+<header class="m"><b>Escalatam</b><span>Web Lab · 12 variantes</span></header>
+<section class="hero"><p class="over">Laboratorio de demos para leads</p><h1 class="d"><span>Una web premium,</span><span>12 motores ligeros</span></h1>
+<p class="l">La misma estructura (titular con glitch, objeto 3D en el hero, transición de horizonte, cifras que cuentan y servicios en scroll horizontal) construida con 12 tecnologías distintas, cada una aplicada a un nicho real de clientes. Todos los negocios son ficticios y las cifras son de ejemplo.</p>
+<div class="links"><a class="pill f m" href="https://github.com/0xDapa/escalatam-web-lab">Repositorio + SOP</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/blob/main/PROMPTS.md">Prompts reutilizables</a><a class="pill m" href="https://0xdapa.github.io/escalatam-demo-3d/">Demo original (Three.js)</a></div></section>
+<section class="grid"><article class="v" style="--a:#ff5a1f">
+  <a class="th" href="01-webgl2-puro/"><img src="thumbs/01-webgl2-puro.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Brasa Norte"><img class="ph" src="thumbs/01-webgl2-puro-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">01</span><h2 class="d">Brasa Norte</h2><p class="niche">Restaurante / asador</p>
+  <p class="tech m">WebGL2 puro (sin librería)</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>2.8 KB</dd></div><div><dt>Página gzip</dt><dd>75.6 KB</dd></div><div><dt>FPS móvil*</dt><dd>60.0</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="01-webgl2-puro/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/01-webgl2-puro">Código y notas</a></div></div>
+</article><article class="v" style="--a:#0fa3a0">
+  <a class="th" href="02-ogl/"><img src="thumbs/02-ogl.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Clínica Dental Lumen"><img class="ph" src="thumbs/02-ogl-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">02</span><h2 class="d">Clínica Dental Lumen</h2><p class="niche">Clínica dental</p>
+  <p class="tech m">OGL (≈ 8 KB gz usados)</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>15.7 KB</dd></div><div><dt>Página gzip</dt><dd>84.5 KB</dd></div><div><dt>FPS móvil*</dt><dd>60.3</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="02-ogl/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/02-ogl">Código y notas</a></div></div>
+</article><article class="v" style="--a:#b47a26">
+  <a class="th" href="03-twgl/"><img src="thumbs/03-twgl.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Altamar Inmobiliaria"><img class="ph" src="thumbs/03-twgl-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">03</span><h2 class="d">Altamar Inmobiliaria</h2><p class="niche">Inmobiliaria</p>
+  <p class="tech m">TWGL (helpers WebGL, ≈ 12 KB gz)</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>15.4 KB</dd></div><div><dt>Página gzip</dt><dd>82.2 KB</dd></div><div><dt>FPS móvil*</dt><dd>60.0</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="03-twgl/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/03-twgl">Código y notas</a></div></div>
+</article><article class="v" style="--a:#c6ff00">
+  <a class="th" href="04-regl/"><img src="thumbs/04-regl.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Pulso Fitness"><img class="ph" src="thumbs/04-regl-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">04</span><h2 class="d">Pulso Fitness</h2><p class="niche">Gimnasio / box</p>
+  <p class="tech m">regl (WebGL funcional, ≈ 26 KB gz)</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>33.2 KB</dd></div><div><dt>Página gzip</dt><dd>96.3 KB</dd></div><div><dt>FPS móvil*</dt><dd>60.0</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="04-regl/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/04-regl">Código y notas</a></div></div>
+</article><article class="v" style="--a:#8a1c2b">
+  <a class="th" href="05-picogl/"><img src="thumbs/05-picogl.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Ortega &amp; Vidal"><img class="ph" src="thumbs/05-picogl-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">05</span><h2 class="d">Ortega &amp; Vidal</h2><p class="niche">Despacho de abogados</p>
+  <p class="tech m">PicoGL (WebGL2, ≈ 20 KB gz)</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>17.4 KB</dd></div><div><dt>Página gzip</dt><dd>82.6 KB</dd></div><div><dt>FPS móvil*</dt><dd>60.3</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="05-picogl/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/05-picogl">Código y notas</a></div></div>
+</article><article class="v" style="--a:#ff2e63">
+  <a class="th" href="06-shader-raymarch/"><img src="thumbs/06-shader-raymarch.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Nácar Joyas"><img class="ph" src="thumbs/06-shader-raymarch-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">06</span><h2 class="d">Nácar Joyas</h2><p class="niche">Joyería / tienda de lujo</p>
+  <p class="tech m">Fragment shader único (raymarching, 0 librerías)</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>2.5 KB</dd></div><div><dt>Página gzip</dt><dd>75.4 KB</dd></div><div><dt>FPS móvil*</dt><dd>40.3</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="06-shader-raymarch/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/06-shader-raymarch">Código y notas</a></div></div>
+</article><article class="v" style="--a:#c0592b">
+  <a class="th" href="07-zdog/"><img src="thumbs/07-zdog.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Tueste Lento"><img class="ph" src="thumbs/07-zdog-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">07</span><h2 class="d">Tueste Lento</h2><p class="niche">Cafetería de especialidad</p>
+  <p class="tech m">Zdog (pseudo-3D plano, ≈ 9 KB gz)</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>9.6 KB</dd></div><div><dt>Página gzip</dt><dd>108.2 KB</dd></div><div><dt>FPS móvil*</dt><dd>60.0</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="07-zdog/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/07-zdog">Código y notas</a></div></div>
+</article><article class="v" style="--a:#ff5d3b">
+  <a class="th" href="08-canvas2d-globo/"><img src="thumbs/08-canvas2d-globo.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Rumbo Sur Viajes"><img class="ph" src="thumbs/08-canvas2d-globo-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">08</span><h2 class="d">Rumbo Sur Viajes</h2><p class="niche">Agencia de viajes</p>
+  <p class="tech m">Canvas 2D + proyección 3D manual (0 librerías)</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>12.5 KB</dd></div><div><dt>Página gzip</dt><dd>88.9 KB</dd></div><div><dt>FPS móvil*</dt><dd>59.3</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="08-canvas2d-globo/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/08-canvas2d-globo">Código y notas</a></div></div>
+</article><article class="v" style="--a:#2d5bff">
+  <a class="th" href="09-css3d/"><img src="thumbs/09-css3d.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Lino &amp; Sal"><img class="ph" src="thumbs/09-css3d-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">09</span><h2 class="d">Lino &amp; Sal</h2><p class="niche">Tienda de moda sostenible</p>
+  <p class="tech m">Solo CSS 3D transforms (+ 1 KB de JS)</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>1.3 KB</dd></div><div><dt>Página gzip</dt><dd>66.7 KB</dd></div><div><dt>FPS móvil*</dt><dd>60.0</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="09-css3d/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/09-css3d">Código y notas</a></div></div>
+</article><article class="v" style="--a:#5b4bff">
+  <a class="th" href="10-svg/"><img src="thumbs/10-svg.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Babel Lab"><img class="ph" src="thumbs/10-svg-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">10</span><h2 class="d">Babel Lab</h2><p class="niche">Academia de idiomas</p>
+  <p class="tech m">SVG + JS vanilla (proyección 3D manual)</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>2.5 KB</dd></div><div><dt>Página gzip</dt><dd>70.2 KB</dd></div><div><dt>FPS móvil*</dt><dd>60.3</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="10-svg/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/10-svg">Código y notas</a></div></div>
+</article><article class="v" style="--a:#ff4f8b">
+  <a class="th" href="11-lenis-anime/"><img src="thumbs/11-lenis-anime.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Dulce Capa"><img class="ph" src="thumbs/11-lenis-anime-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">11</span><h2 class="d">Dulce Capa</h2><p class="niche">Pastelería artesanal</p>
+  <p class="tech m">Lenis (scroll suave) + anime.js v4 + CSS 3D</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>20.7 KB</dd></div><div><dt>Página gzip</dt><dd>91.3 KB</dd></div><div><dt>FPS móvil*</dt><dd>60.0</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="11-lenis-anime/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/11-lenis-anime">Código y notas</a></div></div>
+</article><article class="v" style="--a:#4f7a5a">
+  <a class="th" href="12-motion-particulas/"><img src="thumbs/12-motion-particulas.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Respira Spa"><img class="ph" src="thumbs/12-motion-particulas-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
+  <div class="meta"><span class="m n">12</span><h2 class="d">Respira Spa</h2><p class="niche">Spa y bienestar</p>
+  <p class="tech m">Motion (mini) + partículas Canvas 2D vanilla</p>
+  <dl class="m"><div><dt>JS gzip</dt><dd>8.6 KB</dd></div><div><dt>Página gzip</dt><dd>77.0 KB</dd></div><div><dt>FPS móvil*</dt><dd>36.3</dd></div></dl>
+  <div class="ac"><a class="pill f m" href="12-motion-particulas/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/12-motion-particulas">Código y notas</a></div></div>
+</article></section>
+<p class="note">* FPS medidos en Chrome headless con GPU por software (SwiftShader) en un servidor sin tarjeta gráfica: es el peor caso. En un móvil o portátil real con GPU las variantes WebGL/Canvas suelen ir a la tasa de refresco de la pantalla. Detalle completo en el README del repositorio.</p>
+</main><footer class="m"><span>Escalatam · Web Lab</span><span>Demos conceptuales · negocios ficticios · cifras de ejemplo</span></footer></body></html>

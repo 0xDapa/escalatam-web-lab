@@ -1,0 +1,10 @@
+.stage{perspective:1400px;perspective-origin:50% 40%;display:grid;place-items:center;overflow:hidden}
+.ring3d{--r:340px;--w:220px;position:relative;width:var(--w);height:calc(var(--w)*1.36);transform-style:preserve-3d;transform:translateZ(calc(var(--r)*-1)) rotateX(-9deg) rotateY(var(--ry,0deg));will-change:transform;cursor:grab;touch-action:pan-y}
+.c3{position:absolute;inset:0;transform:rotateY(calc(var(--i)*45deg)) translateZ(var(--r));backface-visibility:hidden;border-radius:6px;overflow:hidden;background:var(--a);box-shadow:0 30px 60px -30px rgba(29,28,26,.45)}
+.fab{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(255,255,255,.07) 0 2px,transparent 2px 5px),repeating-linear-gradient(90deg,rgba(0,0,0,.06) 0 1px,transparent 1px 4px),radial-gradient(120% 80% at 30% 20%,var(--a),var(--b))}
+.fab::after{content:"";position:absolute;left:18%;right:18%;top:14%;bottom:30%;border-radius:40% 40% 8px 8px/30% 30% 8px 8px;background:linear-gradient(160deg,rgba(255,255,255,.35),rgba(0,0,0,.12));box-shadow:inset 0 -18px 30px rgba(0,0,0,.12)}
+.c3 figcaption{position:absolute;left:14px;right:14px;bottom:12px;color:#1d1c1a;display:flex;flex-direction:column;gap:2px}
+.c3 figcaption span,.c3 figcaption i{font-size:9.5px;font-style:normal;opacity:.75}
+.c3 figcaption b{font-size:30px;line-height:1;font-weight:400}
+.stage::after{content:"";position:absolute;left:15%;right:15%;bottom:9%;height:40px;border-radius:50%;background:radial-gradient(closest-side,rgba(29,28,26,.22),transparent);pointer-events:none}
+@media (max-width:760px),(max-aspect-ratio:4/5){.ring3d{--r:200px;--w:140px}.c3 figcaption b{font-size:20px}.stage{perspective:900px}}

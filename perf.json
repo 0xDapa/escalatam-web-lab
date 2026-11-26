@@ -1,0 +1,242 @@
+[
+ {
+  "id": "01-webgl2-puro",
+  "js_kb": 5.8,
+  "js_gz_kb": 2.8,
+  "page_gz_kb": 75.6,
+  "desk": {
+   "fcp_ms": 588,
+   "lcp_ms": 588,
+   "load_ms": 377,
+   "fps_hero": 60.0,
+   "fps_scroll": 55.0
+  },
+  "mob": {
+   "fcp_ms": 124,
+   "lcp_ms": 1404,
+   "load_ms": 78,
+   "fps_hero": 60.0,
+   "fps_scroll": 61.3
+  }
+ },
+ {
+  "id": "02-ogl",
+  "js_kb": 52.0,
+  "js_gz_kb": 15.7,
+  "page_gz_kb": 84.5,
+  "desk": {
+   "fcp_ms": 52,
+   "lcp_ms": 252,
+   "load_ms": 97,
+   "fps_hero": 48.0,
+   "fps_scroll": 58.3
+  },
+  "mob": {
+   "fcp_ms": 52,
+   "lcp_ms": 204,
+   "load_ms": 74,
+   "fps_hero": 60.3,
+   "fps_scroll": 60.0
+  }
+ },
+ {
+  "id": "03-twgl",
+  "js_kb": 43.7,
+  "js_gz_kb": 15.4,
+  "page_gz_kb": 82.2,
+  "desk": {
+   "fcp_ms": 268,
+   "lcp_ms": 268,
+   "load_ms": 59,
+   "fps_hero": 35.3,
+   "fps_scroll": 55.7
+  },
+  "mob": {
+   "fcp_ms": 120,
+   "lcp_ms": 120,
+   "load_ms": 57,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.0
+  }
+ },
+ {
+  "id": "04-regl",
+  "js_kb": 94.0,
+  "js_gz_kb": 33.2,
+  "page_gz_kb": 96.3,
+  "desk": {
+   "fcp_ms": 376,
+   "lcp_ms": 376,
+   "load_ms": 251,
+   "fps_hero": 60.0,
+   "fps_scroll": 55.0
+  },
+  "mob": {
+   "fcp_ms": 152,
+   "lcp_ms": 152,
+   "load_ms": 120,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.0
+  }
+ },
+ {
+  "id": "05-picogl",
+  "js_kb": 70.6,
+  "js_gz_kb": 17.4,
+  "page_gz_kb": 82.6,
+  "desk": {
+   "fcp_ms": 112,
+   "lcp_ms": 112,
+   "load_ms": 59,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.0
+  },
+  "mob": {
+   "fcp_ms": 88,
+   "lcp_ms": 88,
+   "load_ms": 56,
+   "fps_hero": 60.3,
+   "fps_scroll": 60.0
+  }
+ },
+ {
+  "id": "06-shader-raymarch",
+  "js_kb": 5.4,
+  "js_gz_kb": 2.5,
+  "page_gz_kb": 75.4,
+  "desk": {
+   "fcp_ms": 200,
+   "lcp_ms": 200,
+   "load_ms": 110,
+   "fps_hero": 25.7,
+   "fps_scroll": 51.0
+  },
+  "mob": {
+   "fcp_ms": 44,
+   "lcp_ms": 136,
+   "load_ms": 47,
+   "fps_hero": 40.3,
+   "fps_scroll": 57.0
+  }
+ },
+ {
+  "id": "07-zdog",
+  "js_kb": 32.8,
+  "js_gz_kb": 9.6,
+  "page_gz_kb": 108.2,
+  "desk": {
+   "fcp_ms": 388,
+   "lcp_ms": 388,
+   "load_ms": 45,
+   "fps_hero": 56.3,
+   "fps_scroll": 60.0
+  },
+  "mob": {
+   "fcp_ms": 92,
+   "lcp_ms": 92,
+   "load_ms": 47,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.3
+  }
+ },
+ {
+  "id": "08-canvas2d-globo",
+  "js_kb": 36.7,
+  "js_gz_kb": 12.5,
+  "page_gz_kb": 88.9,
+  "desk": {
+   "fcp_ms": 204,
+   "lcp_ms": 204,
+   "load_ms": 43,
+   "fps_hero": 42.3,
+   "fps_scroll": 56.0
+  },
+  "mob": {
+   "fcp_ms": 48,
+   "lcp_ms": 92,
+   "load_ms": 37,
+   "fps_hero": 59.3,
+   "fps_scroll": 60.3
+  }
+ },
+ {
+  "id": "09-css3d",
+  "js_kb": 3.0,
+  "js_gz_kb": 1.3,
+  "page_gz_kb": 66.7,
+  "desk": {
+   "fcp_ms": 444,
+   "lcp_ms": 476,
+   "load_ms": 63,
+   "fps_hero": 60.0,
+   "fps_scroll": 59.7
+  },
+  "mob": {
+   "fcp_ms": 136,
+   "lcp_ms": 156,
+   "load_ms": 43,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.3
+  }
+ },
+ {
+  "id": "10-svg",
+  "js_kb": 5.7,
+  "js_gz_kb": 2.5,
+  "page_gz_kb": 70.2,
+  "desk": {
+   "fcp_ms": 72,
+   "lcp_ms": 156,
+   "load_ms": 58,
+   "fps_hero": 38.0,
+   "fps_scroll": 57.7
+  },
+  "mob": {
+   "fcp_ms": 44,
+   "lcp_ms": 112,
+   "load_ms": 40,
+   "fps_hero": 60.3,
+   "fps_scroll": 59.3
+  }
+ },
+ {
+  "id": "11-lenis-anime",
+  "js_kb": 58.2,
+  "js_gz_kb": 20.7,
+  "page_gz_kb": 91.3,
+  "desk": {
+   "fcp_ms": 312,
+   "lcp_ms": 344,
+   "load_ms": 64,
+   "fps_hero": 59.3,
+   "fps_scroll": 61.3
+  },
+  "mob": {
+   "fcp_ms": 72,
+   "lcp_ms": 72,
+   "load_ms": 52,
+   "fps_hero": 60.0,
+   "fps_scroll": 60.0
+  }
+ },
+ {
+  "id": "12-motion-particulas",
+  "js_kb": 21.7,
+  "js_gz_kb": 8.6,
+  "page_gz_kb": 77.0,
+  "desk": {
+   "fcp_ms": 60,
+   "lcp_ms": 156,
+   "load_ms": 66,
+   "fps_hero": 22.3,
+   "fps_scroll": 50.7
+  },
+  "mob": {
+   "fcp_ms": 44,
+   "lcp_ms": 100,
+   "load_ms": 47,
+   "fps_hero": 36.3,
+   "fps_scroll": 55.3
+  }
+ }
+]

@@ -1,0 +1,2 @@
+.stage{-webkit-mask:linear-gradient(90deg,transparent,#000 22%);mask:linear-gradient(90deg,transparent,#000 22%)}
+@media (max-width:760px),(max-aspect-ratio:4/5){.stage{-webkit-mask:linear-gradient(180deg,transparent,#000 15%);mask:linear-gradient(180deg,transparent,#000 15%)}}

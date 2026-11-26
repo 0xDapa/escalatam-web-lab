@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tueste Lento — Cafetería de especialidad · Demo conceptual Escalatam</title>
+<meta name="description" content="Granos de fincas peruanas, tostados cada martes en nuestro obrador. Para tomar aquí o llevar a casa.">
+<link rel="icon" href="data:,">
+<meta name="theme-color" content="#efe6d8">
+<link rel="preload" href="fonts/display.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+@font-face{font-family:Display;src:url(fonts/display.woff2) format("woff2");font-display:swap}
+@font-face{font-family:Body;src:url(fonts/body.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:Body;src:url(fonts/body-bold.woff2) format("woff2");font-weight:700;font-display:swap}
+@font-face{font-family:Mono;src:url(fonts/mono.woff2) format("woff2");font-display:swap}
+:root{--bg:#efe6d8;--fg:#2a1a12;--mut:#73604f;--acc:#c0592b;--acc2:#2f8f6b;--bg2:#2a1a12;--fg2:#f4ece0;--mut2:#bba48f;--hair:rgba(255,255,255,.15);--bg3:#efe6d8;--fg3:#2a1a12;--mut3:#73604f;--hair3:#d8cbb6;--giant:rgba(42,26,18,.14);--art:radial-gradient(60% 80% at 50% 55%,#6b3f22 0%,#3d2414 45%,#2a1a12 100%);--on-acc:#fff;--dls:.005em}
+</style>
+<link rel="stylesheet" href="core.css">
+<script>document.documentElement.classList.add('js')</script>
+<script defer src="app.js"></script>
+</head>
+<body>
+<main>
+<section class="hero" id="inicio">
+  <header class="top">
+    <a class="logo" href="#inicio"><svg viewBox="0 0 24 24" aria-hidden="true" class=""><path d="M4 9h13v5a6 6 0 0 1-6 6h-1a6 6 0 0 1-6-6z"/><path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 2c0 2 2 2 2 4M12 2c0 2 2 2 2 4"/></svg>Tueste Lento</a>
+    <ul class="vnav m"><li><a href="#inicio">Inicio</a></li><li><a href="#nosotros">Nosotros</a></li><li><a href="#servicios">Servicios</a></li><li><a href="#contacto">Contacto</a></li></ul>
+    <span class="tag m">Demo conceptual</span>
+  </header>
+  <div class="stage" id="stage" aria-hidden="true"></div>
+  <div class="copy">
+    <p class="over fu" style="--d:0ms">Café de especialidad · Lima</p>
+    <h1 class="hl d rv"><span class="ln" style="--i:0" data-t="Café">Café</span><span class="ln" style="--i:1" data-t="tostado">tostado</span><span class="ln" style="--i:2" data-t="sin prisa">sin prisa</span></h1>
+    <p class="lede fu" style="--d:450ms">Granos de fincas peruanas, tostados cada martes en nuestro obrador. Para tomar aquí o llevar a casa.</p>
+    <div class="btns fu" style="--d:600ms"><a class="pill f" href="#contacto">Ver menú</a><a class="pill" href="#servicios">Comprar café</a></div>
+  </div>
+  <p class="hint m">Gira la taza ↔</p>
+</section>
+<section class="hz" aria-hidden="true"><div class="sc"><i class="line"></i><div class="fill"></div><div class="ring"></div><p class="kick d">Del grano<br>a la taza<small>Tueste semanal · Origen directo · Leche vegetal sin coste</small></p></div></section>
+<section class="stats" id="nosotros">
+  <div class="pin"><div class="art fu"></div><h2 class="big d rv"><span class="ln" style="--i:0" data-t="Tostamos">Tostamos</span><span class="ln" style="--i:1" data-t="los martes.">los martes.</span><span class="ln" style="--i:2" data-t="Tú lo">Tú lo</span><span class="ln" style="--i:3" data-t="disfrutas.">disfrutas.</span></h2></div>
+  <div><div class="intro fu"><p>Trabajamos con 6 fincas de Cajamarca, Cusco y Puno a las que pagamos por encima del precio justo.</p><p>Barra abierta desde las 7:30, con brunch los fines de semana.</p></div><ul class="nums d"><li><span class="n d" data-to="6" data-dec="0" data-pre="" data-suf="">0</span><p class="c">fincas de origen directo</p></li><li><span class="n d" data-to="86" data-dec="0" data-pre="+" data-suf="">+0</span><p class="c">puntos SCA en nuestro blend</p></li><li><span class="n d" data-to="450" data-dec="0" data-pre="" data-suf="">0</span><p class="c">tazas servidas cada día</p></li><li><span class="n d" data-to="7.5" data-dec="1" data-pre="" data-suf="h">0h</span><p class="c">apertura (7:30 de la mañana)</p></li></ul></div>
+</section>
+<section class="svc" id="servicios"><div class="sc">
+  <div class="prog m"><span>Servicios</span><span>01 — 04</span><i><b></b></i></div>
+  <div class="giant d">TUESTE</div>
+  <div class="strip"><div class="lead"><h3 class="d rv"><span class="ln" style="--i:0" data-t="Mucho">Mucho</span><span class="ln" style="--i:1" data-t="más que">más que</span><span class="ln" style="--i:2" data-t="un espresso">un espresso</span></h3><p>Café, brunch, talleres y suscripción mensual a domicilio.</p></div><div class="cards"><article class="card"><svg viewBox="0 0 24 24" aria-hidden="true" class=""><path d="M4 9h13v5a6 6 0 0 1-6 6h-1a6 6 0 0 1-6-6z"/><path d="M17 11h1.5a2.5 2.5 0 0 1 0 5H17"/><path d="M8 2c0 2 2 2 2 4M12 2c0 2 2 2 2 4"/></svg><span class="k m">01</span><h4 class="d">Barra</h4><p>Espresso, filtrados V60 y cold brew de temporada.</p></article><article class="card"><svg viewBox="0 0 24 24" aria-hidden="true" class=""><path d="M4 20c0-9 6-15 16-16-1 10-7 16-16 16z"/><path d="M4 20l8-8"/></svg><span class="k m">02</span><h4 class="d">Brunch</h4><p>Pan de masa madre, huevos de granja y fruta local.</p></article><article class="card"><svg viewBox="0 0 24 24" aria-hidden="true" class=""><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span class="k m">03</span><h4 class="d">Talleres</h4><p>Cata y latte art los sábados por la mañana.</p></article><article class="card"><svg viewBox="0 0 24 24" aria-hidden="true" class=""><path d="M3 12V4h8l10 10-8 8z"/><circle cx="7.5" cy="8.5" r="1.5"/></svg><span class="k m">04</span><h4 class="d">Suscripción</h4><p>Recibe 250 g recién tostados cada mes.</p></article></div></div>
+</div></section>
+<section class="cta" id="contacto"><h2 class="d rv"><span class="ln" style="--i:0" data-t="Pasa por">Pasa por</span><span class="ln" style="--i:1" data-t="un café">un café</span></h2><p class="fu">Jr. Ejemplo 123 · Abrimos todos los días. También en delivery.</p><div class="btns fu" style="--d:200ms"><a class="pill f" href="#contacto">Cómo llegar</a><a class="pill" href="#contacto">Pedir delivery</a></div></section>
+</main>
+<footer class="foot"><span>© Tueste Lento — negocio ficticio</span><span>Demo conceptual por Escalatam · cifras y textos de ejemplo</span><a href="../">← Volver al laboratorio</a></footer>
+</body>
+</html>
