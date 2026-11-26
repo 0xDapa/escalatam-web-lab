@@ -187,3 +187,5 @@ Incluir `.nojekyll` en la raíz para que GitHub sirva todo tal cual.
 - **regl en modo desarrollo** pesa 128 KB → importar `regl/dist/regl.unchecked.js` (94 KB → 33 KB gz).
 - **Canvas 2D con miles de `fillRect` cambiando `globalAlpha`** → agrupar por profundidad en 4 `fill()` (de 17 a 48 fps en software).
 - **Ciudad 3D tapando el titular** → máscara `linear-gradient` en el `.stage`.
+- **Tildes de una línea pisando la línea de arriba** (“MÁS” bajo “LO QUE” con Antonio/Oswald a interlineado 0,95) → interlineado 1,0 en el titular y, si aun así choca, reescribir la línea sin mayúscula acentuada justo debajo de otra línea.
+- **Acento igual al fondo de la sección** (lima sobre lima en Pulso Fitness) → sobrescribir el color de las cifras en el `hero.css` de la variante.

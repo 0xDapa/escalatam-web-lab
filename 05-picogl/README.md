@@ -1,6 +1,6 @@
 # 05-picogl — Ortega & Vidal (Despacho de abogados)
 
-**Demo:** https://0xdapa.github.io/escalatam-web-lab/05-picogl/ · **Tecnología:** PicoGL (WebGL2, ≈ 20 KB gz)
+**Demo:** https://0xdapa.github.io/escalatam-web-lab/05-picogl/ · **Tecnología:** PicoGL (WebGL2 mínimo)
 
 > Negocio **ficticio**. Textos, cifras (22, +1300, 87%, 24h) y reseñas son **de ejemplo**. La imagen de la sección de cifras es un gradiente CSS (sin foto).
 

@@ -44,7 +44,8 @@ h1 span{{display:block}} h1 span:last-child{{color:#2f63ff}}
 .hero p.l{{margin-top:26px;max-width:640px;color:#a9adb8;font-size:clamp(15px,1.3vw,19px)}}
 .links{{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}}
 .pill{{display:inline-flex;align-items:center;height:40px;padding:0 20px;border-radius:99px;border:1.3px solid var(--a,#2f63ff);color:var(--a,#2f63ff);font-size:11px;transition:.25s}}
-.pill.f{{background:var(--a,#2f63ff);color:#0d0d0f}}
+.pill.f{{background:var(--a,#2f63ff);color:#fff;mix-blend-mode:normal}}
+.pill:not(.f){{color:#ececec}}
 .pill:hover{{background:#fff;border-color:#fff;color:#0d0d0f}}
 .grid{{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));gap:clamp(18px,2vw,28px);padding:0 clamp(20px,4vw,56px) 12vh}}
 .v{{background:#16161a;border:1px solid #24242a;border-radius:10px;overflow:hidden;display:flex;flex-direction:column}}

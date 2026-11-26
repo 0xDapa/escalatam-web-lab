@@ -32,7 +32,7 @@ a{color:inherit;text-decoration:none}
 .copy{position:relative;z-index:3;padding:clamp(150px,30vh,300px) 0 90px clamp(20px,15vw,218px);max-width:min(760px,62vw);pointer-events:none}
 .copy a{pointer-events:auto}
 .over{font:700 clamp(12px,1.25vw,18px)/1 Body,sans-serif;text-transform:uppercase;color:var(--acc)}
-.hl{margin-top:10px;font-size:clamp(54px,7.9vw,124px);line-height:.95;color:var(--fg)}
+.hl{margin-top:10px;font-size:clamp(54px,7.9vw,124px);line-height:1;color:var(--fg)}
 .lede{margin-top:22px;font-size:clamp(14px,1.2vw,18px);color:var(--mut);max-width:440px}
 .btns{margin-top:22px;display:flex;flex-wrap:wrap;gap:12px}
 .pill{display:inline-flex;align-items:center;height:42px;padding:0 22px;border-radius:999px;border:1.3px solid var(--acc);font-family:Mono,monospace;font-size:11.5px;letter-spacing:.09em;text-transform:uppercase;color:var(--acc);transition:background .25s,color .25s}

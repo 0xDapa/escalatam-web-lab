@@ -1,6 +1,6 @@
 # 03-twgl — Altamar Inmobiliaria (Inmobiliaria)
 
-**Demo:** https://0xdapa.github.io/escalatam-web-lab/03-twgl/ · **Tecnología:** TWGL (helpers WebGL, ≈ 12 KB gz)
+**Demo:** https://0xdapa.github.io/escalatam-web-lab/03-twgl/ · **Tecnología:** TWGL (helpers WebGL2)
 
 > Negocio **ficticio**. Textos, cifras (+180, 21, 3,2%, 96%) y reseñas son **de ejemplo**. La imagen de la sección de cifras es un gradiente CSS (sin foto).
 

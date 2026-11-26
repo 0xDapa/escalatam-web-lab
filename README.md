@@ -26,12 +26,12 @@ Demo anterior (Three.js r170, ~150 KB gz de JS): https://0xdapa.github.io/escala
 | # | Demo en vivo | Nicho | Tecnología | JS gzip | Página gzip* | Lighthouse móvil | LCP móvil | TBT | FPS hero móvil / escritorio** |
 |---|---|---|---|---|---|---|---|---|---|
 | 01 | [Brasa Norte](https://0xdapa.github.io/escalatam-web-lab/01-webgl2-puro/) | Restaurante / asador | WebGL2 puro (sin librería) | 2.8 KB | 75.6 KB | 97 | 0.8 s | 190 ms | 60.0 / 60.0 |
-| 02 | [Clínica Dental Lumen](https://0xdapa.github.io/escalatam-web-lab/02-ogl/) | Clínica dental | OGL (≈ 8 KB gz usados) | 15.7 KB | 84.5 KB | 99 | 0.8 s | 130 ms | 60.3 / 48.0 |
-| 03 | [Altamar Inmobiliaria](https://0xdapa.github.io/escalatam-web-lab/03-twgl/) | Inmobiliaria | TWGL (helpers WebGL, ≈ 12 KB gz) | 15.4 KB | 82.2 KB | 99 | 1.2 s | 100 ms | 60.0 / 35.3 |
-| 04 | [Pulso Fitness](https://0xdapa.github.io/escalatam-web-lab/04-regl/) | Gimnasio / box | regl (WebGL funcional, ≈ 26 KB gz) | 33.2 KB | 96.3 KB | 99 | 0.8 s | 120 ms | 60.0 / 60.0 |
-| 05 | [Ortega & Vidal](https://0xdapa.github.io/escalatam-web-lab/05-picogl/) | Despacho de abogados | PicoGL (WebGL2, ≈ 20 KB gz) | 17.4 KB | 82.6 KB | 99 | 0.8 s | 100 ms | 60.3 / 60.0 |
+| 02 | [Clínica Dental Lumen](https://0xdapa.github.io/escalatam-web-lab/02-ogl/) | Clínica dental | OGL (micro-librería WebGL) | 15.7 KB | 84.5 KB | 99 | 0.8 s | 130 ms | 60.3 / 48.0 |
+| 03 | [Altamar Inmobiliaria](https://0xdapa.github.io/escalatam-web-lab/03-twgl/) | Inmobiliaria | TWGL (helpers WebGL2) | 15.4 KB | 82.2 KB | 99 | 1.2 s | 100 ms | 60.0 / 35.3 |
+| 04 | [Pulso Fitness](https://0xdapa.github.io/escalatam-web-lab/04-regl/) | Gimnasio / box | regl (WebGL funcional) | 33.2 KB | 96.3 KB | 99 | 0.8 s | 120 ms | 60.0 / 60.0 |
+| 05 | [Ortega & Vidal](https://0xdapa.github.io/escalatam-web-lab/05-picogl/) | Despacho de abogados | PicoGL (WebGL2 mínimo) | 17.4 KB | 82.6 KB | 99 | 0.8 s | 100 ms | 60.3 / 60.0 |
 | 06 | [Nácar Joyas](https://0xdapa.github.io/escalatam-web-lab/06-shader-raymarch/) | Joyería / tienda de lujo | Fragment shader único (raymarching, 0 librerías) | 2.5 KB | 75.4 KB | 98 | 0.8 s | 170 ms | 40.3 / 25.7 |
-| 07 | [Tueste Lento](https://0xdapa.github.io/escalatam-web-lab/07-zdog/) | Cafetería de especialidad | Zdog (pseudo-3D plano, ≈ 9 KB gz) | 9.6 KB | 108.2 KB | 100 | 1.1 s | 70 ms | 60.0 / 56.3 |
+| 07 | [Tueste Lento](https://0xdapa.github.io/escalatam-web-lab/07-zdog/) | Cafetería de especialidad | Zdog (pseudo-3D en Canvas 2D) | 9.6 KB | 108.2 KB | 100 | 1.1 s | 70 ms | 60.0 / 56.3 |
 | 08 | [Rumbo Sur Viajes](https://0xdapa.github.io/escalatam-web-lab/08-canvas2d-globo/) | Agencia de viajes | Canvas 2D + proyección 3D manual (0 librerías) | 12.5 KB | 88.9 KB | 97 | 0.8 s | 210 ms | 59.3 / 42.3 |
 | 09 | [Lino & Sal](https://0xdapa.github.io/escalatam-web-lab/09-css3d/) | Tienda de moda sostenible | Solo CSS 3D transforms (+ 1 KB de JS) | 1.3 KB | 66.7 KB | 90 | 0.8 s | 420 ms | 60.0 / 60.0 |
 | 10 | [Babel Lab](https://0xdapa.github.io/escalatam-web-lab/10-svg/) | Academia de idiomas | SVG + JS vanilla (proyección 3D manual) | 2.5 KB | 70.2 KB | 100 | 1.1 s | 50 ms | 60.3 / 38.0 |

@@ -1,6 +1,6 @@
 # 07-zdog — Tueste Lento (Cafetería de especialidad)
 
-**Demo:** https://0xdapa.github.io/escalatam-web-lab/07-zdog/ · **Tecnología:** Zdog (pseudo-3D plano, ≈ 9 KB gz)
+**Demo:** https://0xdapa.github.io/escalatam-web-lab/07-zdog/ · **Tecnología:** Zdog (pseudo-3D en Canvas 2D)
 
 > Negocio **ficticio**. Textos, cifras (6, +86, 450, 7,5h) y reseñas son **de ejemplo**. La imagen de la sección de cifras es un gradiente CSS (sin foto).
 

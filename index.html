@@ -22,7 +22,8 @@ h1 span{display:block} h1 span:last-child{color:#2f63ff}
 .hero p.l{margin-top:26px;max-width:640px;color:#a9adb8;font-size:clamp(15px,1.3vw,19px)}
 .links{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
 .pill{display:inline-flex;align-items:center;height:40px;padding:0 20px;border-radius:99px;border:1.3px solid var(--a,#2f63ff);color:var(--a,#2f63ff);font-size:11px;transition:.25s}
-.pill.f{background:var(--a,#2f63ff);color:#0d0d0f}
+.pill.f{background:var(--a,#2f63ff);color:#fff;mix-blend-mode:normal}
+.pill:not(.f){color:#ececec}
 .pill:hover{background:#fff;border-color:#fff;color:#0d0d0f}
 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));gap:clamp(18px,2vw,28px);padding:0 clamp(20px,4vw,56px) 12vh}
 .v{background:#16161a;border:1px solid #24242a;border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
@@ -54,25 +55,25 @@ footer{border-top:1px solid #24242a;padding:24px clamp(20px,4vw,56px);font-size:
 </article><article class="v" style="--a:#0fa3a0">
   <a class="th" href="02-ogl/"><img src="thumbs/02-ogl.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Clínica Dental Lumen"><img class="ph" src="thumbs/02-ogl-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
   <div class="meta"><span class="m n">02</span><h2 class="d">Clínica Dental Lumen</h2><p class="niche">Clínica dental</p>
-  <p class="tech m">OGL (≈ 8 KB gz usados)</p>
+  <p class="tech m">OGL (micro-librería WebGL)</p>
   <dl class="m"><div><dt>JS gzip</dt><dd>15.7 KB</dd></div><div><dt>Página gzip</dt><dd>84.5 KB</dd></div><div><dt>FPS móvil*</dt><dd>60.3</dd></div></dl>
   <div class="ac"><a class="pill f m" href="02-ogl/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/02-ogl">Código y notas</a></div></div>
 </article><article class="v" style="--a:#b47a26">
   <a class="th" href="03-twgl/"><img src="thumbs/03-twgl.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Altamar Inmobiliaria"><img class="ph" src="thumbs/03-twgl-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
   <div class="meta"><span class="m n">03</span><h2 class="d">Altamar Inmobiliaria</h2><p class="niche">Inmobiliaria</p>
-  <p class="tech m">TWGL (helpers WebGL, ≈ 12 KB gz)</p>
+  <p class="tech m">TWGL (helpers WebGL2)</p>
   <dl class="m"><div><dt>JS gzip</dt><dd>15.4 KB</dd></div><div><dt>Página gzip</dt><dd>82.2 KB</dd></div><div><dt>FPS móvil*</dt><dd>60.0</dd></div></dl>
   <div class="ac"><a class="pill f m" href="03-twgl/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/03-twgl">Código y notas</a></div></div>
 </article><article class="v" style="--a:#c6ff00">
   <a class="th" href="04-regl/"><img src="thumbs/04-regl.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Pulso Fitness"><img class="ph" src="thumbs/04-regl-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
   <div class="meta"><span class="m n">04</span><h2 class="d">Pulso Fitness</h2><p class="niche">Gimnasio / box</p>
-  <p class="tech m">regl (WebGL funcional, ≈ 26 KB gz)</p>
+  <p class="tech m">regl (WebGL funcional)</p>
   <dl class="m"><div><dt>JS gzip</dt><dd>33.2 KB</dd></div><div><dt>Página gzip</dt><dd>96.3 KB</dd></div><div><dt>FPS móvil*</dt><dd>60.0</dd></div></dl>
   <div class="ac"><a class="pill f m" href="04-regl/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/04-regl">Código y notas</a></div></div>
 </article><article class="v" style="--a:#8a1c2b">
   <a class="th" href="05-picogl/"><img src="thumbs/05-picogl.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Ortega &amp; Vidal"><img class="ph" src="thumbs/05-picogl-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
   <div class="meta"><span class="m n">05</span><h2 class="d">Ortega &amp; Vidal</h2><p class="niche">Despacho de abogados</p>
-  <p class="tech m">PicoGL (WebGL2, ≈ 20 KB gz)</p>
+  <p class="tech m">PicoGL (WebGL2 mínimo)</p>
   <dl class="m"><div><dt>JS gzip</dt><dd>17.4 KB</dd></div><div><dt>Página gzip</dt><dd>82.6 KB</dd></div><div><dt>FPS móvil*</dt><dd>60.3</dd></div></dl>
   <div class="ac"><a class="pill f m" href="05-picogl/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/05-picogl">Código y notas</a></div></div>
 </article><article class="v" style="--a:#ff2e63">
@@ -84,7 +85,7 @@ footer{border-top:1px solid #24242a;padding:24px clamp(20px,4vw,56px);font-size:
 </article><article class="v" style="--a:#c0592b">
   <a class="th" href="07-zdog/"><img src="thumbs/07-zdog.webp" width="800" height="500" loading="lazy" alt="Vista de escritorio de Tueste Lento"><img class="ph" src="thumbs/07-zdog-m.webp" width="180" height="390" loading="lazy" alt="Vista móvil"></a>
   <div class="meta"><span class="m n">07</span><h2 class="d">Tueste Lento</h2><p class="niche">Cafetería de especialidad</p>
-  <p class="tech m">Zdog (pseudo-3D plano, ≈ 9 KB gz)</p>
+  <p class="tech m">Zdog (pseudo-3D en Canvas 2D)</p>
   <dl class="m"><div><dt>JS gzip</dt><dd>9.6 KB</dd></div><div><dt>Página gzip</dt><dd>108.2 KB</dd></div><div><dt>FPS móvil*</dt><dd>60.0</dd></div></dl>
   <div class="ac"><a class="pill f m" href="07-zdog/">Abrir demo</a><a class="pill m" href="https://github.com/0xDapa/escalatam-web-lab/tree/main/07-zdog">Código y notas</a></div></div>
 </article><article class="v" style="--a:#ff5d3b">

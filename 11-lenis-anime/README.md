@@ -5,7 +5,7 @@
 > Negocio **ficticio**. Textos, cifras (28, 60min, +3500, 4,9★) y reseñas son **de ejemplo**. La imagen de la sección de cifras es un gradiente CSS (sin foto).
 
 ## Cómo funciona el hero
-Hero 100 % DOM: una tarta de 5 capas hecha con discos CSS 3D, animada con anime.js (stagger, rebote, decoración que cae). Lenis aporta el scroll suave; el contador de cifras y el glitch también usan anime.js.
+Hero 100 % DOM: una tarta de 5 capas hecha con discos CSS 3D, animada con anime.js (stagger, rebote, decoración que cae). Lenis aporta el scroll suave; los contadores de cifras también usan anime.js (el glitch del titular es CSS del núcleo).
 
 ## Identidad
 - Fuente display: **Sofia Sans Extra Condensed 900** · texto: Archivo · etiquetas: JetBrains Mono (todas self-hosted en `fonts/`).

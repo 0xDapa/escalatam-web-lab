@@ -1,6 +1,6 @@
 # 04-regl — Pulso Fitness (Gimnasio / box)
 
-**Demo:** https://0xdapa.github.io/escalatam-web-lab/04-regl/ · **Tecnología:** regl (WebGL funcional, ≈ 26 KB gz)
+**Demo:** https://0xdapa.github.io/escalatam-web-lab/04-regl/ · **Tecnología:** regl (WebGL funcional)
 
 > Negocio **ficticio**. Textos, cifras (42, 14, +850, 7) y reseñas son **de ejemplo**. La imagen de la sección de cifras es un gradiente CSS (sin foto).
 

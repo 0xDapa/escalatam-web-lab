@@ -2,7 +2,7 @@
 import asyncio,sys,os,json
 from playwright.async_api import async_playwright
 BASE=os.environ.get('BASE','http://localhost:8817/')
-OUT=os.path.join(os.path.dirname(__file__),'..','shots')
+OUT=os.environ.get('OUT',os.path.join(os.path.dirname(__file__),'..','shots'))
 ARGS=['--no-sandbox','--use-gl=angle','--use-angle=swiftshader','--enable-unsafe-swiftshader','--ignore-gpu-blocklist']
 async def shoot(b,vid,full=True):
     res={}

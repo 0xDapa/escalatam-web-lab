@@ -1,11 +1,11 @@
 # 02-ogl — Clínica Dental Lumen (Clínica dental)
 
-**Demo:** https://0xdapa.github.io/escalatam-web-lab/02-ogl/ · **Tecnología:** OGL (≈ 8 KB gz usados)
+**Demo:** https://0xdapa.github.io/escalatam-web-lab/02-ogl/ · **Tecnología:** OGL (micro-librería WebGL)
 
 > Negocio **ficticio**. Textos, cifras (15, +2400, 98%, 0€) y reseñas son **de ejemplo**. La imagen de la sección de cifras es un gradiente CSS (sin foto).
 
 ## Cómo funciona el hero
-OGL (micro-librería WebGL): esfera de 128×128 con vertex shader de ruido (respira), fresnel iridiscente “perla” y 3 satélites orbitando. Solo se importan Renderer, Camera, Program, Mesh, Sphere y Transform.
+OGL (micro-librería WebGL): esfera de 128×96 segmentos con vertex shader de ruido (respira), fresnel iridiscente “perla” y 3 satélites orbitando. Solo se importan Renderer, Camera, Program, Mesh, Sphere y Transform.
 
 ## Identidad
 - Fuente display: **Big Shoulders Display 800** · texto: Archivo · etiquetas: JetBrains Mono (todas self-hosted en `fonts/`).

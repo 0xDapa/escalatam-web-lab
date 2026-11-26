@@ -15,7 +15,7 @@ add(id='01-webgl2-puro', name='Brasa Norte', niche='Restaurante / asador', tech=
  giant='BRASA', cta=['¿Mesa para','esta noche?'], ctap='Abrimos de martes a domingo desde las 19:00. Reserva online o escríbenos por WhatsApp.', c1='Reservar ahora', c2='WhatsApp',
  how='Fragment + vertex shader escritos a mano: 9 000 partículas sobre una esfera de Fibonacci, desplazadas con ruido y chispas que suben. Blending aditivo, sin texturas.')
 
-add(id='02-ogl', name='Clínica Dental Lumen', niche='Clínica dental', tech='OGL (≈ 8 KB gz usados)', lib='ogl',
+add(id='02-ogl', name='Clínica Dental Lumen', niche='Clínica dental', tech='OGL (micro-librería WebGL)', lib='ogl',
  font='bigshoulders', dls='.01em', colors=dict(bg='#f2f6fa',fg='#0d1b2a',mut='#5a6b7d',acc='#0fa3a0',acc2='#7fd6ff',bg2='#0d1b2a',fg2='#eef4f9',mut2='#9fb2c4',hair='rgba(255,255,255,.16)',bg3='#f2f6fa',fg3='#0d1b2a',mut3='#5a6b7d',hair3='#d4dde6',giant='rgba(13,27,42,.14)',art='radial-gradient(90% 120% at 70% 20%,#dff7f6 0%,#9fdcd9 35%,#2e7d8f 75%,#0d1b2a 100%)'),
  logo='tooth', over='Odontología estética · Valencia', hl=['Sonrisas','que se','notan'],
  lede='Implantes, ortodoncia invisible y blanqueamiento con tecnología digital. Primera valoración sin coste.',
@@ -26,11 +26,11 @@ add(id='02-ogl', name='Clínica Dental Lumen', niche='Clínica dental', tech='OG
  lead=['Tratamientos','con','precisión'], leadp='Planificación digital de principio a fin. Ves el resultado antes de empezar.',
  cards=[('spark','01','Blanqueamiento','Sesión de 60 minutos con resultados visibles desde el primer día.'),('shield','02','Implantes','Cirugía guiada por ordenador y garantía de por vida en el implante.'),('grid','03','Ortodoncia invisible','Alineadores transparentes con seguimiento mensual.'),('cal','04','Cita online','Elige día y hora; te recordamos por WhatsApp.')],
  giant='LUMEN', cta=['Agenda tu','valoración'], ctap='Te llamamos en menos de 24 h para confirmar. Sin compromiso.', c1='Pedir cita', c2='Llamar',
- how='OGL (micro-librería WebGL): esfera de 128×128 con vertex shader de ruido (respira), fresnel iridiscente “perla” y 3 satélites orbitando. Solo se importan Renderer, Camera, Program, Mesh, Sphere y Transform.')
+ how='OGL (micro-librería WebGL): esfera de 128×96 segmentos con vertex shader de ruido (respira), fresnel iridiscente “perla” y 3 satélites orbitando. Solo se importan Renderer, Camera, Program, Mesh, Sphere y Transform.')
 
-add(id='03-twgl', name='Altamar Inmobiliaria', niche='Inmobiliaria', tech='TWGL (helpers WebGL, ≈ 12 KB gz)', lib='twgl',
+add(id='03-twgl', name='Altamar Inmobiliaria', niche='Inmobiliaria', tech='TWGL (helpers WebGL2)', lib='twgl',
  font='oswald', dls='-.005em', colors=dict(bg='#eeeae4',fg='#14213d',mut='#5b6275',acc='#b47a26',acc2='#3d6bff',bg2='#14213d',fg2='#f1ede6',mut2='#a3abc0',hair='rgba(255,255,255,.16)',bg3='#eeeae4',fg3='#14213d',mut3='#5b6275',hair3='#d5cfc5',giant='rgba(20,33,61,.15)',art='linear-gradient(180deg,#f7d9a8 0%,#e3a25a 40%,#6b4a3a 75%,#14213d 100%)'),
- logo='home', over='Viviendas exclusivas · Ciudad de México', hl=['Tu próxima','dirección','empieza','aquí'],
+ logo='home', over='Viviendas exclusivas · Ciudad de México', hl=['Tu próxima','dirección','empieza','hoy'],
  lede='Pisos, áticos y casas seleccionadas a mano en las mejores zonas. Visitas virtuales y asesoría legal incluida.',
  b1='Ver propiedades', b2='Vender mi casa', hint='Arrastra la ciudad ↔',
  kick=['Encontramos','la casa.','Tú la vives.'], kicks='Tasación gratuita · Visitas 3D · Firma digital',
@@ -41,7 +41,7 @@ add(id='03-twgl', name='Altamar Inmobiliaria', niche='Inmobiliaria', tech='TWGL 
  giant='ALTAMAR', cta=['Agenda una','visita hoy'], ctap='Cuéntanos qué buscas y te enviamos una selección en 48 horas.', c1='Quiero visitar', c2='Tasación gratis',
  how='TWGL simplifica buffers/uniforms: una ciudad de 24×24 edificios instanciados (1 draw call, WebGL2 instancing) que suben con una ola senoidal, iluminación direccional y niebla hacia el fondo.')
 
-add(id='04-regl', name='Pulso Fitness', niche='Gimnasio / box', tech='regl (WebGL funcional, ≈ 26 KB gz)', lib='regl',
+add(id='04-regl', name='Pulso Fitness', niche='Gimnasio / box', tech='regl (WebGL funcional)', lib='regl',
  font='teko', dls='.01em', colors=dict(bg='#0b0b0c',fg='#f2f2f2',mut='#9a9a9a',acc='#c6ff00',acc2='#00e5ff',bg2='#c6ff00',fg2='#0b0b0c',mut2='#3d4a12',hair='rgba(0,0,0,.25)',bg3='#0b0b0c',fg3='#f2f2f2',mut3='#9a9a9a',hair3='rgba(255,255,255,.12)',giant='rgba(198,255,0,.25)',art='repeating-linear-gradient(115deg,#0b0b0c 0 18px,#1c1f12 18px 36px),#0b0b0c',on='#0b0b0c'),
  logo='bolt', over='Entrenamiento funcional · Madrid', hl=['Supera','tu propio','récord'],
  lede='Clases de 45 minutos, entrenadores certificados y seguimiento de tu progreso en la app. Primera semana gratis.',
@@ -54,9 +54,9 @@ add(id='04-regl', name='Pulso Fitness', niche='Gimnasio / box', tech='regl (WebG
  giant='PULSO', cta=['Tu primera','clase es gratis'], ctap='Reserva desde la web y ven con ropa cómoda. Nosotros ponemos el resto.', c1='Reservar clase', c2='WhatsApp',
  how='regl (WebGL declarativo): 14 000 puntos en un toroide que late a ritmo cardíaco (función ECG en el vertex shader), blending aditivo con dos colores neón.')
 
-add(id='05-picogl', name='Ortega & Vidal', niche='Despacho de abogados', tech='PicoGL (WebGL2, ≈ 20 KB gz)', lib='picogl',
+add(id='05-picogl', name='Ortega & Vidal', niche='Despacho de abogados', tech='PicoGL (WebGL2 mínimo)', lib='picogl',
  font='antonio', dls='0', colors=dict(bg='#f5f2ec',fg='#1b1b1f',mut='#62606a',acc='#8a1c2b',acc2='#c9a24a',bg2='#1b1b1f',fg2='#f2eee6',mut2='#a6a2a9',hair='rgba(255,255,255,.15)',bg3='#f5f2ec',fg3='#1b1b1f',mut3='#62606a',hair3='#dcd6cb',giant='rgba(27,27,31,.13)',art='linear-gradient(135deg,#2a2a30 0%,#4a1520 45%,#8a1c2b 70%,#c9a24a 100%)'),
- logo='scale', over='Abogados · Buenos Aires', hl=['Defendemos','lo que','más importa'],
+ logo='scale', over='Abogados · Buenos Aires', hl=['Defendemos','lo que','te importa'],
  lede='Derecho civil, laboral y de familia con más de 20 años de experiencia. Primera consulta en 24 horas.',
  b1='Consulta inicial', b2='Áreas de práctica', hint='Gira el cristal ↔',
  kick=['Claridad','en cada','decisión'], kicks='Honorarios transparentes · Respuesta en 24 h',
@@ -80,7 +80,7 @@ add(id='06-shader-raymarch', name='Nácar Joyas', niche='Joyería / tienda de lu
  giant='NÁCAR', cta=['Encuentra','tu pieza'], ctap='Escríbenos y te ayudamos a elegir el regalo perfecto.', c1='Ver tienda', c2='Instagram',
  how='Un único fragment shader: 5 metaballs con smooth-min, raymarching de 64 pasos, reflejo de entorno procedural (estudio) y aberración de color en el borde. Resolución adaptativa (renderiza al 60 % y escala).')
 
-add(id='07-zdog', name='Tueste Lento', niche='Cafetería de especialidad', tech='Zdog (pseudo-3D plano, ≈ 9 KB gz)', lib='zdog',
+add(id='07-zdog', name='Tueste Lento', niche='Cafetería de especialidad', tech='Zdog (pseudo-3D en Canvas 2D)', lib='zdog',
  font='fjalla', dls='.005em', colors=dict(bg='#efe6d8',fg='#2a1a12',mut='#73604f',acc='#c0592b',acc2='#2f8f6b',bg2='#2a1a12',fg2='#f4ece0',mut2='#bba48f',hair='rgba(255,255,255,.15)',bg3='#efe6d8',fg3='#2a1a12',mut3='#73604f',hair3='#d8cbb6',giant='rgba(42,26,18,.14)',art='radial-gradient(60% 80% at 50% 55%,#6b3f22 0%,#3d2414 45%,#2a1a12 100%)'),
  logo='cup', over='Café de especialidad · Lima', hl=['Café','tostado','sin prisa'],
  lede='Granos de fincas peruanas, tostados cada martes en nuestro obrador. Para tomar aquí o llevar a casa.',
@@ -144,7 +144,7 @@ add(id='11-lenis-anime', name='Dulce Capa', niche='Pastelería artesanal', tech=
  lead=['Dulces','para cada','ocasión'], leadp='Pide online con 24 h de antelación o pasa por la vitrina.',
  cards=[('cake','01','Tartas por encargo','Elige bizcocho, relleno y cobertura.'),('heart','02','Bodas','Degustación previa y montaje en el lugar.'),('leaf','03','Sin gluten','Obrador separado y certificado.'),('tag','04','Cajas regalo','Macarons y galletas con tarjeta personalizada.')],
  giant='DULCE', cta=['Encarga','tu tarta'], ctap='Escríbenos el día, el número de personas y el sabor. Te confirmamos en 1 hora.', c1='Encargar', c2='WhatsApp',
- how='Hero 100 % DOM: una tarta de 5 capas hecha con discos CSS 3D, animada con anime.js (stagger, rebote, decoración que cae). Lenis aporta el scroll suave; el contador de cifras y el glitch también usan anime.js.')
+ how='Hero 100 % DOM: una tarta de 5 capas hecha con discos CSS 3D, animada con anime.js (stagger, rebote, decoración que cae). Lenis aporta el scroll suave; los contadores de cifras también usan anime.js (el glitch del titular es CSS del núcleo).')
 
 add(id='12-motion-particulas', name='Respira Spa', niche='Spa y bienestar', tech='Motion (mini) + partículas Canvas 2D vanilla', lib='motion',
  font='bigshoulders', dls='.01em', colors=dict(bg='#eef1ea',fg='#1f2a22',mut='#5e6b61',acc='#4f7a5a',acc2='#d9a46c',bg2='#1f2a22',fg2='#eef1ea',mut2='#a5b3a8',hair='rgba(255,255,255,.15)',bg3='#eef1ea',fg3='#1f2a22',mut3='#5e6b61',hair3='#d3dacd',giant='rgba(31,42,34,.12)',art='radial-gradient(80% 100% at 40% 30%,#f4efe4 0%,#c9d6c3 35%,#6f8f74 70%,#1f2a22 100%)'),
