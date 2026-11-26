@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Kai Torres — Entrenador personal en Ciudad de México · Demo conceptual Escalatam</title>
+<meta name="description" content="Entrenador personal con anillos de actividad en muelle, carrusel de planes con inercia y rebote elástico, y reserva con toasts (Motion, estilo Emil Kowalski).">
+<meta name="theme-color" content="#f1f1ec">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/big-shoulders-display-normal-600-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#principal">Saltar al contenido</a>
+<header class="hd">
+  <a class="logo" href="#principal">KAI<b>TORRES</b></a>
+  <nav aria-label="Principal"><a href="#metodo">Método</a><a href="#planes">Planes</a><a href="#resultados">Resultados</a></nav>
+  <a class="btn sm" href="#reserva">Clase de prueba</a>
+</header>
+<main id="principal">
+  <section class="hero" aria-labelledby="ht">
+    <div class="h-l">
+      <p class="tag"><span class="dot"></span>Coach certificado · Roma Norte, CDMX</p>
+      <h1 id="ht">Entrena con<br><span>intención.</span></h1>
+      <p class="lede">Fuerza, movilidad y hábitos medidos cada semana. Sin rutinas genéricas: un plan que se ajusta a tus datos.</p>
+      <div class="row"><a class="btn" href="#reserva">Agendar clase de prueba</a><a class="btn ghost" href="#planes">Ver planes</a></div>
+    </div>
+    <div class="h-r">
+      <div class="rings-card">
+        <div class="seg" id="range" role="group" aria-label="Periodo"><span class="pill" aria-hidden="true"></span><button type="button" aria-pressed="true" data-k="hoy">Hoy</button><button type="button" aria-pressed="false" data-k="sem">Semana</button><button type="button" aria-pressed="false" data-k="mes">Mes</button></div>
+        <div class="rings">
+          <svg viewBox="0 0 220 220" role="img" aria-labelledby="rgT"><title id="rgT">Anillos de progreso de un cliente de ejemplo</title>
+            <g transform="rotate(-90 110 110)" fill="none" stroke-linecap="round" stroke-width="20">
+              <circle class="bg r1" cx="110" cy="110" r="96"/><circle class="fg r1" id="r1" cx="110" cy="110" r="96" pathLength="1"/>
+              <circle class="bg r2" cx="110" cy="110" r="72"/><circle class="fg r2" id="r2" cx="110" cy="110" r="72" pathLength="1"/>
+              <circle class="bg r3" cx="110" cy="110" r="48"/><circle class="fg r3" id="r3" cx="110" cy="110" r="48" pathLength="1"/>
+            </g>
+          </svg>
+          <ul class="legend">
+            <li><i class="c1"></i><span>Moverse</span><b><span id="v1">0</span>/600 kcal</b></li>
+            <li><i class="c2"></i><span>Fuerza</span><b><span id="v2">0</span>/45 min</b></li>
+            <li><i class="c3"></i><span>Descanso</span><b><span id="v3">0</span>/8 h</b></li>
+          </ul>
+        </div>
+        <p class="fine">Datos de un cliente de ejemplo, sincronizados desde su reloj.</p>
+      </div>
+      <img class="h-img" src="img/boxeo-800.webp" srcset="img/boxeo-800.webp 800w, img/boxeo-1600.webp 1600w" sizes="(max-width:900px) 90vw, 40vw" width="800" height="531" alt="Dos boxeadores entrenando en el ring">
+    </div>
+  </section>
+
+  <section class="sec" id="metodo" aria-labelledby="mt">
+    <div class="wrap">
+      <h2 id="mt" class="h">El método <span>K.T.</span></h2>
+      <div class="cards">
+        <article class="card" tabindex="0"><span class="n">01</span><h3>Evaluación</h3><p>Test de fuerza, movilidad y composición corporal. Sabemos desde dónde partes.</p></article>
+        <article class="card" tabindex="0"><span class="n">02</span><h3>Plan vivo</h3><p>Rutina en la app que se ajusta cada lunes según tu sueño, carga y progreso.</p></article>
+        <article class="card" tabindex="0"><span class="n">03</span><h3>Nutrición simple</h3><p>Sin dietas imposibles: platos de referencia y una meta de proteína diaria.</p></article>
+        <article class="card" tabindex="0"><span class="n">04</span><h3>Check-in semanal</h3><p>Video de 10 min y ajustes. Si fallas una semana, se reprograma, no se castiga.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec dark" id="planes" aria-labelledby="pt">
+    <div class="wrap">
+      <div class="ph"><h2 id="pt" class="h">Planes</h2><div class="arrows"><button type="button" id="prev" aria-label="Plan anterior">←</button><button type="button" id="next" aria-label="Plan siguiente">→</button></div></div>
+      <p class="hint">Arrastra las tarjetas · suelta con fuerza y verás la inercia.</p>
+    </div>
+    <div class="track-wrap" id="tw">
+      <ul class="track" id="track">
+        <li class="plan"><p class="pn">Online</p><p class="price">$1,490<small>MXN/mes*</small></p><ul><li>Plan en la app</li><li>Check-in semanal</li><li>Chat de dudas</li></ul><button class="btn pick" type="button" data-n="Online">Elegir Online</button></li>
+        <li class="plan hot"><span class="badge">Más elegido</span><p class="pn">Híbrido</p><p class="price">$3,200<small>MXN/mes*</small></p><ul><li>2 sesiones presenciales/sem</li><li>Plan en la app</li><li>Nutrición básica</li></ul><button class="btn pick" type="button" data-n="Híbrido">Elegir Híbrido</button></li>
+        <li class="plan"><p class="pn">1 a 1</p><p class="price">$5,600<small>MXN/mes*</small></p><ul><li>4 sesiones presenciales/sem</li><li>Nutrición completa</li><li>Medición mensual</li></ul><button class="btn pick" type="button" data-n="1 a 1">Elegir 1 a 1</button></li>
+        <li class="plan"><p class="pn">Pareja</p><p class="price">$4,800<small>MXN/mes*</small></p><ul><li>3 sesiones para dos</li><li>Retos compartidos</li><li>Plan individual</li></ul><button class="btn pick" type="button" data-n="Pareja">Elegir Pareja</button></li>
+        <li class="plan"><p class="pn">Empresa</p><p class="price">A medida</p><ul><li>Clases grupales en oficina</li><li>Pausas activas</li><li>Reporte mensual</li></ul><button class="btn pick" type="button" data-n="Empresa">Elegir Empresa</button></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" id="resultados" aria-labelledby="rt">
+    <div class="wrap res">
+      <div>
+        <h2 id="rt" class="h">Resultados <span>reales*</span></h2>
+        <ul class="kpis"><li><b data-to="12">0</b><span>kg menos de grasa en 16 sem (media)*</span></li><li><b data-to="38">0</b><span>% más fuerza en sentadilla*</span></li><li><b data-to="214">0</b><span>clientes activos*</span></li></ul>
+        <div class="tst" id="tst">
+          <blockquote class="on"><p>“En 4 meses pasé de no hacer una dominada a hacer 6. Y sin dolor de espalda.”</p><cite>Daniela · 34 · Híbrido</cite></blockquote>
+          <blockquote><p>“Lo que más me sirvió: el check-in del lunes. Imposible abandonar.”</p><cite>Marco · 41 · Online</cite></blockquote>
+          <blockquote><p>“Perdí 9 kg comiendo tacos los viernes. El plan es realista.”</p><cite>Sofía · 29 · 1 a 1</cite></blockquote>
+        </div>
+        <div class="tnav" role="group" aria-label="Cambiar testimonio"><button type="button" aria-pressed="true" aria-label="Testimonio 1"></button><button type="button" aria-pressed="false" aria-label="Testimonio 2"></button><button type="button" aria-pressed="false" aria-label="Testimonio 3"></button></div>
+      </div>
+      <div class="gal">
+        <img loading="lazy" src="img/rack-800.webp" srcset="img/rack-800.webp 800w, img/rack-1600.webp 1600w" sizes="(max-width:900px) 45vw, 25vw" width="800" height="1067" alt="Zona de pesas con máquina Smith">
+        <img loading="lazy" src="img/jaula-800.webp" srcset="img/jaula-800.webp 800w, img/jaula-1600.webp 1600w" sizes="(max-width:900px) 45vw, 25vw" width="800" height="1067" alt="Máquina de poleas en un gimnasio con luz natural">
+      </div>
+    </div>
+  </section>
+
+  <section class="sec book" id="reserva" aria-labelledby="bt">
+    <div class="wrap bk">
+      <div><h2 id="bt" class="h">Tu clase de <span>prueba.</span></h2><p class="mut">45 minutos con evaluación incluida. Gratis la primera vez (ejemplo).</p></div>
+      <form id="form" class="form">
+        <fieldset><legend>Objetivo</legend><div class="chips" id="goal"><button type="button" aria-pressed="true">Perder grasa</button><button type="button" aria-pressed="false">Ganar fuerza</button><button type="button" aria-pressed="false">Movilidad</button><button type="button" aria-pressed="false">Preparar carrera</button></div></fieldset>
+        <fieldset><legend>Días por semana</legend><div class="step"><button type="button" id="minus" aria-label="Menos días">−</button><output id="days" aria-live="polite"><span>3</span></output><button type="button" id="plus" aria-label="Más días">+</button></div></fieldset>
+        <label>Plan<select id="plan"><option>Sin decidir</option><option>Online</option><option>Híbrido</option><option>1 a 1</option><option>Pareja</option><option>Empresa</option></select></label>
+        <button class="btn" type="submit">Reservar por WhatsApp</button>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="ft"><div class="wrap"><p class="logo">KAI<b>TORRES</b></p><p>Estudio en Colima 210, Roma Norte, CDMX · Lun–Sáb 6:00–21:00</p><p>Entrenador <b>ficticio</b> — demo de Escalatam. Precios, resultados y testimonios <b>de ejemplo</b>. Fotos CC0 del WordPress Photo Directory. WhatsApp abre wa.me sin número.</p><p><a href="../">← Escalatam Web Lab</a></p></div></footer>
+</body>
+</html>

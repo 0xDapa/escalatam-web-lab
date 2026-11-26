@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Dra. Elena Ríos — Psicóloga clínica en Lima y online · Demo conceptual Escalatam</title>
+<meta name="description" content="Consulta de psicología con ejercicio de respiración guiado, texto que se ilumina con el scroll (estilo Apple) y reserva en 3 pasos dentro de un drawer (Motion, estilo Emil Kowalski).">
+<meta name="theme-color" content="#eef0ea">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/spectral-normal-300.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/lago-800.webp" as="image" type="image/webp" fetchpriority="high" imagesrcset="img/lago-800.webp 800w, img/lago-1600.webp 1600w" imagesizes="(max-width:860px) 92vw, 46vw">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#principal">Saltar al contenido</a>
+<div class="page" data-drawer-bg>
+<header class="hd">
+  <a class="logo" href="#principal">Elena Ríos<span>Psicología clínica</span></a>
+  <nav aria-label="Principal"><a href="#enfoque">Enfoque</a><a href="#terapias">Terapias</a><a href="#respira">Respira</a><a href="#preguntas">Preguntas</a></nav>
+  <button class="btn sm open-book" type="button">Reservar</button>
+</header>
+<main id="principal">
+  <section class="hero" aria-labelledby="ht">
+    <div class="h-t">
+      <p class="kick">Terapia individual y de pareja · Miraflores y online</p>
+      <h1 id="ht">Un lugar tranquilo para <em>entender</em> lo que sientes.</h1>
+      <p class="lede">Terapia cognitivo-conductual y de aceptación, con un plan claro desde la primera sesión. Sin juicios, a tu ritmo.</p>
+      <div class="row"><button class="btn open-book" type="button">Reservar primera sesión</button><a class="btn ghost" href="#respira">Probar un respiro de 1 min</a></div>
+      <p class="trust">CPsP 00000 (ficticio) · 12 años de experiencia* · Sesiones de 50 min</p>
+    </div>
+    <figure class="h-i"><img src="img/lago-800.webp" srcset="img/lago-800.webp 800w, img/lago-1600.webp 1600w" sizes="(max-width:860px) 92vw, 46vw" width="800" height="600" alt="Lago tranquilo rodeado de bosque" fetchpriority="high"></figure>
+  </section>
+
+  <section class="scrub" id="enfoque" aria-label="Enfoque">
+    <div class="s-in"><p class="words" id="words">Pedir ayuda no es una señal de debilidad. Es decidir que mereces sentirte mejor. En consulta trabajamos con lo que te pasa hoy, entendemos de dónde viene y practicamos herramientas que puedas usar mañana.</p></div>
+  </section>
+
+  <section class="sec" id="terapias" aria-labelledby="tt">
+    <div class="wrap">
+      <h2 id="tt" class="h">Cómo puedo ayudarte</h2>
+      <div class="thx">
+        <article><img loading="lazy" src="img/hojas-800.webp" srcset="img/hojas-800.webp 800w, img/hojas-1600.webp 1600w" sizes="(max-width:860px) 92vw, 30vw" width="800" height="1067" alt="Hoja de anturio en verde y rojo"><h3>Ansiedad y estrés</h3><p>Entender los disparadores, regular el cuerpo y volver a dormir bien.</p><p class="pr">S/ 160 por sesión*</p></article>
+        <article><img loading="lazy" src="img/laguna-800.webp" srcset="img/laguna-800.webp 800w, img/laguna-1600.webp 1600w" sizes="(max-width:860px) 92vw, 30vw" width="800" height="600" alt="Humedal tranquilo con patos"><h3>Terapia de pareja</h3><p>Comunicación, acuerdos y reparación después de una crisis.</p><p class="pr">S/ 220 por sesión*</p></article>
+        <article><img loading="lazy" src="img/plantas-800.webp" srcset="img/plantas-800.webp 800w, img/plantas-1600.webp 1600w" sizes="(max-width:860px) 92vw, 30vw" width="800" height="549" alt="Plantas de interior en macetas"><h3>Duelo y cambios</h3><p>Acompañamiento en pérdidas, mudanzas, rupturas o cambios de trabajo.</p><p class="pr">S/ 160 por sesión*</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec breathe" id="respira" aria-labelledby="bt">
+    <div class="wrap br">
+      <div><h2 id="bt" class="h">Respira conmigo</h2><p class="mut">Respiración 4-4-6: inhala 4 segundos, sostén 4, exhala 6. Exhalar más largo activa la respuesta de calma. Un minuto basta para notarlo.</p>
+        <button class="btn" type="button" id="bStart" aria-pressed="false">Empezar 1 minuto</button></div>
+      <div class="orb-w"><div class="orb" id="orb"><span id="bTxt" aria-live="polite">Listo</span></div><svg class="ring" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="48" pathLength="1" id="bRing"/></svg></div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="vt">
+    <div class="wrap voices">
+      <h2 id="vt" class="h">Lo que cuentan (testimonios de ejemplo)</h2>
+      <blockquote><p>“Por primera vez sentí que alguien me explicaba lo que me pasaba sin hacerme sentir rara.”</p><cite>— A., 31 años</cite></blockquote>
+      <blockquote><p>“Llegamos a punto de separarnos. Hoy discutimos menos y nos escuchamos más.”</p><cite>— M. y J.</cite></blockquote>
+      <blockquote><p>“Las sesiones online me salvaron: las tomo desde el auto en el almuerzo.”</p><cite>— R., 42 años</cite></blockquote>
+    </div>
+  </section>
+
+  <section class="sec" id="preguntas" aria-labelledby="ft">
+    <div class="wrap faq">
+      <h2 id="ft" class="h">Preguntas</h2>
+      <div class="acc">
+        <details><summary>¿Cuántas sesiones voy a necesitar?</summary><div><p>Depende del motivo. Para ansiedad leve solemos trabajar entre 8 y 12 sesiones; lo revisamos juntas cada mes.</p></div></details>
+        <details><summary>¿Es confidencial?</summary><div><p>Sí. Todo lo que hablamos está protegido por el secreto profesional, salvo riesgo grave para ti o terceros.</p></div></details>
+        <details><summary>¿La sesión online funciona igual?</summary><div><p>La evidencia muestra resultados equivalentes para la mayoría de motivos. Solo necesitas un espacio privado.</p></div></details>
+        <details><summary>¿Y si estoy en crisis ahora mismo?</summary><div><p>Esta web no es un servicio de emergencias. Si estás en peligro, llama a la línea de emergencias de tu país o acude al hospital más cercano.</p></div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec cta" aria-labelledby="ct">
+    <div class="wrap"><h2 id="ct" class="h">Da el primer paso.</h2><p class="mut">La primera sesión sirve para conocernos y ver si encajamos. Si no, te recomiendo a otra colega.</p><button class="btn open-book" type="button">Reservar en 3 pasos</button></div>
+  </section>
+</main>
+<footer class="fo"><div class="wrap"><p class="logo">Elena Ríos<span>Psicología clínica</span></p><p>Calle Ficticia 245, Miraflores, Lima · Lun–Vie 9:00–20:00</p><p>Profesional <b>ficticia</b> — demo de Escalatam. Precios, colegiatura y testimonios <b>de ejemplo</b>. Fotos CC0 del WordPress Photo Directory. WhatsApp abre wa.me sin número.</p><p><a href="../">← Escalatam Web Lab</a></p></div></footer>
+</div>
+<div class="dw" id="dw" hidden>
+  <div class="dw-ov"></div>
+  <div class="dw-p" role="dialog" aria-modal="true" aria-labelledby="dT" tabindex="-1">
+    <div class="dw-grip"><h2 id="dT">Reservar sesión</h2><p class="steps" id="stepLbl">Paso 1 de 3</p></div>
+    <div class="vp" id="vp">
+      <div class="stp" data-s="0"><p class="q">¿Cómo prefieres la sesión?</p><div class="opts" id="mod"><button type="button" aria-pressed="false" data-v="Presencial en Miraflores"><b>Presencial</b><span>Miraflores, Lima</span></button><button type="button" aria-pressed="false" data-v="Online por videollamada"><b>Online</b><span>Videollamada segura</span></button></div></div>
+      <div class="stp" data-s="1" hidden><p class="q">Elige día y hora</p><div class="chips" id="days"></div><div class="chips" id="hours"><button type="button" aria-pressed="false">9:00</button><button type="button" aria-pressed="false">11:00</button><button type="button" aria-pressed="false">16:00</button><button type="button" aria-pressed="false">18:30</button></div></div>
+      <div class="stp" data-s="2" hidden><p class="q">Casi listo</p><label>Tu nombre<input id="nm" autocomplete="given-name" placeholder="Nombre"></label><label>Motivo (opcional)<textarea id="mot" rows="2" placeholder="Ansiedad, pareja, duelo…"></textarea></label><p class="sum" id="sum"></p></div>
+    </div>
+    <div class="nav"><button class="btn ghost" type="button" id="back">Atrás</button><button class="btn" type="button" id="nextB" disabled>Continuar</button></div>
+  </div>
+</div>
+</body>
+</html>

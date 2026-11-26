@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aura Medicina Estética — Clínica en Santiago · Demo conceptual Escalatam</title>
+<meta name="description" content="Clínica de medicina estética con microinteracciones al estilo Emil Kowalski: tarjetas que se expanden, drawer de reserva, toasts y popovers con origen.">
+<meta name="theme-color" content="#f7f3ef">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/libre-caslon-display-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/mona-sans-normal-300-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#principal">Saltar al contenido</a>
+<div class="page" data-drawer-bg>
+<header class="hd">
+  <a class="logo" href="#principal">Aura<span>medicina estética</span></a>
+  <nav aria-label="Principal"><a href="#tratamientos">Tratamientos</a><a href="#precios">Precios</a><a href="#equipo">Equipo</a><a href="#faq">Preguntas</a></nav>
+  <button class="btn sm" data-book type="button">Reservar</button>
+</header>
+<main id="principal">
+  <section class="hero">
+    <div class="aura" aria-hidden="true"><i></i><i></i><i></i></div>
+    <p class="eyebrow"><span class="dot" aria-hidden="true"></span>Valoración médica gratuita en marzo (ejemplo)</p>
+    <h1>Tu piel, en su mejor versión.<br><em>Sin que nadie note por qué.</em></h1>
+    <p class="lede">Medicina estética con criterio médico: dosis justas, resultados naturales y un plan pensado para ti. En Providencia, Santiago.</p>
+    <div class="row"><button class="btn" data-book type="button">Reservar valoración</button><a class="btn ghost" href="#tratamientos">Ver tratamientos</a></div>
+    <ul class="trust" aria-label="Garantías">
+      <li><b>4,9</b> de 5 · 620 reseñas*</li><li>Médicas colegiadas</li><li>Productos con registro ISP</li>
+    </ul>
+  </section>
+
+  <section class="sec" id="tratamientos" aria-labelledby="tt">
+    <div class="wrap">
+      <header class="sh"><p class="k">Tratamientos</p><h2 id="tt">Elige por lo que quieres lograr,<br>no por el nombre del producto.</h2><p class="muted">Toca una tarjeta para ver qué incluye, cuánto dura y cuánto cuesta.</p></header>
+      <div class="cards" id="cards">
+        <button class="card" data-i="0" type="button"><span class="ch">Arrugas de expresión</span><span class="ct">Toxina botulínica</span><span class="cg g0" aria-hidden="true"></span></button>
+        <button class="card" data-i="1" type="button"><span class="ch">Hidratación profunda</span><span class="ct">Skinbooster · ácido hialurónico</span><span class="cg g1" aria-hidden="true"></span></button>
+        <button class="card" data-i="2" type="button"><span class="ch">Manchas y tono</span><span class="ct">Peeling médico</span><span class="cg g2" aria-hidden="true"></span></button>
+        <button class="card" data-i="3" type="button"><span class="ch">Labios definidos</span><span class="ct">Relleno sutil</span><span class="cg g3" aria-hidden="true"></span></button>
+        <button class="card" data-i="4" type="button"><span class="ch">Firmeza</span><span class="ct">Radiofrecuencia + inductores</span><span class="cg g4" aria-hidden="true"></span></button>
+        <button class="card" data-i="5" type="button"><span class="ch">Poros y textura</span><span class="ct">Láser fraccionado suave</span><span class="cg g5" aria-hidden="true"></span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec how" aria-labelledby="hw">
+    <div class="wrap two">
+      <div><p class="k">Cómo trabajamos</p><h2 id="hw">Primero escuchamos.<br>Después, si hace falta, tratamos.</h2></div>
+      <ol class="tl">
+        <li><b>Valoración de 30 min</b><span>Fotografía clínica, historia y expectativas. Si no te recomendamos nada, no pagas nada.</span></li>
+        <li><b>Plan por escrito</b><span>Qué, cuándo y cuánto. Sin paquetes que no necesitas.</span></li>
+        <li><b>Tratamiento</b><span>En cabina privada, con anestesia tópica cuando aplica.</span></li>
+        <li><b>Control a los 15 días</b><span>Revisamos el resultado y ajustamos sin coste.</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec" id="precios" aria-labelledby="pp">
+    <div class="wrap">
+      <header class="sh"><p class="k">Precios orientativos</p><h2 id="pp">Calcula tu plan.</h2></header>
+      <div class="sim">
+        <div class="seg" id="seg" role="radiogroup" aria-label="Zona">
+          <span class="seg-pill" aria-hidden="true"></span>
+          <button role="radio" aria-checked="true" data-v="190">1 zona</button><button role="radio" aria-checked="false" data-v="320">2 zonas</button><button role="radio" aria-checked="false" data-v="420">3 zonas</button>
+        </div>
+        <p class="total"><span class="cur">$</span><span id="total" class="num">190.000</span><span class="per">CLP* por sesión</span></p>
+        <div class="opts">
+          <label class="sw"><input type="checkbox" id="ctrl" checked><span class="tg" aria-hidden="true"></span>Incluir control a los 15 días <span class="info" data-pop="El control es una cita de 15 min para revisar y retocar si hace falta. Siempre gratuito." tabindex="0" role="button" aria-label="Más información sobre el control">?</span></label>
+          <label class="sw"><input type="checkbox" id="pack"><span class="tg" aria-hidden="true"></span>Plan anual (3 sesiones, −15 %) <span class="info" data-pop="Pagas por sesión, sin permanencia. El descuento se aplica desde la segunda." tabindex="0" role="button" aria-label="Más información sobre el plan anual">?</span></label>
+        </div>
+        <button class="btn" data-book type="button">Reservar con este plan</button>
+        <p class="fine">*Precios de ejemplo para la demo. En la versión real se ponen los de la clínica.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec voices" aria-labelledby="vv">
+    <div class="wrap">
+      <header class="sh"><p class="k">Pacientes (testimonios de ejemplo)</p><h2 id="vv">“Me veo descansada,<br>no operada.”</h2></header>
+      <div class="vq">
+        <figure><blockquote>Mis amigas me preguntaron si había vuelto de vacaciones. Eso era exactamente lo que quería.</blockquote><figcaption>Francisca, 41 · toxina en frente</figcaption></figure>
+        <figure><blockquote>La doctora me dijo que no necesitaba relleno. Me ahorró dinero y me ganó para siempre.</blockquote><figcaption>Daniela, 34 · valoración</figcaption></figure>
+        <figure><blockquote>El drawer para reservar es tan fácil que lo hice desde el metro en 30 segundos.</blockquote><figcaption>Javiera, 29 · skinbooster</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec team" id="equipo" aria-labelledby="eq">
+    <div class="wrap">
+      <header class="sh"><p class="k">Equipo médico</p><h2 id="eq">Dos médicas. Una forma de mirar.</h2></header>
+      <div class="docs">
+        <article><span class="mono-av" aria-hidden="true">CV</span><h3>Dra. Catalina Vidal</h3><p>Médica cirujana, magíster en medicina estética. 11 años de práctica*.</p></article>
+        <article><span class="mono-av b" aria-hidden="true">IR</span><h3>Dra. Isidora Rojas</h3><p>Dermatóloga. Especialista en láser y manchas. Docente universitaria*.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="faq" aria-labelledby="fq">
+    <div class="wrap two">
+      <div><p class="k">Preguntas frecuentes</p><h2 id="fq">Lo que todas preguntan antes de venir.</h2></div>
+      <div class="faq" id="faqList">
+        <div class="qa"><button type="button" aria-expanded="false">¿Duele?</button><div class="an"><p>Muy poco. Usamos agujas ultrafinas y anestesia tópica. La mayoría lo describe como un pellizco.</p></div></div>
+        <div class="qa"><button type="button" aria-expanded="false">¿Cuándo veo resultados?</button><div class="an"><p>La toxina a los 3–7 días; el ácido hialurónico al momento, con resultado final a las 2 semanas.</p></div></div>
+        <div class="qa"><button type="button" aria-expanded="false">¿Puedo volver al trabajo?</button><div class="an"><p>Sí. Puede haber un leve enrojecimiento que desaparece en horas. Evita el ejercicio intenso ese día.</p></div></div>
+        <div class="qa"><button type="button" aria-expanded="false">¿Y si no me gusta?</button><div class="an"><p>El control a los 15 días existe para eso. El ácido hialurónico además es reversible.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec visit" aria-labelledby="vi">
+    <div class="wrap two">
+      <div><p class="k">Visítanos</p><h2 id="vi">Av. Providencia 1208, of. 702</h2><p class="muted">Lun–Vie 10:00–20:00 · Sáb 10:00–14:00 · A 2 min del metro Manuel Montt.</p>
+      <div class="row"><button class="btn" data-book type="button">Reservar valoración</button><button class="btn ghost" id="copy" type="button">Copiar dirección</button></div></div>
+      <div class="map" aria-hidden="true"><svg viewBox="0 0 400 260"><path d="M0 180 C120 150 180 210 400 120" /><path d="M40 0 L120 260"/><path d="M260 0 L220 260"/><path d="M0 70 L400 40"/><circle cx="196" cy="138" r="9"/></svg><span>Aura</span></div>
+    </div>
+  </section>
+</main>
+<footer class="ft"><div class="wrap"><p class="logo">Aura<span>medicina estética</span></p><p>Clínica <b>ficticia</b> — demo conceptual de Escalatam. Precios, reseñas, equipo y testimonios <b>de ejemplo</b>. Los tratamientos médicos requieren valoración profesional. WhatsApp abre wa.me sin número: se pone el de la clínica.</p><p><a href="../">← Escalatam Web Lab</a></p></div></footer>
+</div>
+
+<div class="modal" id="modal" hidden>
+  <div class="m-ov"></div>
+  <article class="m-card" role="dialog" aria-modal="true" aria-labelledby="mTitle" tabindex="-1">
+    <span class="cg" id="mG" aria-hidden="true"></span>
+    <button class="m-x" type="button" aria-label="Cerrar">×</button>
+    <div class="m-body">
+      <p class="k" id="mKick"></p><h3 id="mTitle"></h3><p id="mText"></p>
+      <dl class="m-dl"><div><dt>Duración</dt><dd id="mDur"></dd></div><div><dt>Resultado</dt><dd id="mRes"></dd></div><div><dt>Desde</dt><dd id="mPr"></dd></div></dl>
+      <button class="btn" type="button" id="mBook">Reservar este tratamiento</button>
+    </div>
+  </article>
+</div>
+
+<div class="dw" id="dw" hidden>
+  <div class="dw-ov"></div>
+  <div class="dw-p" role="dialog" aria-modal="true" aria-labelledby="dwT" tabindex="-1">
+    <div class="dw-grip"><h2 id="dwT">Reserva tu valoración</h2><p class="muted">3 pasos · menos de un minuto</p></div>
+    <form id="bk">
+      <fieldset><legend>Tratamiento</legend><select id="bkT" name="t"></select></fieldset>
+      <fieldset><legend>Día</legend><div class="chips" id="days"></div></fieldset>
+      <fieldset><legend>Hora</legend><div class="chips" id="hours"></div></fieldset>
+      <label class="fl">Tu nombre<input name="n" required autocomplete="name" placeholder="Nombre y apellido"></label>
+      <button class="btn wide" type="submit">Confirmar por WhatsApp</button>
+      <button class="btn ghost wide" type="button" data-dw-close>Ahora no</button>
+    </form>
+  </div>
+</div>
+<div class="pop" id="pop" role="tooltip" hidden></div>
+</body>
+</html>

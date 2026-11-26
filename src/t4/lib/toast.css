@@ -1,0 +1,16 @@
+[hidden]{display:none!important}
+/* Toasts estilo Sonner — transiciones interrumpibles, 400ms ease (más elegante que ease-out, como Sonner) */
+.tz{position:fixed;z-index:90;bottom:max(20px,env(safe-area-inset-bottom));right:20px;width:min(356px,calc(100vw - 32px));margin:0;padding:0;list-style:none;pointer-events:none}
+.tz::before{content:"";position:absolute;inset:-60px -10px -10px;pointer-events:auto} /* rellena huecos: mantiene el hover */
+.tz-i{--y:0px;--s:1;position:absolute;bottom:0;right:0;left:0;display:flex;gap:12px;align-items:center;box-sizing:border-box;padding:14px 16px;border-radius:var(--t-r,14px);background:var(--t-bg,#fff);color:var(--t-fg,#111);border:1px solid var(--t-bd,rgba(0,0,0,.08));box-shadow:0 4px 12px rgba(0,0,0,.08),0 1px 2px rgba(0,0,0,.06);font:500 14px/1.35 var(--t-font,system-ui);transform:translateY(var(--y)) scale(var(--s));transform-origin:center bottom;transition:transform 400ms ease,opacity 400ms ease,height 400ms ease;pointer-events:auto;touch-action:none;overflow:hidden;user-select:none}
+.tz-i[data-mounted="false"]{transform:translateY(110%) scale(1);opacity:0}
+.tz-i[data-removed="true"]{transform:translateY(calc(var(--y) + 30%)) scale(var(--s))}
+.tz-i[data-swiping="true"]{transition:none}
+.tz-i[data-front="false"] > *{opacity:0;transition:opacity 300ms ease}
+.tz:hover .tz-i > *,.tz-i[data-front="true"] > *{opacity:1}
+.tz-ic{flex:none;display:grid;place-items:center;width:22px;height:22px;border-radius:50%;background:var(--t-ac,#111);color:var(--t-on,#fff);font-size:12px}
+.tz-t{margin:0;font-weight:600}.tz-d{margin:2px 0 0;opacity:.7;font-weight:400;font-size:13px}
+.tz-a{margin-left:auto;flex:none;border:0;border-radius:8px;padding:7px 10px;background:var(--t-ac,#111);color:var(--t-on,#fff);font:600 12px/1 inherit;cursor:pointer;transition:transform 160ms cubic-bezier(.23,1,.32,1)}
+.tz-a:active{transform:scale(.97)}
+@media (prefers-reduced-motion:reduce){.tz-i{transition:opacity 200ms ease}.tz-i[data-mounted="false"],.tz-i[data-removed="true"]{transform:translateY(var(--y)) scale(var(--s))}}
+@media (max-width:600px){.tz{right:16px}}

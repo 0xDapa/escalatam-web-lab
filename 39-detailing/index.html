@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Obsidiana Detailing — Corrección de pintura y cerámico en Monterrey · Demo conceptual Escalatam</title>
+<meta name="description" content="Detailing con un panel de carrocería 3D (Three.js, clearcoat): al hacer scroll se corrigen los swirls tras la cinta y aparecen las gotas del cerámico.">
+<meta name="theme-color" content="#07080a">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/michroma-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/panel-800.webp" as="image" type="image/webp" fetchpriority="high" imagesrcset="img/panel-800.webp 800w, img/panel-1600.webp 1600w" imagesizes="100vw">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#principal">Saltar al contenido</a>
+<header class="hd">
+  <a class="logo" href="#principal">OBSIDIANA</a>
+  <nav aria-label="Principal"><a href="#servicios">Servicios</a><a href="#paquetes">Paquetes</a><a href="#trabajos">Trabajos</a><a class="cta" href="#cita">Agendar</a></nav>
+</header>
+<main id="principal">
+  <section class="story" id="story" aria-labelledby="ht">
+    <div class="stick">
+      <img class="poster" src="img/panel-800.webp" srcset="img/panel-800.webp 800w, img/panel-1600.webp 1600w" sizes="100vw" width="800" height="500" alt="Panel de carrocería negro con marcas de swirl bajo luces de estudio" fetchpriority="high">
+      <canvas id="gl" aria-hidden="true"></canvas>
+      <div class="intro" id="c0">
+        <p class="kick">Detailing de autor · Monterrey, N.L.</p>
+        <h1 id="ht">Negro<br>espejo.</h1>
+        <p class="lede">Corrección de pintura en 2 pasos y cerámico 9H. Baja para ver lo que hacemos con un panel real.</p>
+      </div>
+      <div class="cap" id="c1"><p class="st">01 / Diagnóstico</p><h2>Así llega.</h2><p>Swirls de lavado con rodillo, hologramas de pulido mal hecho y rayas finas. El brillo se queda en 38 GU.*</p></div>
+      <div class="cap" id="c2"><p class="st">02 / Corrección</p><h2>La cinta no miente.</h2><p>Medimos el espesor y corregimos por secciones. A la izquierda, después; a la derecha, antes.</p></div>
+      <div class="cap" id="c3"><p class="st">03 / Acabado</p><h2>Profundidad real.</h2><p>El negro vuelve a ser negro: las barras de luz se reflejan sin halos.</p></div>
+      <div class="cap" id="c4"><p class="st">04 / Cerámico 9H</p><h2>El agua ya no se queda.</h2><p>Efecto perla durante hasta 3 años (ejemplo). Lavar es enjuagar.</p><a class="btn" href="#cita">Agendar diagnóstico gratis</a></div>
+      <div class="meter" aria-hidden="true"><span>Brillo</span><b id="gu">38</b><span>GU*</span><i><em id="guBar"></em></i></div>
+      <div class="bar" aria-hidden="true"><em id="bar"></em></div>
+    </div>
+  </section>
+
+  <section class="sec" id="servicios" aria-labelledby="sv">
+    <div class="wrap">
+      <h2 id="sv" class="h">Servicios</h2>
+      <div class="svc">
+        <article><span class="ix">01</span><h3>Lavado detallado</h3><p>Prelavado con espuma, dos cubetas, descontaminado férrico y secado con aire.</p><p class="pr">desde $1,200 MXN*</p></article>
+        <article><span class="ix">02</span><h3>Corrección de pintura</h3><p>1 o 2 pasos con medición de micras. Elimina hasta el 90% de swirls (ejemplo).</p><p class="pr">desde $6,500 MXN*</p></article>
+        <article><span class="ix">03</span><h3>Cerámico 9H</h3><p>Protección de 1 a 3 años, hidrofóbica, con certificado y revisión anual.</p><p class="pr">desde $9,800 MXN*</p></article>
+        <article><span class="ix">04</span><h3>Interior y piel</h3><p>Aspirado profundo, vapor, hidratación de piel y ozono contra olores.</p><p class="pr">desde $2,400 MXN*</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="trabajos" aria-labelledby="tr">
+    <div class="wrap">
+      <h2 id="tr" class="h">Antes / después</h2>
+      <div class="ba" id="ba" style="--x:50%">
+        <img loading="lazy" src="img/rojo-800.webp" srcset="img/rojo-800.webp 800w, img/rojo-1600.webp 1600w" sizes="(max-width:900px) 100vw, 1100px" width="800" height="533" alt="Deportivo rojo después del pulido">
+        <img class="before" loading="lazy" src="img/rojo-800.webp" srcset="img/rojo-800.webp 800w, img/rojo-1600.webp 1600w" sizes="(max-width:900px) 100vw, 1100px" width="800" height="533" alt="" aria-hidden="true">
+        <span class="tagb">Antes</span><span class="taga">Después</span>
+        <input type="range" min="0" max="100" value="50" id="baR" aria-label="Comparar antes y después">
+        <span class="knob" aria-hidden="true"></span>
+      </div>
+      <p class="note">Simulación con filtros para la demo: el “antes” se genera con CSS sobre la misma foto.</p>
+      <div class="gal">
+        <figure><img loading="lazy" src="img/clasico-800.webp" srcset="img/clasico-800.webp 800w, img/clasico-1600.webp 1600w" sizes="(max-width:700px) 100vw, 33vw" width="800" height="534" alt="Deportivo clásico verde oscuro"><figcaption>Clásico 1967 · corrección 2 pasos</figcaption></figure>
+        <figure><img loading="lazy" src="img/rueda-800.webp" srcset="img/rueda-800.webp 800w, img/rueda-1600.webp 1600w" sizes="(max-width:700px) 100vw, 33vw" width="800" height="450" alt="Rin negro de un auto moderno"><figcaption>Rines y cálipers · cerámico</figcaption></figure>
+        <figure><img loading="lazy" src="img/interior-800.webp" srcset="img/interior-800.webp 800w, img/interior-1600.webp 1600w" sizes="(max-width:700px) 100vw, 33vw" width="800" height="533" alt="Interior de auto clásico con volante de madera"><figcaption>Interior · piel y madera</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="paquetes" aria-labelledby="pq">
+    <div class="wrap calc">
+      <div>
+        <h2 id="pq" class="h">Arma tu paquete</h2>
+        <p class="mut">Precio estimado al momento. Confirmamos tras ver el auto (diagnóstico gratis, ejemplo).</p>
+        <fieldset><legend>Tamaño</legend><div class="seg" id="size"><span class="pill" aria-hidden="true"></span><button type="button" aria-pressed="true" data-m="1">Compacto</button><button type="button" aria-pressed="false" data-m="1.2">Sedán</button><button type="button" aria-pressed="false" data-m="1.45">SUV / Pick-up</button></div></fieldset>
+        <fieldset><legend>Servicios</legend><div class="opts" id="opts">
+          <label><input type="checkbox" value="1200" data-n="Lavado detallado" checked><span>Lavado detallado</span><b>$1,200</b></label>
+          <label><input type="checkbox" value="6500" data-n="Corrección de pintura"><span>Corrección de pintura</span><b>$6,500</b></label>
+          <label><input type="checkbox" value="9800" data-n="Cerámico 9H"><span>Cerámico 9H</span><b>$9,800</b></label>
+          <label><input type="checkbox" value="2400" data-n="Interior y piel"><span>Interior y piel</span><b>$2,400</b></label>
+        </div></fieldset>
+      </div>
+      <div class="total" id="cita">
+        <p class="st">Total estimado</p>
+        <p class="num" aria-live="polite"><span>$</span><span id="tot">1,200</span><small>MXN*</small></p>
+        <label class="lbl">¿Cuándo?<select id="day"><option>Esta semana</option><option>Próxima semana</option><option>Fin de semana</option></select></label>
+        <a class="btn wide" id="wa" href="https://wa.me/" target="_blank" rel="noopener">Agendar por WhatsApp</a>
+        <p class="fine">Recogemos tu auto en San Pedro y Cumbres sin costo (ejemplo).</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec quotes" aria-labelledby="op">
+    <div class="wrap">
+      <h2 id="op" class="h">Clientes (opiniones de ejemplo)</h2>
+      <div class="qs">
+        <blockquote><p>“Mi Mustang negro parecía gris. Ahora me da miedo lavarlo yo.”</p><cite>Rodrigo · San Pedro</cite></blockquote>
+        <blockquote><p>“Me mandaron fotos con el medidor de micras en cada paso. Cero sorpresas.”</p><cite>Ana Sofía · Cumbres</cite></blockquote>
+        <blockquote><p>“El cerámico vale cada peso: con la lluvia el agua se va sola.”</p><cite>Héctor · Valle Oriente</cite></blockquote>
+      </div>
+      <ul class="stats"><li><b>1,400+</b>autos detallados*</li><li><b>4.9</b>en reseñas*</li><li><b>3 años</b>garantía cerámico*</li></ul>
+    </div>
+  </section>
+</main>
+<footer class="ft"><div class="wrap"><p class="logo">OBSIDIANA</p><p>Av. Ficticia 123, San Pedro Garza García, N.L. · Lun–Sáb 8:00–19:00</p><p>Negocio <b>ficticio</b> — demo de Escalatam. Precios, cifras y opiniones <b>de ejemplo</b>. El panel 3D se genera por código (Three.js); fotos CC0 del WordPress Photo Directory. WhatsApp abre wa.me sin número.</p><p><a href="../">← Escalatam Web Lab</a></p></div></footer>
+</body>
+</html>

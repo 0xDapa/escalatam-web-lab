@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cumbre T1 — botella térmica de titanio · Demo conceptual Escalatam</title>
+<meta name="description" content="Página de lanzamiento de producto al estilo Apple: modelo 3D en Three.js, vista explotada ligada al scroll, acabados y pedido por WhatsApp.">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/host-grotesk-normal-300-800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/t1-natural-800.webp" as="image" type="image/webp">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#principal">Saltar al contenido</a>
+<header class="ln" id="ln">
+  <div class="ln-in">
+    <a class="ln-brand" href="#principal" aria-label="Cumbre T1, inicio">Cumbre T1</a>
+    <nav aria-label="Secciones"><a href="#diseno">Diseño</a><a href="#acabados">Acabados</a><a href="#specs">Especificaciones</a></nav>
+    <a class="pill sm" href="#comprar">Comprar</a>
+  </div>
+</header>
+<main id="principal">
+<section class="story" id="story" aria-label="Presentación del producto">
+  <div class="stick">
+    <img class="poster" src="img/t1-natural-800.webp" srcset="img/t1-natural-800.webp 800w, img/t1-natural-1600.webp 1600w" sizes="(max-width:700px) 90vw, 46vw" width="800" height="1000" alt="Botella térmica Cumbre T1 en titanio natural">
+    <canvas id="gl" aria-hidden="true"></canvas>
+    <div class="cap c0">
+      <p class="eyebrow grad">Nuevo</p>
+      <h1>Cumbre T1</h1>
+      <p class="lede">Titanio. 24 horas de frío.<br>Para toda la vida.</p>
+      <div class="row"><a class="pill" href="#comprar">Comprar</a><a class="link" href="#diseno">Ver cómo está hecha <span aria-hidden="true">↓</span></a></div>
+      <p class="price">Desde $ 89* <span>precio de ejemplo</span></p>
+    </div>
+    <div class="cap c1" id="diseno"><p class="k">Titanio grado 5</p><h2>Más ligera<br>que tu móvil.</h2><p class="big">290<span> g*</span></p></div>
+    <div class="cap c2">
+      <ul class="labels">
+        <li class="l1"><b>Tapa de un giro</b>Rosca de ¾ de vuelta con junta de silicona.</li>
+        <li class="l2"><b>Doble pared al vacío</b>El aire no pasa. El frío no sale.</li>
+        <li class="l3"><b>Interior cerámico</b>Sin sabor a metal. Ni al café ni al agua.</li>
+        <li class="l4"><b>Titanio grado 5</b>Exterior de 0,6 mm. Ligero y casi indestructible.</li>
+      </ul>
+    </div>
+    <div class="cap c3"><h2>Cierra en ¾ de vuelta.<br><span class="dim">No gotea. Nunca.</span></h2></div>
+    <div class="cap c4"><h2>Diseñada en Bogotá.<br><span class="grad">Hecha para durar.</span></h2></div>
+    <div class="bar" aria-hidden="true"><i></i></div>
+  </div>
+</section>
+
+<section class="say" aria-label="Por qué">
+  <p class="scrub" id="scrub">Tu café sigue caliente cuando vuelves de la reunión. Tu agua, helada después del gimnasio. Y la botella entera pesa menos que tus llaves.</p>
+</section>
+
+<section class="hl" aria-labelledby="hl-t">
+  <div class="wrap"><h2 id="hl-t" class="h2">Lo esencial.</h2></div>
+  <div class="track" id="track" tabindex="0" aria-label="Carrusel de características">
+    <article class="tile t1"><p class="k">Temperatura</p><h3>24 h frío.<br>12 h caliente.*</h3><div class="thermo" aria-hidden="true"><i></i></div></article>
+    <article class="tile t2"><p class="k">Peso</p><h3>290 g.*<br>Literalmente pluma.</h3><p class="huge">290</p></article>
+    <article class="tile t3"><p class="k">Interior</p><h3>Cerámica esmaltada.<br>Cero sabor a metal.</h3><div class="rings" aria-hidden="true"><i></i><i></i><i></i></div></article>
+    <article class="tile t4"><p class="k">Garantía</p><h3>De por vida.<br>Si se abolla, la cambiamos.*</h3><p class="huge">∞</p></article>
+    <article class="tile t5"><p class="k">Planeta</p><h3>Reemplaza ~1.000 botellas<br>de plástico al año.*</h3><p class="huge">1k</p></article>
+  </div>
+  <div class="dots" id="dots" role="tablist" aria-label="Ir a la característica"></div>
+</section>
+
+<section class="fin" id="acabados" aria-labelledby="fin-t">
+  <div class="wrap fin-in">
+    <div class="fin-img"><img id="finImg" src="img/t1-natural-800.webp" width="800" height="1000" alt="Cumbre T1 en acabado titanio natural" loading="lazy"></div>
+    <div class="fin-txt">
+      <p class="k">Acabados</p>
+      <h2 class="h2">Cuatro tonos.<br>Uno es el tuyo.</h2>
+      <p class="muted" id="finName">Titanio natural — anodizado mate, el titanio tal cual sale del taller.</p>
+      <div class="sw" id="sw" role="radiogroup" aria-label="Elige acabado">
+        <span class="sw-pill" id="swPill" aria-hidden="true"></span>
+        <button role="radio" aria-checked="true" data-f="natural" style="--c:#b9b3a9">Natural</button>
+        <button role="radio" aria-checked="false" data-f="basalto" style="--c:#2b2c2f">Basalto</button>
+        <button role="radio" aria-checked="false" data-f="arena" style="--c:#d8c3a5">Arena</button>
+        <button role="radio" aria-checked="false" data-f="paramo" style="--c:#5f6f5a">Páramo</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="specs" id="specs" aria-labelledby="sp-t">
+  <div class="wrap">
+    <h2 id="sp-t" class="h2">¿Cuál es para ti?</h2>
+    <div class="cmp">
+      <div class="col"><p class="m">Cumbre T1</p><p class="pr">$ 89*</p><dl><dt>Capacidad</dt><dd>750 ml</dd><dt>Peso</dt><dd>290 g*</dd><dt>Frío / caliente</dt><dd>24 h / 12 h*</dd><dt>Ideal para</dt><dd>Oficina, gimnasio, viaje</dd></dl></div>
+      <div class="col"><p class="m">Cumbre T1 Mini</p><p class="pr">$ 69*</p><dl><dt>Capacidad</dt><dd>420 ml</dd><dt>Peso</dt><dd>190 g*</dd><dt>Frío / caliente</dt><dd>18 h / 9 h*</dd><dt>Ideal para</dt><dd>Café, mochila, bolso</dd></dl></div>
+    </div>
+  </div>
+</section>
+
+<section class="quotes" aria-labelledby="q-t">
+  <div class="wrap">
+    <h2 id="q-t" class="h2">Quien la prueba, no vuelve al plástico.</h2>
+    <p class="muted">Testimonios de ejemplo · valoración media 4,9/5 (ficticia)</p>
+    <div class="qg">
+      <blockquote><p>“La llevo al turno de 12 horas en el hospital. El último café sigue caliente.”</p><cite>Laura M. · enfermera</cite></blockquote>
+      <blockquote><p>“Subí al Nevado con agua helada. Pesa tan poco que se me olvidó que la llevaba.”</p><cite>Andrés R. · montañista</cite></blockquote>
+      <blockquote><p>“Por fin una botella que no sabe a metal. Mi té verde lo agradece.”</p><cite>Camila T. · diseñadora</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section class="buy" id="comprar" aria-labelledby="b-t">
+  <div class="wrap buy-in">
+    <h2 id="b-t" class="h2">Llévatela.</h2>
+    <div class="card">
+      <img id="buyImg" src="img/t1-natural-800.webp" width="800" height="1000" alt="" loading="lazy">
+      <div>
+        <p class="m" id="buyName">Cumbre T1 · Natural</p>
+        <p class="pr" id="buyPr">$ 89*</p>
+        <div class="seg" role="radiogroup" aria-label="Tamaño">
+          <button role="radio" aria-checked="true" data-s="T1" data-p="89">750 ml</button><button role="radio" aria-checked="false" data-s="T1 Mini" data-p="69">420 ml</button>
+        </div>
+        <div class="qty"><button type="button" id="minus" aria-label="Quitar una">−</button><output id="q" aria-live="polite">1</output><button type="button" id="plus" aria-label="Añadir una">+</button></div>
+        <a class="pill wide" id="waBuy" href="https://wa.me/" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+        <p class="fine">Envío gratis en la ciudad (ejemplo) · Pago al recibir · Cambios 30 días</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="ft">
+  <div class="wrap">
+    <p>* Negocio y producto <b>ficticios</b> para una demo de Escalatam. Precios, pesos, tiempos de temperatura, garantía y testimonios son <b>de ejemplo</b>. El botón de WhatsApp abre wa.me sin número: se pone el del cliente.</p>
+    <p>Modelo 3D generado por código (Three.js, LatheGeometry) — sin fotos de producto. Fuente Host Grotesk (OFL).</p>
+    <p class="cr">Cumbre · Bogotá · Demo conceptual · <a href="../">Escalatam Web Lab</a></p>
+  </div>
+</footer>
+</body>
+</html>

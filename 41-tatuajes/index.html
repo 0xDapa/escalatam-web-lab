@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Tinta Negra — Estudio de tatuajes en Guadalajara · Demo conceptual Escalatam</title>
+<meta name="description" content="Estudio de tatuajes con un shader de tinta en agua (Three.js) que reacciona al cursor, flash day con revelado por clip-path y cotizador por WhatsApp.">
+<meta name="theme-color" content="#ece5d8">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/unifrakturmaguntia-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#principal">Saltar al contenido</a>
+<header class="hd">
+  <a class="logo" href="#principal">Tinta Negra</a>
+  <nav aria-label="Principal"><a href="#estilos">Estilos</a><a href="#flash">Flash</a><a href="#artistas">Artistas</a><a class="cta" href="#cita">Cotizar</a></nav>
+</header>
+<main id="principal">
+  <section class="hero" aria-labelledby="ht">
+    <canvas id="gl" aria-hidden="true"></canvas>
+    <div class="h-in">
+      <p class="kick">Est. 2014 · Col. Americana, Guadalajara</p>
+      <h1 id="ht">Tinta<br>Negra</h1>
+      <p class="lede">Blackwork, tradicional y línea fina. Diseños únicos, agujas de un solo uso y cero prisas.</p>
+      <div class="row"><a class="btn" href="#cita">Cotiza tu idea</a><a class="btn ghost" href="#flash">Ver flash del mes</a></div>
+    </div>
+    <p class="hint" aria-hidden="true">Mueve el cursor: la tinta te sigue</p>
+  </section>
+
+  <section class="sec" id="estilos" aria-labelledby="es">
+    <div class="wrap">
+      <h2 id="es" class="h"><span>I.</span> Estilos</h2>
+      <ul class="styles" id="styles">
+        <li><button type="button" data-img="flash-aguila"><span class="nm">Tradicional</span><span class="ds">Líneas gruesas, color sólido, iconos clásicos.</span><span class="pr">desde $1,800*</span></button></li>
+        <li><button type="button" data-img="brazo"><span class="nm">Blackwork</span><span class="ds">Negro pleno, geometría y ornamento.</span><span class="pr">desde $2,500*</span></button></li>
+        <li><button type="button" data-img="flash-mariposa"><span class="nm">Línea fina</span><span class="ds">Trazos de una aguja, botánica y lettering.</span><span class="pr">desde $1,200*</span></button></li>
+        <li><button type="button" data-img="flash-barco"><span class="nm">Neo-tradicional</span><span class="ds">Volumen, paleta rica, composición grande.</span><span class="pr">desde $3,200*</span></button></li>
+      </ul>
+      <div class="peek" id="peek" aria-hidden="true"><img alt="" width="800" height="927"></div>
+    </div>
+  </section>
+
+  <section class="sec flash" id="flash" aria-labelledby="fl">
+    <div class="wrap">
+      <h2 id="fl" class="h"><span>II.</span> Flash del mes</h2>
+      <p class="mut">Diseños listos para tatuar a precio cerrado. Cada uno se tatúa una sola vez.</p>
+      <div class="fgrid">
+        <figure class="fl" data-rv><img loading="lazy" src="img/flash-aguila-800.webp" srcset="img/flash-aguila-800.webp 800w, img/flash-aguila-1600.webp 1600w" sizes="(max-width:760px) 90vw, 30vw" width="800" height="927" alt="Flash de águila de estilo naval"><figcaption><b>Águila naval</b><span>12 cm · $2,200*</span><button type="button" class="take" data-n="Águila naval">Apartar</button></figcaption></figure>
+        <figure class="fl" data-rv><img loading="lazy" src="img/flash-barco-800.webp" srcset="img/flash-barco-800.webp 800w, img/flash-barco-1600.webp 1600w" sizes="(max-width:760px) 90vw, 30vw" width="800" height="963" alt="Flash de barco velero"><figcaption><b>Velero</b><span>14 cm · $2,600*</span><button type="button" class="take" data-n="Velero">Apartar</button></figcaption></figure>
+        <figure class="fl" data-rv><img loading="lazy" src="img/flash-mariposa-800.webp" srcset="img/flash-mariposa-800.webp 800w, img/flash-mariposa-1600.webp 1600w" sizes="(max-width:760px) 90vw, 30vw" width="800" height="1140" alt="Flash de mariposa"><figcaption><b>Mariposa</b><span>9 cm · $1,600*</span><button type="button" class="take" data-n="Mariposa">Apartar</button></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="artistas" aria-labelledby="ar">
+    <div class="wrap arts">
+      <h2 id="ar" class="h"><span>III.</span> Artistas</h2>
+      <article class="art" data-rv><img loading="lazy" src="img/artista-800.webp" srcset="img/artista-800.webp 800w, img/artista-1600.webp 1600w" sizes="(max-width:760px) 90vw, 40vw" width="800" height="1200" alt="Tatuadora trabajando en un cliente"><h3>Renata “Ren” Ochoa</h3><p>Línea fina y botánica · 9 años tatuando (ejemplo)</p></article>
+      <article class="art" data-rv><img loading="lazy" src="img/maestro-800.webp" srcset="img/maestro-800.webp 800w, img/maestro-1600.webp 1600w" sizes="(max-width:760px) 90vw, 40vw" width="800" height="534" alt="Tatuador con máquina en mano"><h3>Toño Lira</h3><p>Tradicional y neo-tradicional · fundador (ejemplo)</p></article>
+      <div class="quotes">
+        <blockquote><p>“Llegué con una idea en servilleta y salí con la pieza de mi vida.”</p><cite>— Paola, línea fina</cite></blockquote>
+        <blockquote><p>“Limpieza de quirófano y un trato que te quita los nervios.”</p><cite>— Luis, blackwork</cite></blockquote>
+        <p class="rate"><b>4.9</b> de 5 · 680 reseñas (ejemplo)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec cita" id="cita" aria-labelledby="ct">
+    <div class="wrap ck">
+      <div><h2 id="ct" class="h"><span>IV.</span> Cotiza tu idea</h2><p class="mut">Te respondemos por WhatsApp con un rango de precio y fechas. El anticipo se descuenta del total.</p>
+        <ul class="care"><li>Agujas y tintas veganas de un solo uso</li><li>Diseño incluido, hasta 2 ajustes</li><li>Kit de cuidado de regalo</li></ul></div>
+      <form class="form" id="form">
+        <fieldset><legend>Zona</legend><div class="chips" id="zone"><button type="button" aria-pressed="true">Antebrazo</button><button type="button" aria-pressed="false">Brazo</button><button type="button" aria-pressed="false">Espalda</button><button type="button" aria-pressed="false">Pierna</button><button type="button" aria-pressed="false">Costillas</button></div></fieldset>
+        <label>Tamaño aproximado: <output id="sizeOut">10 cm</output><input type="range" id="size" min="3" max="40" value="10"></label>
+        <p class="est">Estimado: <b id="est">$1,800 – $2,600</b> MXN*</p>
+        <label>Tu idea<textarea id="idea" rows="3" placeholder="Una golondrina tradicional con una rosa…"></textarea></label>
+        <button class="btn" type="submit">Enviar por WhatsApp</button>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="ft"><div class="wrap"><p class="logo">Tinta Negra</p><p>Av. Chapultepec Sur 000, Col. Americana, Guadalajara · Mar–Sáb 12:00–21:00 · Solo mayores de 18</p><p>Estudio <b>ficticio</b> — demo de Escalatam. Precios, artistas y reseñas <b>de ejemplo</b>. Shader de tinta propio en Three.js; fotos CC0 (WordPress Photo Directory / Openverse). WhatsApp abre wa.me sin número.</p><p><a href="../">← Escalatam Web Lab</a></p></div></footer>
+</body>
+</html>

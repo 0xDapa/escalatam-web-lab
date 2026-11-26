@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>NOVA — DJ y productora de techno melódico · Demo conceptual Escalatam</title>
+<meta name="description" content="Web de DJ con esfera de partículas en Three.js que late con un loop sintetizado en WebAudio, fechas de gira con hover compartido y presave con toast.">
+<meta name="theme-color" content="#07060c">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/unbounded-normal-300-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#principal">Saltar al contenido</a>
+<header class="hd">
+  <a class="logo" href="#principal">NOVA</a>
+  <nav aria-label="Principal"><a href="#musica">Música</a><a href="#gira">Gira</a><a href="#booking">Booking</a></nav>
+</header>
+<main id="principal">
+  <section class="hero" aria-labelledby="ht">
+    <canvas id="gl" aria-hidden="true"></canvas>
+    <div class="glow" aria-hidden="true"></div>
+    <div class="h-in">
+      <p class="mono">Techno melódico · Monterrey → Berlín</p>
+      <h1 id="ht">NOVA</h1>
+      <p class="lede">Nuevo EP <b>“Órbita”</b> — sale en <span id="cd" class="mono">09d 05h 00m</span></p>
+      <div class="row">
+        <button class="btn" type="button" id="play" aria-pressed="false"><span class="eq" aria-hidden="true"><i></i><i></i><i></i></span><span class="pl-t">Escuchar adelanto</span></button>
+        <a class="btn ghost" href="#booking">Booking</a>
+      </div>
+      <p class="fine mono">Adelanto = loop de 124 BPM generado en tu navegador (WebAudio).</p>
+    </div>
+  </section>
+
+  <section class="sec" id="musica" aria-labelledby="mu">
+    <div class="wrap">
+      <h2 id="mu" class="h">Música</h2>
+      <div class="rel">
+        <article class="rc a1" data-rv><div class="cv"><span>ÓRBITA</span></div><h3>Órbita EP</h3><p class="mono">4 tracks · próximamente</p><button class="btn sm presave" type="button">Presave</button></article>
+        <article class="rc a2" data-rv><div class="cv"><span>PERIGEO</span></div><h3>Perigeo</h3><p class="mono">Single · 2025 · 1.2 M plays*</p><a class="btn sm ghost" href="#">Escuchar</a></article>
+        <article class="rc a3" data-rv><div class="cv"><span>LUZ ZODIACAL</span></div><h3>Luz zodiacal</h3><p class="mono">Remix · 2024</p><a class="btn sm ghost" href="#">Escuchar</a></article>
+      </div>
+      <ul class="nums"><li><b>480K</b><span>oyentes mensuales*</span></li><li><b>62</b><span>shows en 2025*</span></li><li><b>11</b><span>países*</span></li></ul>
+    </div>
+  </section>
+
+  <section class="sec" id="gira" aria-labelledby="gi">
+    <div class="wrap">
+      <h2 id="gi" class="h">Gira 2026–27</h2>
+      <ul class="tour" id="tour">
+        <li class="hl" aria-hidden="true"></li>
+        <li class="gig"><span class="d mono">12 DIC</span><span class="c">Ciudad de México</span><span class="v">Foro Ficticio</span><button class="tix" type="button" data-c="CDMX">Boletos</button></li>
+        <li class="gig"><span class="d mono">20 DIC</span><span class="c">Monterrey</span><span class="v">Club Gravedad</span><button class="tix sold" type="button" data-c="Monterrey" data-sold="1">Agotado · lista</button></li>
+        <li class="gig"><span class="d mono">31 DIC</span><span class="c">Tulum</span><span class="v">Festival Selva (ejemplo)</span><button class="tix" type="button" data-c="Tulum">Boletos</button></li>
+        <li class="gig"><span class="d mono">17 ENE</span><span class="c">Bogotá</span><span class="v">Bodega Norte</span><button class="tix" type="button" data-c="Bogotá">Boletos</button></li>
+        <li class="gig"><span class="d mono">07 FEB</span><span class="c">Berlín</span><span class="v">Halle 4 (ejemplo)</span><button class="tix" type="button" data-c="Berlín">Boletos</button></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="pr">
+    <div class="wrap live">
+      <figure data-rv><img loading="lazy" src="img/cabina-800.webp" srcset="img/cabina-800.webp 800w, img/cabina-1600.webp 1600w" sizes="(max-width:760px) 90vw, 50vw" width="800" height="533" alt="Manos de DJ mezclando en vivo con controlador y laptop"><figcaption class="mono">Live set híbrido · CDJ + sintes</figcaption></figure>
+      <div>
+        <h2 id="pr" class="h sm">Lo que dicen</h2>
+        <blockquote><p>“Cerró nuestro festival y la pista no se vació ni a las 6 a.m.”</p><cite class="mono">— Promotora, Festival Selva (ejemplo)</cite></blockquote>
+        <blockquote><p>“Profesional de principio a fin: rider claro y set impecable.”</p><cite class="mono">— Club Gravedad (ejemplo)</cite></blockquote>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec book" id="booking" aria-labelledby="bk">
+    <div class="wrap bkg">
+      <div><h2 id="bk" class="h">Booking</h2><p class="mut">Clubs, festivales, marcas y eventos privados. Respuesta con fee y rider en 48 h.</p></div>
+      <form class="form" id="form">
+        <fieldset><legend class="mono">Tipo de evento</legend><div class="chips" id="kind"><button type="button" aria-pressed="true">Club</button><button type="button" aria-pressed="false">Festival</button><button type="button" aria-pressed="false">Marca</button><button type="button" aria-pressed="false">Privado</button></div></fieldset>
+        <div class="two"><label class="mono">Ciudad<input name="c" placeholder="Ciudad"></label><label class="mono">Fecha<input name="f" type="date"></label></div>
+        <label class="mono">Aforo<input name="a" inputmode="numeric" placeholder="Ej. 800"></label>
+        <button class="btn" type="submit">Enviar por WhatsApp</button>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="ft"><div class="wrap"><p class="logo">NOVA</p><p>Artista <b>ficticia</b> — demo de Escalatam. Cifras, fechas y opiniones <b>de ejemplo</b>. Esfera de partículas propia en Three.js; el audio es un loop sintetizado en el navegador. Foto CC0 del WordPress Photo Directory. WhatsApp abre wa.me sin número.</p><p><a href="../">← Escalatam Web Lab</a></p></div></footer>
+</body>
+</html>

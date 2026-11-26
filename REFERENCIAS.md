@@ -131,3 +131,26 @@ nicho (salud, marca personal, hotel, restaurante). CSSDA, FWA y Godly **no** se 
 3. **CTA único y repetido** ("Book a call", "BOOK A DATE", "Reservas"), muchas veces directo a WhatsApp o teléfono.
 4. **Una interacción memorable ligada al negocio** (antes/después, día/noche, viaje por altitudes), no animación gratuita.
 5. **Scroll suave (Lenis) + GSAP** en casi todas las premiadas. En nuestras demos lo resolvemos con CSS y JS vanilla para mantener Lighthouse móvil ≥ 90.
+
+
+---
+
+# Tanda 4 — referencias de movimiento y WebGL
+
+Material de investigación (artículos guardados, capturas, mediciones) en `research-refs/t4/`, **fuera del repositorio** (.gitignore).
+De cada referencia tomamos principios y medidas, nunca código.
+
+| Referencia | Qué medimos / aprendimos | Dónde lo aplicamos |
+|---|---|---|
+| [emilkowal.ski](https://emilkowal.ski/) (artículos + skills MIT) | Curvas, duraciones < 300 ms, scale(.97), nada desde scale(0), origin-aware, blur en crossfades, muelles bounce 0 | Todas (ver METODO-EMIL-KOWALSKI.md) |
+| [Sonner](https://sonner.emilkowal.ski/) | Pila de toasts: escala 0,05·i, 14 px, expandir al hover, swipe por velocidad, pausa con pestaña oculta | `src/t4/lib/toast.js` |
+| [Vaul](https://vaul.emilkowal.ski/) | Drawer iOS `cubic-bezier(.32,.72,0,1)` 500 ms, arrastre 1:1, descarte por velocidad, fondo escalado | `src/t4/lib/drawer.js` (35, 38, 44) |
+| [animations.dev](https://animations.dev/) | Catálogo de micro-interacciones, FLIP, número que rueda | 38, 36, 39, 40 |
+| [Apple AirPods Pro](https://www.apple.com/airpods-pro/) / [MacBook Pro](https://www.apple.com/macbook-pro/) | Sticky de 900 px en padres de 2.250 px, vídeos ligados al scroll, texto gris→negro por palabra, nav `saturate(180%) blur(20px)`, titulares 96/100 tracking −1,44 px, curvas `(.4,0,.6,1)` y `(.28,.11,.32,1)` | 37, 39, 43, 44 |
+| [Apple Watch Ultra](https://www.apple.com/apple-watch-ultra-3/) | Anillos de actividad, cifras grandes | 40 |
+| [Linear](https://linear.app/) | `cubic-bezier(.32,.72,0,1)` y `(.165,.84,.44,1)`, densidad de producto | 38, 40 |
+| [Vercel](https://vercel.com/) / [Rauno](https://rauno.me/) / [Paco](https://paco.me/) | Interfaces mínimas, hover compartido, detalles tipográficos | 42 (gira), 36 |
+| [Lusion](https://lusion.co/) | Planos de imagen deformados por la velocidad del scroll | 36 |
+| [Active Theory](https://activetheory.net/) | Shaders como identidad, partículas | 41, 42 |
+| [Igloo Inc](https://www.igloo.inc/) | Objeto 3D protagonista con materiales físicos y scroll narrativo | 35, 42 |
+| [Bruno Simon](https://bruno-simon.com/) | Escenas procedurales con personalidad | 37 |

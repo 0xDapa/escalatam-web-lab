@@ -1,4 +1,4 @@
-# Escalatam Web Lab — 22 demos ligeras de webs premium
+# Escalatam Web Lab — 44 demos ligeras de webs premium
 
 **Galería en vivo:** https://0xdapa.github.io/escalatam-web-lab/
 
@@ -94,6 +94,32 @@ vendible, con código propio, marca ficticia, textos en español, fotos CC0 loca
 
 Lighthouse: preset móvil (CPU ×4, 4G simulada) contra localhost en Chrome headless con GPU por software. Fotos: StockSnap (CC0), créditos en el README de cada carpeta.
 <!-- TANDA3:END -->
+
+<!-- TANDA4:START -->
+## Tanda 4 — 10 webs con Three.js y Motion (Emil Kowalski + Apple)
+
+Investigamos los artículos y skills (MIT) de **Emil Kowalski** (Sonner, Vaul, animations.dev), las páginas de producto de **Apple**
+(scroll-scrub, sticky de 500+ vh, texto que se ilumina) y webs WebGL premiadas (Lusion, Active Theory, Igloo, Bruno Simon).
+Cada demo aplica esos principios con código propio a un nicho vendible. Método completo con snippets: [`METODO-EMIL-KOWALSKI.md`](METODO-EMIL-KOWALSKI.md).
+
+- **7 con Three.js** (35, 36, 37, 39, 41, 42, 43) · **9 con Motion** (35, 36, 38, 39, 40, 41, 42, 43, 44) · **5 con scroll-scrub tipo Apple** (36, 37, 39, 43, 44).
+- Three.js se **carga por intención** (primer scroll/puntero/tecla o 7 s) y un póster renderizado del mismo modelo hace de LCP → Lighthouse móvil ≥ 90 con WebGL.
+
+| # | Demo en vivo | Nicho | Tecnología | Inspirada en | JS inicial gzip | JS total gzip | Lighthouse móvil (Perf / A11y / BP / SEO) |
+|---|---|---|---|---|---|---|---|
+| 35 | [Flora Viva](https://0xdapa.github.io/escalatam-web-lab/35-floristeria/) | Floristería | Three.js 0.187 + Motion 14 | [Igloo Inc + Sonner/Vaul](https://www.igloo.inc/) | 29.0 KB | 166.6 KB | 95 / 100 / 100 / 100 |
+| 36 | [Lucía Ferrer](https://0xdapa.github.io/escalatam-web-lab/36-fotografa/) | Fotógrafa (bodas, retrato, paisaje) | Three.js 0.187 + Motion 14 · scroll-scrub | [Lusion + Active Theory](https://lusion.co/) | 28.8 KB | 159.4 KB | 90 / 100 / 100 / 100 |
+| 37 | [Estudio Vértice](https://0xdapa.github.io/escalatam-web-lab/37-arquitectura/) | Estudio de arquitectura | Three.js 0.187 · scroll-scrub | [Apple (scroll-scrub) + Bruno Simon](https://www.apple.com/macbook-pro/) | 2.5 KB | 138.1 KB | 100 / 100 / 100 / 100 |
+| 38 | [Aura Medicina Estética](https://0xdapa.github.io/escalatam-web-lab/38-clinica-estetica/) | Clínica estética | Motion 14 | [animations.dev + Vaul + Sonner (Emil Kowalski)](https://animations.dev/) | 30.3 KB | 30.3 KB | 100 / 100 / 100 / 100 |
+| 39 | [Obsidiana Detailing](https://0xdapa.github.io/escalatam-web-lab/39-detailing/) | Detailing automotriz | Three.js 0.187 + Motion 14 · scroll-scrub | [Apple (scroll-scrub) + estudios de detailing](https://www.apple.com/airpods-pro/) | 28.2 KB | 160.9 KB | 97 / 100 / 100 / 100 |
+| 40 | [Kai Torres](https://0xdapa.github.io/escalatam-web-lab/40-entrenador/) | Entrenador personal | Motion 14 | [Apple Watch + Emil Kowalski](https://www.apple.com/apple-watch-ultra-3/) | 28.8 KB | 28.8 KB | 97 / 100 / 100 / 100 |
+| 41 | [Tinta Negra](https://0xdapa.github.io/escalatam-web-lab/41-tatuajes/) | Estudio de tatuajes | Three.js 0.187 + Motion 14 | [Active Theory + Lusion (shaders)](https://activetheory.net/) | 28.1 KB | 158.2 KB | 99 / 100 / 100 / 100 |
+| 42 | [NOVA](https://0xdapa.github.io/escalatam-web-lab/42-dj-artista/) | DJ / artista musical | Three.js 0.187 + Motion 14 | [Igloo Inc + Active Theory](https://www.igloo.inc/) | 28.2 KB | 159.5 KB | 99 / 100 / 100 / 100 |
+| 43 | [Cumbre T1](https://0xdapa.github.io/escalatam-web-lab/43-lanzamiento-producto/) | Lanzamiento de producto (DTC) | Three.js 0.187 + Motion 14 · scroll-scrub | [Apple AirPods Pro / MacBook Pro](https://www.apple.com/airpods-pro/) | 28.8 KB | 164.6 KB | 99 / 100 / 100 / 100 |
+| 44 | [Dra. Elena Ríos](https://0xdapa.github.io/escalatam-web-lab/44-psicologia/) | Psicóloga | Motion 14 · scroll-scrub | [Apple (texto con scroll) + Vaul/animations.dev](https://vaul.emilkowal.ski/) | 29.1 KB | 29.1 KB | 100 / 95 / 100 / 100 |
+
+Lighthouse: preset móvil (CPU ×4, 4G simulada) contra localhost en Chrome headless con GPU por software. Collage local (no se publica, `shots/` está en .gitignore): `python3 tools/collage4.py` → `shots/collage-tanda4.png`.
+<!-- TANDA4:END -->
 
 ## Elegir variante en 10 segundos
 

@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Estudio Vértice — Arquitectura residencial en Medellín · Demo conceptual Escalatam</title>
+<meta name="description" content="Estudio de arquitectura: una casa procedural en Three.js pasa del plano al volumen, a la luz de tarde y a la noche mientras haces scroll.">
+<meta name="theme-color" content="#1d4a86">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/sora-normal-200-600.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/hero-1600.webp" as="image" type="image/webp" fetchpriority="high" imagesrcset="img/hero-800.webp 800w, img/hero-1600.webp 1600w" imagesizes="100vw">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#principal">Saltar al contenido</a>
+<header class="hd">
+  <a class="logo" href="#principal" aria-label="Estudio Vértice, inicio"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20 12 3l10 17z"/><path d="M12 3v17"/></svg>Vértice</a>
+  <nav aria-label="Principal"><a href="#proyectos">Proyectos</a><a href="#servicios">Servicios</a><a href="#proceso">Proceso</a><a class="cta" href="#contacto">Agenda una visita</a></nav>
+</header>
+<main id="principal">
+<section class="story" id="story" aria-label="Casa Ladera, del plano a la noche">
+  <div class="stick">
+    <img class="poster" src="img/hero-1600.webp" srcset="img/hero-800.webp 800w, img/hero-1600.webp 1600w" sizes="100vw" width="1600" height="1000" alt="Plano axonométrico de una casa contemporánea en líneas azules">
+    <canvas id="gl" aria-hidden="true"></canvas>
+    <div class="cap c0">
+      <p class="mono">Estudio Vértice · Arquitectura residencial · Medellín</p>
+      <h1>Dibujamos casas que se sienten antes de construirse.</h1>
+      <p class="lede">Haz scroll: esta casa se levanta desde el plano, recibe la luz de la tarde y se enciende de noche. Así presentamos cada proyecto a nuestros clientes.</p>
+      <a class="btn" href="#contacto">Agenda una visita al estudio</a>
+    </div>
+    <div class="cap c1"><p class="mono">01 — Plano</p><h2>Todo empieza en papel.<br>Aquí, en tiempo real.</h2><p>Planos, cortes y alzados con medidas reales antes de mover una sola piedra.</p></div>
+    <div class="cap c2"><p class="mono">02 — Volumen</p><h2>Un voladizo de 6 m<br>sobre el agua.</h2><p>Hormigón visto, celosía de madera de teca y una piscina que refleja la planta alta.</p></div>
+    <div class="cap c3"><p class="mono">03 — Luz</p><h2>Orientada al poniente.</h2><p>La tarde entra hasta la cocina; el sol del mediodía se queda en la celosía.</p></div>
+    <div class="cap c4"><p class="mono">04 — Habitar</p><h2>De noche,<br>la casa se enciende.</h2><a class="btn light" href="#contacto">Quiero una casa así</a></div>
+    <div class="meta" aria-hidden="true"><span>Casa Ladera</span><span>Medellín, CO</span><span>420 m²*</span><span>2025*</span><span class="ph">Fase <b id="fase">01</b>/04</span><i id="prog"></i></div>
+  </div>
+</section>
+
+<section class="sec projects" id="proyectos" aria-labelledby="pr-t">
+  <div class="wrap">
+    <header class="sh"><p class="mono">Proyectos seleccionados</p><h2 id="pr-t">Obra construida<br>y en curso.</h2></header>
+    <ol class="plist" id="plist">
+      <li data-img="pasarela"><span class="n">01</span><span class="t">Pasarela del Río</span><span class="y">Espacio público · 2024</span><span class="a">↗</span></li>
+      <li data-img="museo"><span class="n">02</span><span class="t">Museo de la Ladera</span><span class="y">Cultural · 2023</span><span class="a">↗</span></li>
+      <li data-img="cubierta"><span class="n">03</span><span class="t">Cubierta Mercado Sur</span><span class="y">Comercial · 2023</span><span class="a">↗</span></li>
+      <li data-img="reflejo"><span class="n">04</span><span class="t">Casa Espejo</span><span class="y">Vivienda · 2022</span><span class="a">↗</span></li>
+      <li data-img="lamas"><span class="n">05</span><span class="t">Torre Lamas</span><span class="y">Oficinas · 2022</span><span class="a">↗</span></li>
+      <li data-img="auditorio"><span class="n">06</span><span class="t">Auditorio Llano</span><span class="y">Cultural · 2021</span><span class="a">↗</span></li>
+    </ol>
+    <figure class="peek" id="peek" aria-hidden="true"><img alt="" width="800" height="600"></figure>
+    <p class="note">Proyectos y fechas de ejemplo. Fotos CC0 de arquitectura real (créditos en el README), no son obra del estudio.</p>
+  </div>
+</section>
+
+<section class="sec gallery" aria-label="Galería">
+  <div class="g">
+    <img loading="lazy" src="img/ciudad-artes-800.webp" srcset="img/ciudad-artes-800.webp 800w, img/ciudad-artes-1600.webp 1600w" sizes="(max-width:760px) 100vw, 60vw" width="1600" height="1203" alt="Edificio blanco de arcos y lámina de agua">
+    <img loading="lazy" src="img/torre-800.webp" srcset="img/torre-800.webp 800w, img/torre-1600.webp 1600w" sizes="(max-width:760px) 100vw, 40vw" width="1238" height="1600" alt="Torre de vidrio azul contra el cielo">
+    <img loading="lazy" src="img/fachada-800.webp" srcset="img/fachada-800.webp 800w, img/fachada-1600.webp 1600w" sizes="(max-width:760px) 100vw, 40vw" width="1200" height="1600" alt="Fachada de lamas verdes en diagonal">
+    <img loading="lazy" src="img/marquesina-800.webp" srcset="img/marquesina-800.webp 800w, img/marquesina-1600.webp 1600w" sizes="(max-width:760px) 100vw, 60vw" width="1600" height="900" alt="Marquesina de acero y vidrio">
+  </div>
+</section>
+
+<section class="sec services" id="servicios" aria-labelledby="sv-t">
+  <div class="wrap">
+    <header class="sh"><p class="mono">Servicios</p><h2 id="sv-t">Del lote a la llave.</h2></header>
+    <div class="sv">
+      <article><p class="mono">A</p><h3>Arquitectura residencial</h3><p>Anteproyecto, proyecto ejecutivo y dirección de obra para casas unifamiliares.</p><p class="pr">desde $ 45/m²*</p></article>
+      <article><p class="mono">B</p><h3>Interiorismo</h3><p>Materiales, mobiliario a medida e iluminación pensados con la arquitectura.</p><p class="pr">desde $ 25/m²*</p></article>
+      <article><p class="mono">C</p><h3>Licencias y trámites</h3><p>Curaduría, licencia de construcción y coordinación con ingenierías.</p><p class="pr">tarifa fija*</p></article>
+      <article><p class="mono">D</p><h3>Visualización 3D</h3><p>Recorridos interactivos como el de esta página para vender sobre plano.</p><p class="pr">desde $ 900*</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="sec process" id="proceso" aria-labelledby="ps-t">
+  <div class="wrap">
+    <header class="sh"><p class="mono">Proceso</p><h2 id="ps-t">Cuatro fases.<br>Cero sorpresas.</h2></header>
+    <ol class="steps">
+      <li><b>01</b><h3>Escucha</h3><p>Visita al lote, programa de necesidades y presupuesto real.</p><span>2 semanas</span></li>
+      <li><b>02</b><h3>Anteproyecto</h3><p>Dos propuestas con maqueta 3D navegable.</p><span>4–6 semanas</span></li>
+      <li><b>03</b><h3>Proyecto</h3><p>Planos ejecutivos, licencias e ingenierías coordinadas.</p><span>8–10 semanas</span></li>
+      <li><b>04</b><h3>Obra</h3><p>Dirección de obra con informe semanal en fotos.</p><span>según proyecto</span></li>
+    </ol>
+  </div>
+</section>
+
+<section class="sec voices" aria-labelledby="vo-t">
+  <div class="wrap">
+    <header class="sh"><p class="mono">Clientes (testimonios de ejemplo)</p><h2 id="vo-t">Lo que dicen al recibir las llaves.</h2></header>
+    <div class="vq">
+      <blockquote><p>“Vimos la casa de noche, con las luces encendidas, un año antes de que existiera. Eso nos convenció.”</p><cite>Familia Restrepo · Casa en El Retiro</cite></blockquote>
+      <blockquote><p>“El presupuesto final se desvió un 3 %. Nuestro anterior arquitecto, un 40 %.”</p><cite>Juliana P. · Casa Llanogrande</cite></blockquote>
+    </div>
+    <dl class="nums"><div><dt>Casas entregadas</dt><dd>38*</dd></div><div><dt>Años de estudio</dt><dd>12*</dd></div><div><dt>Desvío medio de presupuesto</dt><dd>4 %*</dd></div></dl>
+  </div>
+</section>
+
+<section class="sec contact" id="contacto" aria-labelledby="ct-t">
+  <div class="wrap ct">
+    <div><p class="mono">Contacto</p><h2 id="ct-t">Cuéntanos tu lote.</h2><p>Respondemos en menos de 24 h hábiles. La primera visita al estudio es sin coste (ejemplo).</p><p class="mono addr">Cra. 37 #8A-20, El Poblado · Medellín<br>Lun–Vie 9:00–18:00</p></div>
+    <form id="form" class="form">
+      <label>Nombre<input name="n" required autocomplete="name" placeholder="Tu nombre"></label>
+      <label>Tipo de proyecto<select name="t"><option>Casa nueva</option><option>Reforma integral</option><option>Interiorismo</option><option>Visualización 3D</option></select></label>
+      <label>Superficie aproximada <output id="m2o">220 m²</output><input type="range" name="m" min="60" max="800" step="10" value="220" id="m2"></label>
+      <label>Ubicación del lote<input name="u" placeholder="Barrio o municipio"></label>
+      <button class="btn" type="submit">Enviar por WhatsApp</button>
+      <p class="fine">Se abre WhatsApp con tu mensaje ya escrito. No guardamos datos.</p>
+    </form>
+  </div>
+</section>
+</main>
+<footer class="ft">
+  <div class="wrap">
+    <p class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 20 12 3l10 17z"/><path d="M12 3v17"/></svg>Vértice</p>
+    <p>Estudio <b>ficticio</b> · demo de Escalatam. Cifras, precios, proyectos y testimonios <b>de ejemplo</b>. La casa 3D está generada por código (Three.js); las fotos son CC0 de arquitectura real no relacionada.</p>
+    <p><a href="../">← Escalatam Web Lab</a></p>
+  </div>
+</footer>
+</body>
+</html>

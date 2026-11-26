@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lucía Ferrer — Fotografía de bodas, retrato y paisaje · Demo conceptual Escalatam</title>
+<meta name="description" content="Portfolio de fotógrafa con galería WebGL curva (Three.js): las fotos giran en un arco al hacer scroll o arrastrar y se doblan con la velocidad.">
+<meta name="theme-color" content="#0c0c0b">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/geist-normal-300-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/boda-480.webp" as="image" type="image/webp" fetchpriority="high" imagesrcset="img/boda-480.webp 480w, img/boda-800.webp 800w" imagesizes="(max-width:760px) 72vw, 24vw">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#principal">Saltar al contenido</a>
+<header class="hd">
+  <a class="logo" href="#principal">Lucía Ferrer<span>/ fotografía</span></a>
+  <nav aria-label="Principal"><a href="#servicios">Servicios</a><a href="#series">Series</a><a href="#opiniones">Opiniones</a><a class="cta" href="#reserva">Reservar fecha</a></nav>
+</header>
+<main id="principal">
+  <section class="arc" id="arc" aria-labelledby="ht">
+    <div class="stick">
+      <div class="fallback" aria-hidden="true"><img src="img/retrato-480.webp" srcset="img/retrato-480.webp 480w, img/retrato-800.webp 800w" sizes="(max-width:760px) 72vw, 24vw" width="800" height="1199" alt=""><img src="img/boda-480.webp" srcset="img/boda-480.webp 480w, img/boda-800.webp 800w" sizes="(max-width:760px) 72vw, 24vw" width="800" height="1067" alt="" fetchpriority="high"><img src="img/cumbre-480.webp" srcset="img/cumbre-480.webp 480w, img/cumbre-800.webp 800w" sizes="(max-width:760px) 72vw, 24vw" width="800" height="1067" alt=""></div>
+      <canvas id="gl" aria-hidden="true"></canvas>
+      <div class="h-top">
+        <h1 id="ht">Luz que <em>se queda.</em></h1>
+        <p>Bodas, retrato y paisaje desde Barcelona. Fotografía documental, sin poses de catálogo.</p>
+      </div>
+      <div class="h-bot">
+        <p class="cap" id="cap" aria-live="polite"><span class="n">01</span><span class="t">Boda en el Empordà</span><span class="m">Girona · 2025</span></p>
+        <p class="hint"><span class="ln"></span>Haz scroll o arrastra</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="servicios" aria-labelledby="sv">
+    <div class="wrap">
+      <p class="lbl">01 — Servicios</p>
+      <h2 id="sv">Tres formas de contar<br>una historia <em>con luz natural.</em></h2>
+      <ol class="svc">
+        <li><span class="k">A</span><div><h3>Bodas</h3><p>Cobertura completa, de los preparativos al último baile. Galería privada en 6 semanas.</p></div><p class="pr">desde 1.900 €*</p></li>
+        <li><span class="k">B</span><div><h3>Retrato y moda</h3><p>Sesiones de 2 h en estudio o exterior, con dirección suave y retoque natural.</p></div><p class="pr">desde 280 €*</p></li>
+        <li><span class="k">C</span><div><h3>Editorial y paisaje</h3><p>Encargos para marcas, hoteles y revistas. Licencias claras de uso.</p></div><p class="pr">a medida</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="sec series" id="series" aria-labelledby="se">
+    <div class="wrap">
+      <p class="lbl">02 — Series</p>
+      <h2 id="se">Trabajo reciente</h2>
+      <div class="mason">
+        <button type="button" class="ph tall" data-i="0"><img loading="lazy" src="img/retrato-800.webp" srcset="img/retrato-800.webp 800w, img/retrato-1600.webp 1600w" sizes="(max-width:700px) 50vw, 33vw" width="800" height="1199" alt="Retrato de modelo mirando a cámara"><span>Retrato · Estudio Poblenou</span></button>
+        <button type="button" class="ph" data-i="1"><img loading="lazy" src="img/pinos-800.webp" srcset="img/pinos-800.webp 800w, img/pinos-1600.webp 1600w" sizes="(max-width:700px) 50vw, 33vw" width="800" height="450" alt="Montañas en capas azules al amanecer"><span>Paisaje · Pirineo</span></button>
+        <button type="button" class="ph tall" data-i="2"><img loading="lazy" src="img/boda-800.webp" srcset="img/boda-800.webp 800w, img/boda-1600.webp 1600w" sizes="(max-width:700px) 50vw, 33vw" width="800" height="1067" alt="Pareja de recién casados caminando"><span>Boda · Empordà</span></button>
+        <button type="button" class="ph" data-i="3"><img loading="lazy" src="img/elefante-800.webp" srcset="img/elefante-800.webp 800w, img/elefante-1600.webp 1600w" sizes="(max-width:700px) 50vw, 33vw" width="800" height="450" alt="Primer plano en blanco y negro de un elefante"><span>Editorial · B/N</span></button>
+        <button type="button" class="ph tall" data-i="4"><img loading="lazy" src="img/moda-800.webp" srcset="img/moda-800.webp 800w, img/moda-1600.webp 1600w" sizes="(max-width:700px) 50vw, 33vw" width="800" height="1052" alt="Modelo en sesión de moda"><span>Moda · Campaña SS</span></button>
+        <button type="button" class="ph" data-i="5"><img loading="lazy" src="img/mirador-800.webp" srcset="img/mirador-800.webp 800w, img/mirador-1600.webp 1600w" sizes="(max-width:700px) 50vw, 33vw" width="800" height="600" alt="Panorámica de colinas verdes"><span>Paisaje · Garrotxa</span></button>
+        <button type="button" class="ph" data-i="6"><img loading="lazy" src="img/garza-800.webp" srcset="img/garza-800.webp 800w, img/garza-1600.webp 1600w" sizes="(max-width:700px) 50vw, 33vw" width="800" height="450" alt="Silueta de garza en blanco y negro"><span>Editorial · Delta</span></button>
+        <button type="button" class="ph" data-i="7"><img loading="lazy" src="img/valle-800.webp" srcset="img/valle-800.webp 800w, img/valle-1600.webp 1600w" sizes="(max-width:700px) 50vw, 33vw" width="800" height="600" alt="Valle visto desde lo alto"><span>Paisaje · Val d’Aran</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="opiniones" aria-labelledby="op">
+    <div class="wrap">
+      <p class="lbl">03 — Opiniones (de ejemplo)</p>
+      <h2 id="op" class="sr">Opiniones</h2>
+      <div class="q" id="quotes">
+        <blockquote class="on"><p>“Nos olvidamos de que había una cámara. Las fotos parecen recuerdos, no una sesión.”</p><cite>Clara y Joan — boda en Begur</cite></blockquote>
+        <blockquote><p>“Entendió la marca en una reunión. La campaña se publicó sin retoques extra.”</p><cite>Marta Vidal — directora creativa (ficticia)</cite></blockquote>
+        <blockquote><p>“Mi primer retrato en el que me reconozco. Luz preciosa y cero incomodidad.”</p><cite>Andrea R. — retrato personal</cite></blockquote>
+      </div>
+      <div class="qnav" role="group" aria-label="Cambiar opinión"><button type="button" aria-label="Opinión 1" aria-pressed="true"></button><button type="button" aria-label="Opinión 2" aria-pressed="false"></button><button type="button" aria-label="Opinión 3" aria-pressed="false"></button></div>
+      <ul class="press" aria-label="Publicaciones (ficticias)"><li>Revista Lumen</li><li>Bodas&amp;Co</li><li>Nord Editorial</li><li>Atlas Viajes</li></ul>
+    </div>
+  </section>
+
+  <section class="sec book" id="reserva" aria-labelledby="rv">
+    <div class="wrap bk">
+      <div><p class="lbl">04 — Reserva</p><h2 id="rv">¿Tienes fecha? <em>Hablemos.</em></h2><p class="mut">Solo 18 bodas al año (ejemplo). Respondo por WhatsApp en menos de 24 h con disponibilidad y una propuesta.</p></div>
+      <form class="form" id="form">
+        <fieldset><legend>Tipo de sesión</legend><div class="seg" id="seg"><span class="pill" aria-hidden="true"></span><button type="button" aria-pressed="true">Boda</button><button type="button" aria-pressed="false">Retrato</button><button type="button" aria-pressed="false">Marca</button></div></fieldset>
+        <label>Nombre<input name="n" autocomplete="name" required placeholder="Tu nombre"></label>
+        <div class="two"><label>Fecha<input name="f" type="date"></label><label>Lugar<input name="l" placeholder="Ciudad o finca"></label></div>
+        <button class="btn" type="submit">Consultar por WhatsApp <span aria-hidden="true">→</span></button>
+      </form>
+    </div>
+  </section>
+</main>
+<footer class="ft"><div class="wrap"><p class="big">Lucía Ferrer</p><p>Estudio en Poblenou, Barcelona · hola@luciaferrer.example</p><p>Fotógrafa <b>ficticia</b> — demo de Escalatam. Precios y opiniones <b>de ejemplo</b>. Fotos CC0 del WordPress Photo Directory (ver img/creditos.json). Galería curva en WebGL hecha con Three.js.</p><p><a href="../">← Escalatam Web Lab</a></p></div></footer>
+<div class="lb" id="lb" hidden role="dialog" aria-modal="true" aria-label="Foto ampliada"><img id="lbImg" alt=""><p id="lbCap"></p><button type="button" class="x" id="lbX" aria-label="Cerrar">×</button></div>
+</body>
+</html>

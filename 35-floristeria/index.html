@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Flora Viva — Floristería de autor en Valencia · Demo conceptual Escalatam</title>
+<meta name="description" content="Floristería con una flor 3D procedural (Three.js) que se abre al hacer scroll y cambia de color al armar tu ramo; carrito en drawer y toasts.">
+<meta name="theme-color" content="#f3ece1">
+<link rel="icon" href="data:,">
+<link rel="preload" href="fonts/gloock-normal-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/flor-800.webp" as="image" type="image/webp" fetchpriority="high">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="module" src="js/main.js"></script>
+</head>
+<body>
+<a class="skip" href="#principal">Saltar al contenido</a>
+<div class="page" data-drawer-bg>
+<header class="hd">
+  <a class="logo" href="#principal">Flora <i>Viva</i></a>
+  <nav aria-label="Principal"><a href="#ramos">Ramos</a><a href="#arma">Arma tu ramo</a><a href="#suscripcion">Suscripción</a><a href="#eventos">Bodas y eventos</a></nav>
+  <button class="cartb" id="cartBtn" type="button" aria-label="Abrir cesta, 0 ramos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l-1.2 11.2a2 2 0 0 1-2 1.8H8.2a2 2 0 0 1-2-1.8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><span id="cartN">0</span></button>
+</header>
+<main id="principal">
+  <section class="hero">
+    <div class="h-txt">
+      <p class="tag">Floristería de autor · Ruzafa, Valencia</p>
+      <h1>Flores que se abren<br>cuando las <em>miras.</em></h1>
+      <p class="lede">Ramos de temporada hechos a mano cada mañana con flor del mercado. Entrega el mismo día en Valencia si pides antes de las 13:00.</p>
+      <div class="row"><a class="btn" href="#ramos">Ver ramos de hoy</a><a class="btn ghost" href="#arma">Arma el tuyo</a></div>
+      <ul class="facts"><li><b>2 h</b>entrega express*</li><li><b>7 días</b>de frescura garantizada*</li><li><b>4,9★</b>en 1.200 pedidos*</li></ul>
+    </div>
+    <div class="h-art"><div class="slot" id="slotHero"><img class="poster" src="img/flor-800.webp" srcset="img/flor-800.webp 800w, img/flor-1600.webp 1600w" sizes="(max-width:860px) 92vw, 50vw" width="800" height="900" alt="Peonía rosa abierta, modelada en 3D"><canvas id="gl" aria-hidden="true"></canvas></div></div>
+  </section>
+
+  <section class="sec" id="ramos" aria-labelledby="rt">
+    <div class="wrap">
+      <header class="sh"><h2 id="rt">Ramos de hoy</h2><p>Cambian cada semana según lo que llega al mercado de flor. Precios de ejemplo.</p></header>
+      <div class="grid" id="grid">
+        <article class="prod"><img loading="lazy" src="img/rojas-800.webp" srcset="img/rojas-800.webp 800w, img/rojas-1600.webp 1600w" sizes="(max-width:700px) 100vw, 33vw" alt="Ramo de rosas rojas con paniculata"><div><h3>Pasión</h3><p>Rosas rojas, paniculata</p></div><p class="pr">45 €*</p><button class="add" type="button" data-n="Pasión" data-p="45" aria-label="Añadir Pasión a la cesta">+</button></article>
+        <article class="prod"><img loading="lazy" src="img/lilas-800.webp" srcset="img/lilas-800.webp 800w, img/lilas-1600.webp 1600w" sizes="(max-width:700px) 100vw, 33vw" alt="Ramo de rosas lilas"><div><h3>Lavanda</h3><p>Rosas lilas de jardín</p></div><p class="pr">52 €*</p><button class="add" type="button" data-n="Lavanda" data-p="52" aria-label="Añadir Lavanda a la cesta">+</button></article>
+        <article class="prod"><img loading="lazy" src="img/naranjas-800.webp" srcset="img/naranjas-800.webp 800w, img/naranjas-1600.webp 1600w" sizes="(max-width:700px) 100vw, 33vw" alt="Rosas naranjas en abundancia"><div><h3>Ámbar</h3><p>Rosas naranjas, 24 tallos</p></div><p class="pr">58 €*</p><button class="add" type="button" data-n="Ámbar" data-p="58" aria-label="Añadir Ámbar a la cesta">+</button></article>
+        <article class="prod"><img loading="lazy" src="img/ramo-800.webp" srcset="img/ramo-800.webp 800w, img/ramo-1600.webp 1600w" sizes="(max-width:700px) 100vw, 33vw" alt="Ramo de rosas rojas y rosas envuelto en papel"><div><h3>Clásico</h3><p>Rosas y paniculata, papel kraft</p></div><p class="pr">39 €*</p><button class="add" type="button" data-n="Clásico" data-p="39" aria-label="Añadir Clásico a la cesta">+</button></article>
+        <article class="prod"><img loading="lazy" src="img/lirios-800.webp" srcset="img/lirios-800.webp 800w, img/lirios-1600.webp 1600w" sizes="(max-width:700px) 100vw, 33vw" alt="Lirios naranjas y flores de temporada"><div><h3>Mercado</h3><p>Lirios y flor de temporada</p></div><p class="pr">35 €*</p><button class="add" type="button" data-n="Mercado" data-p="35" aria-label="Añadir Mercado a la cesta">+</button></article>
+        <article class="prod"><img loading="lazy" src="img/rosa-blanca-800.webp" srcset="img/rosa-blanca-800.webp 800w, img/rosa-blanca-1600.webp 1600w" sizes="(max-width:700px) 100vw, 33vw" alt="Rosa blanca con gotas de rocío"><div><h3>Rocío</h3><p>Rosas blancas, eucalipto</p></div><p class="pr">48 €*</p><button class="add" type="button" data-n="Rocío" data-p="48" aria-label="Añadir Rocío a la cesta">+</button></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec builder" id="arma" aria-labelledby="at">
+    <div class="wrap b-in">
+      <div class="b-art"><div class="slot" id="slotB"></div></div>
+      <div class="b-ui">
+        <h2 id="at">Arma tu ramo</h2>
+        <p>Elige la flor protagonista y verás cómo cambia. Luego el tamaño y una tarjeta escrita a mano.</p>
+        <fieldset><legend>Flor protagonista</legend><div class="pal" id="pal">
+          <button type="button" aria-pressed="true" data-k="peonia" style="--c:#e88aa3">Peonía</button><button type="button" aria-pressed="false" data-k="roja" style="--c:#c4122f">Rosa roja</button><button type="button" aria-pressed="false" data-k="blanca" style="--c:#efe7da">Blanca</button><button type="button" aria-pressed="false" data-k="coral" style="--c:#ff8a66">Coral</button><button type="button" aria-pressed="false" data-k="lila" style="--c:#b08ad6">Lila</button>
+        </div></fieldset>
+        <fieldset><legend>Tamaño</legend><div class="sz" id="sz"><button type="button" aria-pressed="false" data-p="29">Petit<small>29 €*</small></button><button type="button" aria-pressed="true" data-p="45">Mediano<small>45 €*</small></button><button type="button" aria-pressed="false" data-p="69">Generoso<small>69 €*</small></button></div></fieldset>
+        <label class="note">Tarjeta (opcional)<textarea id="msg" rows="2" maxlength="140" placeholder="Feliz cumpleaños, mamá ♥"></textarea></label>
+        <button class="btn" type="button" id="addCustom">Añadir a la cesta · <span id="cprice">45 €</span></button>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec subs" id="suscripcion" aria-labelledby="st">
+    <div class="wrap">
+      <header class="sh"><h2 id="st">Flores en casa cada semana</h2><p>Sin permanencia. Pausa o cancela desde WhatsApp.</p></header>
+      <div class="plans">
+        <article><h3>Quincenal</h3><p class="big">32 €<small>/envío*</small></p><ul><li>Ramo mediano de temporada</li><li>Jarrón de regalo el primer mes</li></ul><button class="btn ghost add-plan" type="button" data-n="Suscripción quincenal" data-p="32">Elegir</button></article>
+        <article class="feat"><span class="badge">La más pedida</span><h3>Semanal</h3><p class="big">28 €<small>/envío*</small></p><ul><li>Ramo mediano cada viernes</li><li>Elige día y hora de entrega</li><li>Flor de sorpresa del florista</li></ul><button class="btn add-plan" type="button" data-n="Suscripción semanal" data-p="28">Elegir</button></article>
+        <article><h3>Oficina</h3><p class="big">59 €<small>/semana*</small></p><ul><li>Centro grande para recepción</li><li>Mantenimiento incluido</li></ul><button class="btn ghost add-plan" type="button" data-n="Plan oficina" data-p="59">Elegir</button></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec events" id="eventos" aria-labelledby="et">
+    <div class="wrap ev">
+      <img loading="lazy" src="img/camelia-800.webp" srcset="img/camelia-800.webp 800w, img/camelia-1600.webp 1600w" sizes="(max-width:860px) 100vw, 45vw" alt="Flor rosa en primer plano">
+      <div><h2 id="et">Bodas y eventos</h2><p>Ramo de novia, centros, arcos florales y montaje el mismo día. Presupuesto en 24 h con un moodboard propio.</p>
+      <ul class="ticks"><li>Visita a la finca sin coste (ejemplo)</li><li>Flor local y de temporada</li><li>Desmontaje y reciclaje incluidos</li></ul>
+      <a class="btn" id="waEvent" href="https://wa.me/" target="_blank" rel="noopener">Pedir presupuesto por WhatsApp</a></div>
+    </div>
+  </section>
+
+  <section class="sec voices" aria-labelledby="vt">
+    <div class="wrap">
+      <h2 id="vt" class="center">Lo que dicen (testimonios de ejemplo)</h2>
+      <div class="vq">
+        <blockquote><p>“El ramo llegó en hora y duró diez días. Mi madre aún habla de él.”</p><cite>Marta · Benimaclet</cite></blockquote>
+        <blockquote><p>“Pedí por WhatsApp a las 12 y a las 14 estaba en la oficina de mi pareja.”</p><cite>Iván · Ruzafa</cite></blockquote>
+        <blockquote><p>“Hicieron toda la flor de nuestra boda. Ni una sola foto sin flores bonitas.”</p><cite>Lucía y Pau · El Saler</cite></blockquote>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="ft"><div class="wrap"><p class="logo">Flora <i>Viva</i></p><p>C/ de Sueca 32, Ruzafa · Valencia · Lun–Sáb 9:00–20:00</p><p>Floristería <b>ficticia</b> — demo de Escalatam. Precios, plazos y testimonios <b>de ejemplo</b>. La flor 3D está generada por código (Three.js); fotos CC0 del WordPress Photo Directory. WhatsApp abre wa.me sin número.</p><p><a href="../">← Escalatam Web Lab</a></p></div></footer>
+</div>
+<div class="dw" id="dw" hidden>
+  <div class="dw-ov"></div>
+  <div class="dw-p" role="dialog" aria-modal="true" aria-labelledby="cT" tabindex="-1">
+    <div class="dw-grip"><h2 id="cT">Tu cesta</h2></div>
+    <ul class="items" id="items"></ul>
+    <p class="empty" id="empty">Aún no has elegido flores.</p>
+    <div class="sum"><span>Total</span><b id="sum">0 €</b></div>
+    <label class="note">Entrega<select id="when"><option>Hoy (antes de las 20:00)</option><option>Mañana por la mañana</option><option>Mañana por la tarde</option></select></label>
+    <a class="btn wide" id="waCart" href="https://wa.me/" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+    <button class="btn ghost wide" type="button" data-dw-close>Seguir mirando</button>
+  </div>
+</div>
+</body>
+</html>

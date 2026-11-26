@@ -189,3 +189,21 @@ Incluir `.nojekyll` en la raíz para que GitHub sirva todo tal cual.
 - **Ciudad 3D tapando el titular** → máscara `linear-gradient` en el `.stage`.
 - **Tildes de una línea pisando la línea de arriba** (“MÁS” bajo “LO QUE” con Antonio/Oswald a interlineado 0,95) → interlineado 1,0 en el titular y, si aun así choca, reescribir la línea sin mayúscula acentuada justo debajo de otra línea.
 - **Acento igual al fondo de la sección** (lima sobre lima en Pulso Fitness) → sobrescribir el color de las cifras en el `hero.css` de la variante.
+
+## 13. Tanda 4 — Three.js + Motion sin perder Lighthouse
+
+Método detallado en [`METODO-EMIL-KOWALSKI.md`](METODO-EMIL-KOWALSKI.md). Flujo para una demo nueva con 3D o Motion:
+
+1. Código legible en `src/t4/<id>/` (`main.js`, `scene.js`, `style.css` con la línea `@t4 toast drawer` si usa las librerías propias).
+2. `node tools/build4.mjs <id>` → `<id>/js/` (esbuild, ESM con code-splitting; Three.js y Motion salen de `pkg/node_modules`, nunca de CDN).
+3. Three.js **solo** con `onIntent()` + `import('./scene.js')`. Póster: `python3 tools/render4.py <id> 1600x1000 <nombre> [--jpg]` (la demo debe exponer `window.__png` en `#render=<nombre>`).
+4. Fotos CC0 de Openverse (WordPress Photo Directory) a 1600/800 px con `tools/photos4.py`; créditos en `img/creditos.json`.
+5. QA: `OUT=shots/t4 python3 tools/shoot3.py <id>` (consola y overflow), `python3 tools/states4.py <id> '#seccion' 0 .3 .6 .9 [--mob]` para scroll-scrub, `bash tools/lighthouse.sh <id>` + `python3 tools/lhfail.py <id>`.
+6. Documentación: `src/variants4.py` → `python3 tools/docs4.py` (README por demo, bloque TANDA4, galería) y `python3 tools/collage4.py`.
+
+Errores de la Tanda 4 que no hay que repetir:
+- **Three.js cargado al inicio** → TBT 2,4 s y rendimiento 47. Con `onIntent` + póster: 99.
+- **`display:grid` pisando `[hidden]`** → modal visible al cargar. `toast.css` empieza con `[hidden]{display:none!important}`.
+- **TDZ**: llamar a `paint()` antes de declarar funciones que usa → la primera llamada va al final del archivo.
+- **Clases genéricas que chocan** (`.row` del hero vs. `.row` de la gira en 42) → nombres por sección (`.gig`).
+- **Ligar opacidad baja a texto real** (palabras al 16 % en 44) baja accesibilidad a 95: es una concesión consciente al efecto Apple.
